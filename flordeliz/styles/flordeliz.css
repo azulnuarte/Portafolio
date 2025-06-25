@@ -91,6 +91,73 @@ ul.menuLinks{
   content:"x";
 }
 
+h1{
+  color: rgb(170, 120, 62);
+  display:flex;
+  justify-content: center;
+  margin: 5px;
+}
+
+p{
+  margin: 10px;
+
+}
+#vamos {
+  background-color: rgb(170, 120, 62);
+  color: white;
+  padding: 10px 20px;
+  margin: 10px auto;
+  display: block;
+  text-align: center;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+#vamos:hover {
+  background-color: rgb(140, 90, 40);
+  transform: scale(1.05);
+}
+.hero {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.hero img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  border-radius: 10px;
+}
+footer {
+  background-color:  rgb(170, 120, 62);
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 2rem;
+  font-size: 0.9rem;
+}
+
+.footer-left, .footer-center {
+  flex: 1 1 200px;
+  margin: 0.5rem;
+}
+
+.social-icons img {
+  width: 30px;
+  height: auto;
+  margin: 0 5px;
+}
+
 
 
 
