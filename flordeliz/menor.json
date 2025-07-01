@@ -124,9 +124,155 @@
       "imagen": "images/imagenes estancia rodena/MIX TROPICAL ECONOMICO.png"
     },
     {
-      "nombre": "Mix Energpetico Económico (Mani, pasa de uva negra, almendra partida, nuez )",
+      "nombre": "Mix Energético Económico (Mani, pasa de uva negra, almendra partida, nuez )",
       "presentaciones": ["50gr - $500", "100gr - $900"],
       "imagen": "images/imagenes estancia rodena/MIX ENERGÉTICO ECONÓMICO.png"
     }
-  ]
+  ],
+
+  "Granolas y Mix Cervecero": [
+    {
+      "nombre": "Granola Tradicional (Avena, semillas de lino, Quinoa pop, semillas de girasol, copos de maíz, pasas negras, arroz inflado, miel. )",
+      "presentaciones": ["50gr - $400", "100gr - $750"],
+      "imagen": "images/imagenes estancia rodena/GRANOLA TRADICIONAL.png"
+    },
+    {
+      "nombre": "Granola Kids (Aritos frutales,bolitas de chocolate,avena, almohaditas de trigo, arroz inflado,copos de maiz, miel  )",
+      "presentaciones": ["50gr - $400", "100gr - $750"],
+      "imagen": "images/imagenes estancia rodena/GRANOLA KIDS.png"
+    },
+    {
+      "nombre": "Mix Cervecero Salado (Maiz frito salado, mani pelado salado, almendra, pasa de uva rubia.) ",
+      "presentaciones": ["50gr - $400", "100gr - $750"],
+      "imagen": "images/imagenes estancia rodena/MIX CERVECERO SALADO.png"
+    }
+ ],
+   "Nueces, Almendras y Castañas": [
+    {
+      "nombre": "Avellanas Georgia",
+      "presentaciones": ["50gr - $400", "100gr - $750"],
+      "imagen": "images/imagenes estancia rodena/AVELLANAS GEORGIA.png"
+    },
+    {
+      "nombre": "Almendra Marindada ",
+      "presentaciones": ["50gr - $400", "100gr - $750"],
+      "imagen": "images/imagenes estancia rodena/ALMENDRA MARINADA.png"
+    },
+    {
+      "nombre": "Almenra Carmel",
+      "presentaciones": ["50gr - $400", "100gr - $750"],
+      "imagen": "images/imagenes estancia rodena/ALMENDRA CARMEL_ SIN STOCK.png"
+    },
+    {
+      "nombre": "Nueces Mariposa Combinada",
+      "presentaciones": ["50gr - $400", "100gr - $750"],
+      "imagen": "images/imagenes estancia rodena/NUECES.png"
+    },
+    {
+      "nombre": "Nueces ",
+      "presentaciones": ["50gr - $400", "100gr - $750"],
+      "imagen": "images/imagenes estancia rodena/NUEZ MARIPOSA.png"
+    },
+    {
+      "nombre": "Castañas de Cajú W4 ",
+      "presentaciones": ["50gr - $400", "100gr - $750"],
+      "imagen": "images/imagenes estancia rodena/CASTAÑAS DE CAJÚ W4.png"
+    }
+ ],
+"Quinoa, Maíz Frito, Semillas y Cereales": [
+  {
+      "nombre": "Quinoa Pop ",
+      "presentaciones": ["50gr - $400", "100gr - $750"],
+      "imagen": "images/imagenes estancia rodena/QUINOA POP.png"
+  },
+  {
+      "nombre": "Maíz Frito Salado ",
+      "presentaciones": ["50gr - $400", "100gr - $750"],
+      "imagen": "images/imagenes estancia rodena/MAIZ FRITO SALADO.png"
+  },
+  {
+      "nombre": "Semillas de Quínoa ",
+      "presentaciones": ["50gr - $400", "100gr - $750"],
+      "imagen": "images/imagenes estancia rodena/SEMILLAS DE QUINOA.png"
+  },
+  {
+      "nombre": "Avena: arollada gruesa y salvado de avena ",
+      "presentaciones": ["50gr - $400", "100gr - $750"],
+      "imagen": "images/imagenes estancia rodena/AVENA_ arrollada  gruesa y salvado de avena.png"
+  },
+  {
+      "nombre": "Semillas de Lino ",
+      "presentaciones": ["50gr - $400", "100gr - $750"],
+      "imagen": "images/imagenes estancia rodena/SEMILLAS DE LINO.png"
+  },
+  {
+      "nombre": "Arroz Inflado sin Azúcar ",
+      "presentaciones": ["50gr - $400", "100gr - $750"],
+      "imagen": "images/imagenes estancia rodena/ARROZ INFLADO.png"
+  }
+ ],
+ "Semillas y Cereales ": [
+  {
+      "nombre": "Copos de Maíz con Azúcar ",
+      "presentaciones": ["50gr - $400", "100gr - $750"],
+      "imagen": "images/imagenes estancia rodena/COPOS DE MAIZ CON AZÚCAR.png"
+  },
+  {
+      "nombre": "Copos de Maíz sin Azúcar ",
+      "presentaciones": ["50gr - $400", "100gr - $750"],
+      "imagen": "images/imagenes estancia rodena/COPOS DE MAIZ SIN AZUCAR.png"
+  },
+   {
+      "nombre": "Semillas de Girasol",
+      "presentaciones": ["50gr - $400", "100gr - $750"],
+      "imagen": "images/imagenes estancia rodena/SEMILLAS DE GIRASOL.png"
+  },
+  {
+      "nombre": "Almohaditas de Trigo y Chocolate",
+      "presentaciones": ["50gr - $400", "100gr - $750"],
+      "imagen": "images/imagenes estancia rodena/ALMOHADITAS DE TRIGO Y CHOCOLATE.png"
+  },
+  {
+      "nombre": "Sésamo Negro",
+      "presentaciones": ["50gr - $400", "100gr - $750"],
+      "imagen": "images/imagenes estancia rodena/SESAMO NEGRO.png"
+  },
+   {
+      "nombre": "Sésamo Blanco",
+      "presentaciones": ["50gr - $400", "100gr - $750"],
+      "imagen": "images/imagenes estancia rodena/SESAMO BLANCO.png"
+  }
+ ],
+ "Cereales y Tutucas ": [
+  {
+      "nombre": "Almohaditas de Limón ",
+      "presentaciones": ["50gr - $400", "100gr - $750"],
+      "imagen": "images/imagenes estancia rodena/ALMOHADITAS  LIMON.png"
+  },
+  {
+      "nombre": "Bolitas de Chocolate",
+      "presentaciones": ["50gr - $400", "100gr - $750"],
+      "imagen": "images/imagenes estancia rodena/BOLITAS DE CHOCOLATE.png"
+  },
+   {
+      "nombre": "Aritos Frutales",
+      "presentaciones": ["50gr - $400", "100gr - $750"],
+      "imagen": "images/imagenes estancia rodena/ARITOS FRUTALES.png"
+  },
+     {
+      "nombre": "Arroz Inflado con Azúcar",
+      "presentaciones": ["50gr - $400", "100gr - $750"],
+      "imagen": "images/imagenes estancia rodena/ARROZ INFLADO CON AZUCAR.png"
+  },
+   {
+      "nombre": "Almohaditas de Frutilla ",
+      "presentaciones": ["50gr - $400", "100gr - $750"],
+      "imagen": "images/imagenes estancia rodena/ALMOHADITAS FRUTILLA.png"
+  },
+    {
+      "nombre": "Tutucas Azucardas ",
+      "presentaciones": ["50gr - $400", "100gr - $750"],
+      "imagen": "images/imagenes estancia rodena/TUTUCAS AZUCARADAS.png"
+  }
+]
 }
