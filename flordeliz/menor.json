@@ -1,0 +1,132 @@
+{
+  "Frutas Deshidratadas": [
+    {
+      "nombre": "Pasa de Uva Negra Sin Semilla Premium",
+      "presentaciones": ["500gr - $3.500", "1kg - $6.900"],
+      "imagen": "images/imagenes estancia rodena/PASA DE UVA NEGRA SIN SEMILLA PREMIUM.png"
+    },
+    {
+      "nombre": "Pasa de Uva Negra Sin Semilla Flame",
+      "presentaciones": ["500gr - $3.500", "1kg - $6.900"],
+      "imagen": "images/imagenes estancia rodena/PASA DE UVA NEGRA SIN SEMILLA FLAME.png"
+    },
+    {
+      "nombre": "Pasa de Uva Rubia Sin Semilla",
+      "presentaciones": ["500gr - $3.500", "1kg - $6.900"],
+      "imagen": "images/imagenes estancia rodena/PASA DE UVA RUBIA SIN SEMILLA.png"
+    },
+    {
+      "nombre": "Arándanos Rojos Deshidratados",
+      "presentaciones": ["500gr - $3.500", "1kg - $6.900"],
+      "imagen": "images/imagenes estancia rodena/ARANDANOS ROJOS DESHIDRATADOS – CHILE.png"
+    },
+    {
+      "nombre": "Ciruela S/C N°1",
+      "presentaciones": ["500gr - $3.500", "1kg - $6.900"],
+      "imagen": "images/imagenes estancia rodena/CIRUELA S_C N° 1.png"
+    },
+    {
+      "nombre": "Dátiles Deshidratados Con Carozo Egipto",
+      "presentaciones": ["500gr - $3.500", "1kg - $6.900"],
+      "imagen": "images/imagenes estancia rodena/DATILES DESHIDRATADOS CON CAROZO EGIPTO.png"
+    },
+    {
+      "nombre": "Tomate Deshidratado N°1 Grande",
+      "presentaciones": ["500gr - $3.500", "1kg - $6.900"],
+      "imagen": "images/imagenes estancia rodena/TOMATE DESHIDRATADO N°1 GRANDE.png"
+    },
+    {
+      "nombre": "Empaque Mixto",
+      "presentaciones": ["500gr - $3.500", "1kg - $6.900"],
+      "imagen": "images/imagenes estancia rodena/EMPAQUE MIXTO.png"
+    },
+    {
+     "nombre": "Medallones De Durazno Deshidratado Sin Carozo Secado a Sol",
+     "presentaciones": ["500gr - $3.500", "1kg - $6.900"],
+     "imagen": "images/imagenes estancia rodena/MEDALLONES DE DURAZNO DESHIDRATAD0.png" 
+    },
+    {
+     "nombre": "Medallones De Durazno Deshidratado Sin Carozo Secado a Horno",
+     "presentaciones": ["500gr - $3.500", "1kg - $6.900"],
+     "imagen": "images/imagenes estancia rodena/MEDALLONES DE DURAZNO DESHIDRATAD0.png" 
+    },
+    {
+     "nombre": "Damasco Deshidratado",
+     "presentaciones": ["500gr - $3.500", "1kg - $6.900"],
+     "imagen": "images/imagenes estancia rodena/DAMASCO DESHIDRATADO.png" 
+    },
+    {
+     "nombre": "Chips de Banana",
+     "presentaciones": ["500gr - $3.500", "1kg - $6.900"],
+     "imagen": "images/imagenes estancia rodena/CHIPS DE BANANA.png" 
+    },
+    {
+     "nombre": "Higos Negros Deshidratados y Tiernizados (Catamarca)",
+     "presentaciones": ["500gr - $3.500", "1kg - $6.900"],
+     "imagen": "images/imagenes estancia rodena/HIGOS NEGROS DESHIDRATADOS Y TIERNIZADOS (CATAMARCA).png" 
+    },
+    {
+     "nombre": "Pera Deshidratada ",
+     "presentaciones": ["500gr - $3.500", "1kg - $6.900"],
+     "imagen": "images/imagenes estancia rodena/PERA DESHIDRATADA.png" 
+    },
+      {
+     "nombre": "Bocaditos Energéticos Moia x 18 u  ",
+     "presentaciones": ["500gr - $3.500", "1kg - $6.900"],
+     "imagen": "images/imagenes estancia rodena/BOCADITOS ENERGETICOS MOIA X 18 U.png" 
+    }
+  ],
+
+  "Mix Frutos Secos": [
+    {
+      "nombre": "Mix Delicia de Cereza (Castañas de caju, cereza glaseada, nuez mariposa EXTRA-LIGHT, pasas deuva rubia, almendra Carmel.)",
+      "presentaciones": ["50gr - $400", "100gr - $750"],
+      "imagen": "images/imagenes estancia rodena/MIX DELICIA DE CEREZA.png"
+    },
+    {
+      "nombre": "Mix Patagónico  ( Arandanos, catañas de Cajú, pasa rubia, avellanas, Nueces, almendras)",
+      "presentaciones": ["50gr - $500", "100gr - $900"],
+      "imagen": "images/imagenes estancia rodena/MIX  PATAGONICO.png"
+    },
+      {
+      "nombre": "Mix Tropical Premium (Anana en cubos, chips de banana, nuez, almendra Carmel, pasas de uva rubia, pasas negras)",
+      "presentaciones": ["50gr - $400", "100gr - $750"],
+      "imagen": "images/imagenes estancia rodena/MIX TROPICAL PREMIUM.png"
+    },
+    {
+      "nombre": "Mix Clásico con Castañas (castañas de caju, nuez, almendras carmel, pasa de uva rubia , pasa de uva negra)",
+      "presentaciones": ["50gr - $500", "100gr - $900"],
+      "imagen": "images/imagenes estancia rodena/MIX CLÁSICO CON CASTAÑAS.png"
+    },
+    {
+      "nombre": "Mix Tropical Clásico (Ananá en cubos, chips de banana, nuez, almendra Carmel, pasas de uva rubia, pasas negras)",
+      "presentaciones": ["50gr - $400", "100gr - $750"],
+      "imagen": "images/imagenes estancia rodena/MIX TROPICAL CLÁSICO.png"
+    },
+    {
+      "nombre": "Mix Clásico con Banana (chips de banana, mani s. sal, pasa negra, pasa rubia, almendra)",
+      "presentaciones": ["50gr - $500", "100gr - $900"],
+      "imagen": "images/imagenes estancia rodena/MIX CLÁSICO CON BANANA.png"
+    },
+      {
+      "nombre": "Mix Clásico  (maní sín sal, almendras, pasa de uva rubía , pasa de uva negra)",
+      "presentaciones": ["50gr - $400", "100gr - $750"],
+      "imagen": "images/imagenes estancia rodena/MIX CLASICO.png"
+    },
+    {
+      "nombre": "Mix Seco sin pasas (Castañas de cajú, nuez marÍposa, maní sÍn sal, almendra)",
+      "presentaciones": ["50gr - $500", "100gr - $900"],
+      "imagen": "images/imagenes estancia rodena/mix seco.png"
+    },
+       {
+      "nombre": "Mix Tropical Económico   (Mani, pasa de uva negra, papaya nacional,almendra partida, nuez)",
+      "presentaciones": ["50gr - $400", "100gr - $750"],
+      "imagen": "images/imagenes estancia rodena/MIX TROPICAL ECONOMICO.png"
+    },
+    {
+      "nombre": "Mix Energpetico Económico (Mani, pasa de uva negra, almendra partida, nuez )",
+      "presentaciones": ["50gr - $500", "100gr - $900"],
+      "imagen": "images/imagenes estancia rodena/MIX ENERGÉTICO ECONÓMICO.png"
+    }
+  ]
+}
