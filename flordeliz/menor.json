@@ -69,11 +69,6 @@
      "nombre": "Pera Deshidratada ",
      "presentaciones": ["500gr - $3.500", "1kg - $6.900"],
      "imagen": "images/imagenes estancia rodena/PERA DESHIDRATADA.png" 
-    },
-      {
-     "nombre": "Bocaditos Energéticos Moia x 18 u  ",
-     "presentaciones": ["500gr - $3.500", "1kg - $6.900"],
-     "imagen": "images/imagenes estancia rodena/BOCADITOS ENERGETICOS MOIA X 18 U.png" 
     }
   ],
 
@@ -274,5 +269,394 @@
       "presentaciones": ["50gr - $400", "100gr - $750"],
       "imagen": "images/imagenes estancia rodena/TUTUCAS AZUCARADAS.png"
   }
+],
+"Fruta Deshidratada y Glaseada ": [
+  {
+      "nombre": "Papaya Deshidratada en Cubos  ",
+      "presentaciones": ["50gr - $400", "100gr - $750"],
+      "imagen": "images/imagenes estancia rodena/PAPAYA DESHIDRATADA EN CUBOS.png"
+  },
+  {
+      "nombre": "Cereza Glaseada ",
+      "presentaciones": ["50gr - $400", "100gr - $750"],
+      "imagen": "images/imagenes estancia rodena/Cereza glaseada.png"
+  },
+  {
+      "nombre": "Cerezas al Marrasquino ",
+      "presentaciones": ["50gr - $400", "100gr - $750"],
+      "imagen": "images/imagenes estancia rodena/Cerezas Al Marrasquino.png"
+  },
+  {
+      "nombre": "Naranja Glaseada en Tiras ",
+      "presentaciones": ["50gr - $400", "100gr - $750"],
+      "imagen": "images/imagenes estancia rodena/NARANJA GLASEADA EN TIRAS.png"
+  },
+  {
+      "nombre": "Papaya Glaseada Multicolor ",
+      "presentaciones": ["50gr - $400", "100gr - $750"],
+      "imagen": "images/imagenes estancia rodena/PAPAYA GLASEADA MULTICOLOR.png"
+  },
+  {
+      "nombre": "Ananá Deshidratado en Cubos Rojos ",
+      "presentaciones": ["50gr - $400", "100gr - $750"],
+      "imagen": "images/imagenes estancia rodena/ANANÁ DESHIDRATADO EN CUBOS ROJO.png"
+  },
+  {
+      "nombre": "Ananá Deshidratado en Cubos Multicolor ",
+      "presentaciones": ["50gr - $400", "100gr - $750"],
+      "imagen": "images/imagenes estancia rodena/ANANÁ DESHIDRATADO EN CUBOS MULTICOLOR.png"
+  },
+   {
+      "nombre": "Clavo de Olor ",
+      "presentaciones": ["50gr - $400", "100gr - $750"],
+      "imagen": "images/imagenes estancia rodena/CLAVO DE OLOR.png"
+  }
+],
+"Hongos y Condimentos ": [
+  {
+      "nombre": "Hongos Secos Boletus Perú ",
+      "presentaciones": ["50gr - $400", "100gr - $750"],
+      "imagen": "images/imagenes estancia rodena/HONGOS SECOS.png"
+  },
+   {
+      "nombre": "Canela ",
+      "presentaciones": ["50gr - $400", "100gr - $750"],
+      "imagen": "images/imagenes estancia rodena/CANELA.png"
+  }
+],
+"Aceites y Aceitunas ": [
+  {
+      "nombre": "Aceitumas Verdes Artesanales N°1 2Kg ",
+      "presentaciones": ["50gr - $400", "100gr - $750"],
+      "imagen": "images/imagenes estancia rodena/ACEITUNAS VERDES.png"
+  },
+   {
+      "nombre": "Aceite de Oliva Olivo de Campo 500cc ",
+      "presentaciones": ["50gr - $400", "100gr - $750"],
+      "imagen": "images/imagenes estancia rodena/aceite de oliva 500.png"
+  },
+     {
+      "nombre": "Aceite de Oliva Olivo de Campo 1L ",
+      "presentaciones": ["50gr - $400", "100gr - $750"],
+      "imagen": "images/imagenes estancia rodena/aceite de oliva 500.png"
+  }
+],
+"Especias y Condimentos ": [
+    
+  {
+      "nombre": "Coco Rallado Indonesia  ",
+      "presentaciones": ["50gr - $400", "100gr - $750"],
+      "imagen": "images/imagenes estancia rodena/COCO RALLADO INDONESIA.png"
+  },
+  {
+      "nombre": "Pimienta Blanca Molida  ",
+      "presentaciones": ["50gr - $400", "100gr - $750"],
+      "imagen": "images/imagenes estancia rodena/PIMIENTA BLANCA MOLIDA.png"
+  },
+  {
+      "nombre": "Ají Molido  ",
+      "presentaciones": ["50gr - $400", "100gr - $750"],
+      "imagen": "images/imagenes estancia rodena/AJI MOLIDO.png"
+  },
+  {
+      "nombre": "Pimienta Negra Molida ",
+      "presentaciones": ["50gr - $400", "100gr - $750"],
+      "imagen": "images/imagenes estancia rodena/PIMIENTA NEGRA MOLIDA.png"
+  },
+  {
+      "nombre": "Pimentón ",
+      "presentaciones": ["50gr - $400", "100gr - $750"],
+      "imagen": "images/imagenes estancia rodena/PIMENTÓN.png"
+  },
+  {
+      "nombre": "Chimichurri con Romero ",
+      "presentaciones": ["50gr - $400", "100gr - $750"],
+      "imagen": "images/imagenes estancia rodena/CHIMICHURRI CON ROMERO.png"
+  },
+ {
+      "nombre": "Bicarbonato de Sodio ",
+      "presentaciones": ["50gr - $400", "100gr - $750"],
+      "imagen": "images/imagenes estancia rodena/BICARBONATO DE SODIO.png"
+  },
+  {
+      "nombre": "Orégano ",
+      "presentaciones": ["50gr - $400", "100gr - $750"],
+      "imagen": "images/imagenes estancia rodena/ORÉGANO.png"
+  },
+  {
+      "nombre": "Romero Egipto ",
+      "presentaciones": ["50gr - $400", "100gr - $750"],
+      "imagen": "images/imagenes estancia rodena/ROMERO EGIPTO.png"
+  },
+  {
+      "nombre": "Cúrcuma Molida ",
+      "presentaciones": ["50gr - $400", "100gr - $750"],
+      "imagen": "images/imagenes estancia rodena/CURCUMA MOLIDA.png"
+  },
+  {
+      "nombre": "Ajo Deshidratado en Polvo ",
+      "presentaciones": ["50gr - $400", "100gr - $750"],
+      "imagen": "images/imagenes estancia rodena/AJO DESHIDRATADO EN POLVO.png"
+  },
+  {
+      "nombre": "Provenzal ",
+      "presentaciones": ["50gr - $400", "100gr - $750"],
+      "imagen": "images/imagenes estancia rodena/PROVENZAL.png"
+  },
+ 
+  {
+      "nombre": "Hojas de Perejil Deshidratadas ",
+      "presentaciones": ["50gr - $400", "100gr - $750"],
+      "imagen": "images/imagenes estancia rodena/HOJAS DE PEREJIL DESHIDRATADAS.png"
+  },
+   {
+      "nombre": "Albahaca en Hojas ",
+      "presentaciones": ["50gr - $400", "100gr - $750"],
+      "imagen": "images/imagenes estancia rodena/ALBAHACA EN HOJAS.png"
+  },
+  {
+      "nombre": "Ajo Deshidratado Granulado ",
+      "presentaciones": ["50gr - $400", "100gr - $750"],
+      "imagen": "images/imagenes estancia rodena/AJO DESHIDRATADO GRANULADO.png"
+  },
+  {
+      "nombre": "Mostaza Amarilla ",
+      "presentaciones": ["50gr - $400", "100gr - $750"],
+      "imagen": "images/imagenes estancia rodena/MOSTAZA AMARILLA.png"
+  },
+   {
+      "nombre": "Nuez Moscada Molida ",
+      "presentaciones": ["50gr - $400", "100gr - $750"],
+      "imagen": "images/imagenes estancia rodena/NUEZ MOSCADA MOLIDA.png"
+  },
+    {
+      "nombre": "Tomillo Egipto ",
+      "presentaciones": ["50gr - $400", "100gr - $750"],
+      "imagen": "images/imagenes estancia rodena/TOMILLO EGIPTO.png"
+  },
+     {
+      "nombre": "Cedrón ",
+      "presentaciones": ["50gr - $400", "100gr - $750"],
+      "imagen": "images/imagenes estancia rodena/CEDRON.png"
+  },
+       {
+      "nombre": "Azafrán Caps. Blister x 10 U  ",
+      "presentaciones": ["50gr - $400", "100gr - $750"],
+      "imagen": "images/imagenes estancia rodena/AZAFRAN CAPS. BLISTER.png"
+  }
+],
+"Linea Maní ": [
+  {
+      "nombre": "Maní Vaina  ",
+      "presentaciones": ["50gr - $400", "100gr - $750"],
+      "imagen": "images/imagenes estancia rodena/MANI VAINA.png"
+  },
+  {
+      "nombre": "Maní Saborizado Premium Jamón ",
+      "presentaciones": ["50gr - $400", "100gr - $750"],
+      "imagen": "images/imagenes estancia rodena/MANI SABORIZADO PREMIUM JAMÓN.png"
+  },
+  {
+      "nombre": "Maní Salado ",
+      "presentaciones": ["50gr - $400", "100gr - $750"],
+      "imagen": "images/imagenes estancia rodena/MANI SALADO.png"
+  },
+    {
+      "nombre": "Caja 20 U x 90gr Maní Saborizado Mixto",
+      "presentaciones": ["50gr - $400", "100gr - $750"],
+      "imagen": "images/imagenes estancia rodena/CAJA 20 U X 90 G MANI SABORIZADO MIXTO.png"
+  }
+],
+"Linea Conservas  Marvavic ": [
+      {
+      "nombre": "Aceitunas Verdes Condimentadas en Aceite",
+      "presentaciones": ["50gr - $400", "100gr - $750"],
+      "imagen": "images/imagenes estancia rodena/ACEITUNAS VERDES CONDIMENTADS EN ACEITE X 330 cc $5.100.png"
+  },
+      {
+      "nombre": "Aceitunas Verdes N°0 y N°1 ",
+      "presentaciones": ["50gr - $400", "100gr - $750"],
+      "imagen": "images/imagenes estancia rodena/91.png"
+  },
+      {
+      "nombre": "Aceitunas Rellenas con Morron Bandeja x 200cc ",
+      "presentaciones": ["50gr - $400", "100gr - $750"],
+      "imagen": "images/imagenes estancia rodena/92.png"
+  },
+       {
+      "nombre": "Aceitunas Verdes Desc. N°2 Bandeja x 200cc ",
+      "presentaciones": ["50gr - $400", "100gr - $750"],
+      "imagen": "images/imagenes estancia rodena/93.png"
+  },
+         {
+      "nombre": "Aceitunas Verdes Desc. N°2 Frasco x 330cc ",
+      "presentaciones": ["50gr - $400", "100gr - $750"],
+      "imagen": "images/imagenes estancia rodena/94.png"
+  },
+           {
+      "nombre": "Chucrut Frasco x 330cc  ",
+      "presentaciones": ["50gr - $400", "100gr - $750"],
+      "imagen": "images/imagenes estancia rodena/95.png"
+  },
+            {
+      "nombre": "Ajíes en Vinagre x 660cc  ",
+      "presentaciones": ["50gr - $400", "100gr - $750"],
+      "imagen": "images/imagenes estancia rodena/96.png"
+  },
+           {
+      "nombre": "Aceitunas Negras N°1 Bandeja x 200cc",
+      "presentaciones": ["50gr - $400", "100gr - $750"],
+      "imagen": "images/imagenes estancia rodena/97.png"
+  },
+            {
+      "nombre": "Aceitunas Negras N°2 Bandeja x 200cc",
+      "presentaciones": ["50gr - $400", "100gr - $750"],
+      "imagen": "images/imagenes estancia rodena/98.png"
+  },
+              {
+      "nombre": "Aceitunas Verdes en Bandeja x 200cc",
+      "presentaciones": ["50gr - $400", "100gr - $750"],
+      "imagen": "images/imagenes estancia rodena/99.png"
+  },
+               {
+      "nombre": "Aceitunas Negras naturales 0  x 330cc",
+      "presentaciones": ["50gr - $400", "100gr - $750"],
+      "imagen": "images/imagenes estancia rodena/100.png"
+  },
+                {
+      "nombre": "Aceitunas Verdes 2 Bandeja x 200cc",
+      "presentaciones": ["50gr - $400", "100gr - $750"],
+      "imagen": "images/imagenes estancia rodena/101.png"
+  },
+                  {
+      "nombre": "Aceitunas Negras Griegas con aceite x330cc",
+      "presentaciones": ["50gr - $400", "100gr - $750"],
+      "imagen": "images/imagenes estancia rodena/102.png"
+  },
+                 {
+      "nombre": "Aceitunas Verdes 2 Bandeja x 600cc",
+      "presentaciones": ["50gr - $400", "100gr - $750"],
+      "imagen": "images/imagenes estancia rodena/103.png"
+  },
+                   {
+      "nombre": "Corazón de Alcaucil Natural Frasco x 330cc",
+      "presentaciones": ["50gr - $400", "100gr - $750"],
+      "imagen": "images/imagenes estancia rodena/104.png"
+  },
+                     {
+      "nombre": "Pasta de aceitunas Negras",
+      "presentaciones": ["50gr - $400", "100gr - $750"],
+      "imagen": "images/imagenes estancia rodena/105.png"
+  },
+                       {
+      "nombre": "Aceitunas Verdes 0 x330cc",
+      "presentaciones": ["50gr - $400", "100gr - $750"],
+      "imagen": "images/imagenes estancia rodena/106.png"
+  },
+                         {
+      "nombre": "Porotos condimentados en Aceite Frasco x330cc",
+      "presentaciones": ["50gr - $400", "100gr - $750"],
+      "imagen": "images/imagenes estancia rodena/107.png"
+  }
+],
+"Condimentos Fraccionados Flor de Liz": [
+  {
+      "nombre": "Condimentos Fraccionados  ",
+      "presentaciones": ["Cúrcuma x 25 grs. $400 Orégano x 8 grs. $400 Condimento para pizza x 15 grs. $400 Ajo molido x 25 grs. $400 Tomates secos x 20 grs. $400 ¡¡Promo lanzamiento!! lleva 3 a elección por $1.000 Pimienta negra en polvo y/o en grano x 25 grs. $800  Ají x 25 grs. $500 Hongos bolletus x 15 grs. $600"],
+      "imagen": "images/imagenes estancia rodena/108.png"
+  }
+],
+"Legumbres": [
+  {
+    "nombre": "Garbanzos",
+    "presentaciones": ["x 500 grs. $2.250/x 1 kg. $4.500"],
+    "imagen": "images/imagenes estancia rodena/.png"
+  },
+  {
+    "nombre": "Lentejas",
+    "presentaciones": ["x 500 grs. $2.550/x 1 kg. $5.100"],
+    "imagen": "images/imagenes estancia rodena/.png"
+  },
+  {
+    "nombre": "Lentejones",
+    "presentaciones": ["x 500 grs. $3.000/x 1 kg. $6.000"],
+    "imagen": "images/imagenes estancia rodena/.png"
+  },
+  {
+    "nombre": "Porotos Alubias",
+    "presentaciones": ["x 500 grs. $3.200/x 1 kg. $6.400"],
+    "imagen": "images/imagenes estancia rodena/.png"
+  }
+],
+"Semillas": [
+  {
+    "nombre": "Semillas de chía",
+    "presentaciones": ["x 500 grs. $7.400/x 1 kg. $8.800", "Pote bisagra x 150 grs."],
+    "imagen": "images/imagenes estancia rodena/.png"
+  },
+  {
+    "nombre": "Semillas de zapallo AA premium",
+    "presentaciones": [],
+    "imagen": "images/imagenes estancia rodena/.png"
+  }
+],
+"Harinas": [
+  {
+    "nombre": "Harina de almendra con piel pureza 70%",
+    "presentaciones": ["x 500 grs. $3.200/x 1 kg. $6.400"],
+    "imagen": "images/imagenes estancia rodena/.png"
+  },
+  {
+    "nombre": "Harina de almendra sin piel pureza 70%",
+    "presentaciones": ["x 500 grs. $3.200/x 1 kg. $6.400"],
+    "imagen": "images/imagenes estancia rodena/.png"
+  },
+  {
+    "nombre": "Harina de avena",
+    "presentaciones": ["x 500 grs. $1.700/x 1 kg. $3.400"],
+    "imagen": "images/imagenes estancia rodena/.png"
+  }
+],
+
+"Cereales": [
+  {
+    "nombre": "Gusanitos de colores",
+    "presentaciones": ["x 500 grs. $3.000/x 1 kg. $5.900"],
+    "imagen": "images/imagenes estancia rodena/.png"
+  }
+],
+"Especias y condimentos": [
+
+  {
+    "nombre": "Pesto seco",
+    "presentaciones": ["x 500 grs. $5.200/x 1 kg. $10.400"],
+    "imagen": "images/imagenes estancia rodena/.png"
+  }
+],
+"Frutos Secos ": [
+  {
+    "nombre": "Pistachos con cáscara tostado salado",
+    "presentaciones": [],
+    "imagen": "images/imagenes estancia rodena/.png"
+  },
+  {
+    "nombre": "Maní crudo calibre 38 ¡Oferta semanal!",
+    "presentaciones": ["$2.000/$4.000"],
+    "imagen": "images/imagenes estancia rodena/.png"
+  },
+  {
+    "nombre": "Pistachos natural pelado sin sal",
+    "presentaciones": ["Pote bisagra x 150 grs. $39.500"],
+    "imagen": "images/imagenes estancia rodena/.png"
+  }
+],
+
+"Frutas": [
+  {
+    "nombre": "Cerezas confitadas",
+    "presentaciones": ["x 500 grs. $10.100/x 1 kg. $20.200"],
+    "imagen": "images/imagenes estancia rodena/.png"
+  }
 ]
+
 }
