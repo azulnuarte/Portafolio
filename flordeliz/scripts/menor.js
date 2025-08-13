@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", async () => {
   try {
-   const response = await fetch("menor.json"); // ✔ esta es la ruta correcta
+    const response = await fetch("menor.json");
     if (!response.ok) {
       throw new Error("No se pudo cargar el archivo menor.json");
     }
@@ -9,36 +9,51 @@ document.addEventListener("DOMContentLoaded", async () => {
     const main = document.querySelector("main");
 
     for (const categoria in data) {
-       //Título de categoría
-     const titulo = document.createElement("h2");
-     titulo.textContent = categoria;
-      titulo.classList.add("categoria-titulo");
-      main.appendChild(titulo);
+      const card = document.createElement("section");
+      card.classList.add("categoria-card");
 
-      const contenedor = document.createElement("div");
-      contenedor.classList.add("categoria-contenedor");
+      const header = document.createElement("div");
+      header.classList.add("categoria-header");
+      header.textContent = categoria;
 
+      const contenido = document.createElement("div");
+      contenido.classList.add("categoria-contenido");
+
+      // Cargar productos de la categoría
       data[categoria].forEach(producto => {
-        const card = document.createElement("section");
-       card.classList.add("producto");
+        const productoCard = document.createElement("div");
+        productoCard.classList.add("producto");
 
-        card.innerHTML = `
-         <img src="${producto.imagen}" alt="${producto.nombre}">
+        productoCard.innerHTML = `
+          <img src="${producto.imagen}" alt="${producto.nombre}">
           <h3>${producto.nombre}</h3>
           <ul>
             ${producto.presentaciones.map(p => `<li>${p}</li>`).join("")}
           </ul>
         `;
 
-        contenedor.appendChild(card);
+        contenido.appendChild(productoCard);
       });
 
-      main.appendChild(contenedor);
+      // Ocultar contenido al inicio
+contenido.classList.add("oculto");
+
+// Toggle: abrir/cerrar al hacer clic en el header
+header.addEventListener("click", () => {
+  contenido.classList.toggle("oculto");
+  card.classList.toggle("abierta");
+});
+
+
+      card.appendChild(header);
+      card.appendChild(contenido);
+      main.appendChild(card);
     }
   } catch (error) {
     console.error("Error al cargar los productos:", error);
   }
 });
+
 
 
 
