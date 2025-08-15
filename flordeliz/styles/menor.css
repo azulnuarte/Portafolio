@@ -94,3 +94,14 @@
   display: none;
 }
 
+@media (max-width: 600px) {
+  .producto {
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto; /* centra las tarjetas en móvil */
+  }
+
+  .categoria-contenido {
+    justify-content: center; /* centra las tarjetas en móvil */
+  }
+}
