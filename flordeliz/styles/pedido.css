@@ -1,0 +1,129 @@
+/* Botón "Agregar" */
+button {
+  background-color: rgb(170, 120, 62); 
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+button:hover {
+  background-color: rgb(140, 90, 40);
+}
+
+button:active {
+  transform: scale(0.96);
+}
+
+/* Contenedor del formulario */
+#pedidoForm {
+  max-width: 400px;
+  margin: 20px auto;
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* Título */
+#pedidoForm h2 {
+  text-align: center;
+  margin-bottom: 15px;
+  color: #333;
+}
+h2{
+  color: rgb(170, 120, 62);
+  display:flex;
+  justify-content: center;
+  margin: 5px;
+}
+/* Etiquetas */
+#pedidoForm label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 6px;
+  color: #555;
+}
+
+/* Inputs */
+#pedidoForm input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+/* Detalle del pedido */
+#detallePedido {
+  background: white;
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 6px;
+}
+
+#detallePedido p {
+  margin: 5px 0;
+  font-size: 0.95rem;
+}
+
+/* Total */
+#pedidoForm p strong {
+  font-size: 1.1rem;
+  color: #333;
+}
+
+/* Botón enviar (ya tenía estilo, pero ajustamos tamaño) */
+#pedidoForm button[type="submit"] {
+  width: 100%;
+  padding: 12px;
+  font-size: 1rem;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  #pedidoForm {
+    margin: 10px;
+    padding: 15px;
+  }
+}
+
+
+/* Botón "Enviar pedido" */
+#pedidoForm button[type="submit"] {
+  background-color: rgb(170, 120, 62); /* azul */
+  padding: 10px 18px;
+  font-size: 1rem;
+  border-radius: 8px;
+}
+
+#pedidoForm button[type="submit"]:hover {
+  background-color: rgb(140, 90, 40);
+}
+
+/* Lista de productos */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Móvil: botones a ancho completo */
+@media (max-width: 600px) {
+  button {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+  }
+}

@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="styles/large.css">
     <link rel="stylesheet" href="styles/menor.css">
     <link rel="stylesheet" href="styles/pedido.css">
-    <script src="scripts/menor.js" defer></script>
+    <script src="scripts/pedido.js" defer></script>
     <script src="scripts/flordeliz.js" defer></script>
     <link rel="icon" href="favicon.ico">
 </head>
@@ -36,14 +36,58 @@
     <nav id="animateme">
         <ul class="menuLinks">
            <li> <a href="flordeliz.html"> Inicio </a> </li>
-           <li class="current-menu-item"><a href="menor.html">Catálogo Por Menor</a></li>
-            <li> <a href="pedidos.html"> Mi pedido </a> </li>
+           <li> <a href="menor.html"> Catálogo  </a> </li>
+           <li class="current-menu-item"><a href="pedidos.html"> Mi pedido</a></li>
 
         </ul>
     </nav>
 
     <main>
-       
+       <h2>Tu pedido</h2>
+<form id="pedidoForm">
+  <label>Nombre y Apellido:</label>
+  <input type="text" id="nombreCliente" required>
+  
+  <div id="detallePedido"></div>
+  
+  <p><strong>Total:</strong> $<span id="totalPedido">0</span></p>
+  
+  <button type="submit">Enviar pedido por WhatsApp</button>
+</form>
+
+<script>
+  const numeroMama = "5492616626634";
+  let carrito = JSON.parse(localStorage.getItem("carrito")) || [];
+
+  function renderCarrito() {
+    const detalleDiv = document.getElementById("detallePedido");
+    const totalSpan = document.getElementById("totalPedido");
+
+    detalleDiv.innerHTML = carrito.map(item => 
+      `<p>${item.presentacion} ${item.producto} - $${item.precio}</p>`
+    ).join("");
+
+    const total = carrito.reduce((sum, item) => sum + Number(item.precio), 0);
+    totalSpan.textContent = total;
+  }
+
+  renderCarrito();
+
+  document.getElementById("pedidoForm").addEventListener("submit", function(e) {
+    e.preventDefault();
+    const nombre = document.getElementById("nombreCliente").value;
+    const total = carrito.reduce((sum, item) => sum + Number(item.precio), 0);
+
+    const mensaje = `*Pedido Flor de Liz*
+Nombre: ${nombre}
+${carrito.map(item => `- ${item.presentacion} ${item.producto} ($${item.precio})`).join("\n")}
+Total: $${total}`;
+
+    const url = `https://wa.me/${numeroMama}?text=${encodeURIComponent(mensaje)}`;
+    window.open(url, "_blank");
+  });
+</script>
+
     </main>
     <footer>
         <div class="footer-left">

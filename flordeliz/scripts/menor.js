@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", async () => {
       header.textContent = categoria;
 
       const contenido = document.createElement("div");
-      contenido.classList.add("categoria-contenido");
+      contenido.classList.add("categoria-contenido", "oculto"); // oculto al inicio
 
       // Cargar productos de la categoría
       data[categoria].forEach(producto => {
@@ -28,22 +28,27 @@ document.addEventListener("DOMContentLoaded", async () => {
           <img src="${producto.imagen}" alt="${producto.nombre}">
           <h3>${producto.nombre}</h3>
           <ul>
-            ${producto.presentaciones.map(p => `<li>${p}</li>`).join("")}
+            ${producto.presentaciones.map(p => {
+              const [cantidad, precioStr] = p.split(" - $");
+              return `
+                <li>${cantidad} - $${precioStr} 
+                  <button onclick="agregarAlCarrito('${producto.nombre}', '${precioStr}', '${cantidad}')">
+                    Agregar
+                  </button>
+                </li>
+              `;
+            }).join("")}
           </ul>
         `;
 
         contenido.appendChild(productoCard);
       });
 
-      // Ocultar contenido al inicio
-contenido.classList.add("oculto");
-
-// Toggle: abrir/cerrar al hacer clic en el header
-header.addEventListener("click", () => {
-  contenido.classList.toggle("oculto");
-  card.classList.toggle("abierta");
-});
-
+      // Toggle: abrir/cerrar al hacer clic en el header
+      header.addEventListener("click", () => {
+        contenido.classList.toggle("oculto");
+        card.classList.toggle("abierta");
+      });
 
       card.appendChild(header);
       card.appendChild(contenido);
@@ -54,7 +59,9 @@ header.addEventListener("click", () => {
   }
 });
 
-
-
-
-
+function agregarAlCarrito(producto, precio, presentacion) {
+  let carrito = JSON.parse(localStorage.getItem("carrito")) || [];
+  carrito.push({ producto, precio, presentacion });
+  localStorage.setItem("carrito", JSON.stringify(carrito));
+  alert("Producto agregado al pedido");
+}
