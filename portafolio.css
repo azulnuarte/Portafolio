@@ -1,0 +1,131 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #F2E9E4;
+    color: #22223B;
+}
+
+.main-header {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 15px 30px;
+    background-color: #4A4E69;
+}
+
+/* LOGO */
+.logo {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #C9ADA7;
+    object-fit: cover;
+}
+
+/* CONTENEDOR TEXTO */
+.text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* TÍTULO */
+.name {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #F2E9E4;
+}
+
+/* SUBTÍTULO */
+.subtitle {
+    margin: 0;
+    font-size: 0.95rem;
+    color: #C9ADA7;
+}
+
+/* MAIN */
+main {
+    padding: 30px;
+}
+
+main h1 {
+    margin: 20px 0;
+    color: #4A4E69;
+}
+
+/* PROYECTOS */
+.project1,
+.project2,
+.project3,
+.project4 {
+    background-color: #FFFFFF;
+    border: 2px solid #9A8C98;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 20px;
+    transition: transform 0.2s ease;
+}
+
+.project1:hover,
+.project2:hover,
+.project3:hover,
+.project4:hover {
+    transform: scale(1.02);
+}
+
+/* títulos de proyectos */
+h3 {
+    color: #22223B;
+    margin-bottom: 10px;
+}
+
+/* imágenes */
+.project1 img,
+.project2 img,
+.project3 img,
+.project4 img {
+    border-radius: 8px;
+    margin: 10px 0;
+}
+
+/* links */
+a {
+    display: inline-block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #F2E9E4;
+    background-color: #4A4E69;
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+a:hover {
+    background-color: #22223B;
+}
+
+/* FOOTER */
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #22223B;
+    color: #F2E9E4;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+.footer-center a {
+    margin: 0 10px;
+    color: #C9ADA7;
+}
+
+.footer-center a:hover {
+    color: #F2E9E4;
+}

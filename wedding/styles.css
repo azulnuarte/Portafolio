@@ -1,43 +1,193 @@
-body{
-  font-family:'Poppins',sans-serif;
-  background: linear-gradient(135deg,#EDC4B3,#E6B8A2);
-  margin:0;
-  padding:0;
-  text-align:center;
-  color:#333
+/* PALETA */
+:root {
+    --bronze: #cb997e;
+    --sand: #ddbea9;
+    --cream: #ffe8d6;
+    --grey: #b7b7a4;
+    --sage: #a5a58d;
+    --olive: #6b705c;
 }
-.container{max-width:750px;margin:auto;padding:20px}
-h1{
-  font-family:'Playfair Display',serif;
-  font-size:48px;
-  margin-bottom:5px;
-  color:#774936;
+
+/* BASE */
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background-color: var(--cream);
+    color: var(--olive);
 }
-h2{font-weight:normal;margin-top:0}
-p{margin:8px 0}
-.card{
-  background:white;
-  border-radius:20px;
-  padding:25px;
-  margin:20px 0;
-  box-shadow:0 10px 25px rgba(0,0,0,0.1)
+
+/* HERO */
+.hero {
+    height: 70vh;
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),
+                url('juaz.jfif');
+    background-size: cover;
+    background-position: center 30%; /* 🔥 AJUSTÁ ESTE VALOR */
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-.timer{font-size:30px;font-weight:bold;color:#C38E70}
-a.button{
-  display:inline-block;
-  margin-top:10px;
-  padding:12px 22px;
-  border-radius:30px;
-  background:#D69F7E;
-  color:white;
-  text-decoration:none;
-  transition:0.3s
+
+.overlay {
+    text-align: center;
+    color: white;
 }
-a.button:hover{background:#8A5A44}
-.hero-img{
-  width:100%;
-  border-radius:20px;
-  margin:20px 0;
-  box-shadow:0 8px 20px rgba(0,0,0,0.15)
+
+.hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-size: 3.8rem;
+    letter-spacing: 1px;
+    text-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    color:#ddbea9;
 }
-.heart{font-size:22px}
+
+.tagline {
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+}
+
+/* CONTENIDO */
+.container {
+    max-width: 900px;
+    margin: auto;
+    padding: 40px 20px;
+}
+
+/* INTRO */
+.intro {
+    text-align: center;
+    font-size: 1.1rem;
+    margin-bottom: 40px;
+}
+
+/* COUNTDOWN */
+.countdown-section {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.timer {
+    font-size: 2rem;
+    color: var(--bronze);
+}
+
+/* GRID */
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+/* ITEMS */
+.item {
+    padding: 20px;
+    border-left: 4px solid var(--bronze);
+}
+
+.item h3 {
+    font-family: 'Playfair Display', serif;
+    color: var(--olive);
+}
+
+.item span {
+    color: var(--sage);
+}
+
+/* BOTONES */
+.btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 18px;
+    text-decoration: none;
+    border-radius: 30px;
+    transition: 0.3s;
+    font-size: 0.9rem;
+}
+.address {
+    font-size: 0.9rem;
+    color: var(--sage);
+    margin-top: 5px;
+    font-style: italic;
+}
+/* estilos */
+.primary {
+    background-color: var(--olive);
+    color: white;
+}
+
+.primary:hover {
+    background-color: var(--bronze);
+}
+
+.secondary {
+    background-color: var(--olive);
+    color: white;
+}
+
+.secondary:hover {
+    background-color: var(--bronze);
+    color: white;
+}
+
+/* CONFIRMACION */
+.confirmation {
+    text-align: center;
+    padding: 40px;
+    background-color: white;
+    border-radius: 20px;
+}
+
+.buttons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px;
+    color: var(--grey);
+}
+
+/* RESPONSIVE */
+@media (max-width: 700px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+}
+a {
+    text-decoration: none;
+    color: var(--bronze);
+    font-weight: 500;
+    position: relative;
+}
+
+/* efecto underline elegante */
+a::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 1px;
+    bottom: -2px;
+    left: 0;
+    background-color: var(--bronze);
+    transition: 0.3s;
+}
+
+a:hover::after {
+    width: 100%;
+}
+
+/* PARA LOS LINKS DE UBICACIÓN */
+.item a {
+    display: inline-block;
+    margin-top: 10px;
+}

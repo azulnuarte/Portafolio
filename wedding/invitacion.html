@@ -3,67 +3,98 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Boda Juan & Azul</title>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+
+<title>Juan & Azul | Wedding Invitation </title>
+
+<meta name="description" content="Invitación digital de boda de Juan y Azul. Confirmá tu asistencia y acompañanos en este día especial.">
+
+<!-- Open Graph -->
+<meta property="og:title" content="Juan & Azul Wedding">
+<meta property="og:description" content="Estás invitado a nuestra boda 💍">
+<meta property="og:type" content="website">
+<meta property="og:image" content="juaz.jfif">
+
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
 <link rel="stylesheet" href="styles.css">
 <script src="invitacion.js" defer></script>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@1&display=swap" rel="stylesheet">
+<link rel="icon" href="favicon.avif" type="image/avif">
 </head>
+
 <body>
 
-<div class="container">
+<header class="hero">
+    <div class="overlay">
+        <h1>Juan & Azul</h1>
+        <p class="tagline">¡Nos vamos a casar!</p>
+    </div>
+</header>
 
-<h1>Juan & Azul</h1>
-<h2>¡Nos casamos!</h2>
-<p>Queremos que nos acompañes en este momento tan especial 💕</p>
+<main class="container">
 
-<!-- FOTO DE LA PAREJA -->
-<img class="hero-img" src="juaz.jfif" alt="Nuestra foto">
+<section class="intro">
+    <p>Después de tantos momentos compartidos, queremos celebrar el comienzo de una nueva etapa juntos. Nos haría muy felices que formes parte de este día tan importante para nosotros.</p>
+</section>
 
-<div class="card">
-<h3>Cuenta regresiva</h3>
-<div class="timer" id="countdown"></div>
-</div>
+<section class="countdown-section">
+    <h2>Cuenta regresiva </h2>
+    <div id="countdown" class="timer"></div>
+</section>
 
-<div class="card">
-<h3>Fecha</h3>
-<p>12 de Agosto 2026 - 10:00 hs</p>
-</div>
+<section class="details grid">
+    <div class="item">
+        <h3>Fecha 📆</h3>
+        <p>12 de Agosto 2026</p>
+        <span>10:00 hs</span>
+    </div>
 
-<div class="card">
-<h3>Ceremonia Civil</h3>
-<p>Registro Civil</p>
-<a class="button" href="https://maps.google.com" target="_blank">Ver ubicación</a>
-</div>
+    <div class="item">
+        <h3>Modalidad</h3>
+        <p>Menú a la canasta 🍽️</p>
+    </div>
+</section>
 
-<div class="card">
-<h3>Fiesta</h3>
-<p>Salón de eventos</p>
-<a class="button" href="https://maps.google.com" target="_blank">Ver ubicación</a>
-</div>
+<section class="locations grid">
+    
+    <div class="item">
+        <h3>Ceremonia Civil</h3>
+        <p>Registro Civil</p>
+        <p class="address">Manuel Antonio Sáez 8253</p>
 
-<div class="card">
-<h3>Modalidad</h3>
-<p>Menú a la canasta 🍽️</p>
-<p>Cada invitado puede traer algo para compartir.</p>
-</div>
+        <a href="https://maps.app.goo.gl/y1YJqgqMqy7Fh9C28" target="_blank" class="btn">
+            Ver en mapa →
+        </a>
+    </div>
 
-<div class="card">
-  <h3>Confirmación de asistencia</h3>
-  <p>Por favor confirmá tu asistencia</p>
+    <div class="item">
+        <h3>Fiesta</h3>
+        <p>Salón de eventos</p>
+        <p class="address">Carodilla 1515</p>
 
-  <div class="confirm-buttons">
-    <a class="button" href="https://wa.me/5492612501013" target="_blank">
-      Confirmar con la novia 👰
-    </a>
+        <a href="https://maps.app.goo.gl/7q6pQc2SKjhH4Zve8?g_st=aw" target="_blank" class="btn">
+            Ver en mapa →
+        </a>
+    </div>
 
-    <a class="button" href="https://wa.me/5492613879812" target="_blank">
-      Confirmar con el novio 🤵
-    </a>
-  </div>
-</div>
+</section>
 
-</div>
+<section class="confirmation">
+    <h2>Confirmación de asistencia</h2>
+    <p>Por favor confirmá tu asistencia</p>
 
+    <div class="buttons">
+        <a href="#" class="btn primary">Novia 👰</a>
+        <a href="#" class="btn secondary">Novio 🤵</a>
+    </div>
+</section>
+
+</main>
+
+<footer>
+    <p>Con amor, Juan & Azul 💍</p>
+</footer>
 
 </body>
 </html>
