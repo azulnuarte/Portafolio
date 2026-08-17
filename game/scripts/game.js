@@ -443,7 +443,60 @@ const scenes = {
         
         
         },
+
+        friendlySara: {
+        image: "images/sara.png",
+        title: "Reunion",
+        text: "Sara's face lights up.\n\n'I thought I'd never see you again.'\n\nShe embraces you.\n\nBut something feels off.\n\nShe feels... wrong.\n\nPerfect.\n\nToo perfect.",
         
+        choices: [
+            {
+                text: "Continue",
+                next: "endingChoice"
+            }
+        ]
+        },
+
+        neutralSara: {
+        image: "images/sara.png",
+        title: "An Uncertain Meeting",
+        text: "Sara tilts her head.\n\n'I'm not sure myself.'\n\nShe speaks slowly, as if remembering.\n\n'I remember the house. The letters. You.'\n\n'But everything else feels... hazy.'\n\nShe studies your face carefully.\n\n'What happened to us?'",
+        
+        choices: [
+            {
+                text: "Continue",
+                next: "endingChoice"
+            }
+        ]
+        },
+
+        hostileSara: {
+        image: "images/sara.png",
+        title: "An Accusation",
+        text: "Sara's expression hardens.\n\n'Did I do this? YOU did this!'\n\nHer voice echoes in the empty hall.\n\n'With that Pen of yours!'\n\nYou step back in shock.\n\nSara knows about the Pen.\n\nBut how?",
+        
+        choices: [
+            {
+                text: "Continue",
+                next: "endingChoice"
+            }
+        ]
+        },
+
+        endingChoice: {
+        image: "images/castlenight.png",
+        title: "The Truth",
+        text: "Sara's true form begins to shimmer.\n\nThe perfection cracks.\n\n'You rewrote us all, didn't you?'\n\n'Made us perfect.'\n\n'Made everything perfect.'\n\nThe world flickers.\n\nYou realize the truth.\n\nThe Pen didn't just rewrite the world...\n\nIt rewrote you too.",
+        
+        choices: [
+            {
+                text: "Reset Game",
+                next: "start"
+            }
+        ]
+        }
+};
+
 function loadScene(sceneId) {
 
     const scene = scenes[sceneId];
