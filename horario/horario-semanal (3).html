@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Horario Semanal Editable</title>
+<style>
+  :root {
+    --bg: #f4f3ef;
+    --card-bg: #ffffff;
+    --border: #e1ded3;
+    --text-muted: #7a7972;
+    --text-secondary: #52514e;
+    --px-per-hour: 48;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    font-family: -apple-system, "Segoe UI", Arial, sans-serif;
+    background: var(--bg);
+    color: #1a1a1a;
+    margin: 0;
+    padding: 24px;
+  }
+
+  h1 { font-size: 20px; font-weight: 600; margin: 0 0 4px; }
+
+  p.hint {
+    font-size: 13px;
+    color: var(--text-muted);
+    margin: 0 0 16px;
+    line-height: 1.5;
+  }
+
+  .legend {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-bottom: 16px;
+    font-size: 12px;
+    color: var(--text-secondary);
+  }
+
+  .legend .item { display: flex; align-items: center; gap: 6px; }
+
+  .legend input[type="color"] {
+    width: 20px;
+    height: 20px;
+    padding: 0;
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    cursor: pointer;
+    background: none;
+  }
+
+  .toolbar {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 14px;
+    flex-wrap: wrap;
+  }
+
+  button {
+    padding: 8px 14px;
+    border-radius: 6px;
+    border: 1px solid var(--border);
+    background: var(--card-bg);
+    cursor: pointer;
+    font-size: 13px;
+  }
+
+  button:hover { background: #f0efe9; }
+
+  button.primary {
+    background: #2c2c2a;
+    color: #fff;
+    border-color: #2c2c2a;
+  }
+
+  button.primary:hover { background: #3d3d3a; }
+
+  button.danger {
+    color: #a03636;
+    border-color: #e2b8b8;
+  }
+
+  .add-panel {
+    display: none;
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 14px 16px;
+    margin-bottom: 14px;
+  }
+
+  .add-panel.open { display: block; }
+
+  .add-panel .row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: flex-end;
+    margin-bottom: 10px;
+  }
+
+  .field { display: flex; flex-direction: column; gap: 4px; }
+
+  .field label { font-size: 11px; color: var(--text-muted); }
+
+  .field input[type="text"],
+  .field input[type="time"],
+  .field select {
+    padding: 7px 8px;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    font-size: 13px;
+    font-family: inherit;
+  }
+
+  .field input[type="color"] {
+    width: 40px;
+    height: 34px;
+    padding: 2px;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    cursor: pointer;
+  }
+
+  .error-msg {
+    font-size: 12px;
+    color: #a03636;
+    margin: 4px 0 0;
+    display: none;
+  }
+
+  .error-msg.show { display: block; }
+
+  .scheduler-wrap {
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 12px;
+    overflow-x: auto;
+  }
+
+  .grid-columns {
+    display: grid;
+    grid-template-columns: 56px repeat(7, minmax(110px, 1fr));
+    min-width: 900px;
+  }
+
+  .day-header {
+    padding: 6px 4px;
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--text-secondary);
+    text-align: center;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .time-header { border-bottom: 1px solid var(--border); }
+
+  .time-ruler {
+    position: relative;
+    border-right: 1px solid var(--border);
+  }
+
+  .time-label {
+    position: absolute;
+    right: 6px;
+    transform: translateY(-50%);
+    font-size: 11px;
+    color: var(--text-muted);
+    white-space: nowrap;
+  }
+
+  .day-col {
+    position: relative;
+    border-right: 1px solid var(--border);
+    background-image: repeating-linear-gradient(
+      to bottom,
+      var(--border) 0,
+      var(--border) 1px,
+      transparent 1px,
+      transparent calc(var(--px-per-hour) * 1px)
+    );
+  }
+
+  .day-col.drop-target { background-color: rgba(0, 0, 0, 0.04); }
+
+  .block {
+    position: absolute;
+    left: 2px;
+    right: 2px;
+    border-radius: 6px;
+    padding: 4px 6px;
+    font-size: 12px;
+    font-weight: 500;
+    overflow: hidden;
+    cursor: grab;
+    user-select: none;
+    box-shadow: 0 0 0 1px rgba(0,0,0,0.04);
+  }
+
+  .block.dragging { opacity: 0.55; z-index: 20; cursor: grabbing; }
+
+  .block .time-tag {
+    display: block;
+    font-size: 10px;
+    font-weight: 400;
+    opacity: 0.85;
+    margin-top: 1px;
+  }
+
+  .edit-icon {
+    position: absolute;
+    top: 2px;
+    right: 3px;
+    width: 15px;
+    height: 15px;
+    font-size: 11px;
+    line-height: 15px;
+    text-align: center;
+    border-radius: 3px;
+    background: rgba(255,255,255,0.5);
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.1s;
+  }
+
+  .block:hover .edit-icon { opacity: 1; }
+
+  .resize-handle {
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 8px;
+    cursor: ns-resize;
+  }
+
+  .resize-handle.top { top: 0; }
+  .resize-handle.bottom { bottom: 0; }
+
+  .edit-popup {
+    position: fixed;
+    z-index: 100;
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 12px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+    width: 220px;
+  }
+
+  .edit-popup .field { margin-bottom: 8px; }
+  .edit-popup .field input[type="text"] { width: 100%; }
+  .edit-popup .actions { display: flex; gap: 6px; margin-top: 8px; }
+  .edit-popup .actions button { flex: 1; padding: 6px 8px; font-size: 12px; }
+</style>
+</head>
+<body>
+
+<h1>Horario semanal editable</h1>
+<p class="hint">
+  Arrastrá el cuerpo de un bloque para moverlo de día u horario · arrastrá su borde superior/inferior para cambiar la duración.<br>
+  Pasá el mouse sobre un bloque y tocá el ✎ para renombrarlo, cambiarle el color o borrarlo.
+</p>
+
+<div class="legend" id="legend"></div>
+
+<div class="toolbar">
+  <button class="primary" id="addTaskBtn">+ Agregar tarea</button>
+  <button id="resetBtn">Restablecer horario original</button>
+</div>
+
+<div class="add-panel" id="addPanel">
+  <div class="row">
+    <div class="field">
+      <label>Nombre de la tarea</label>
+      <input type="text" id="newLabel" placeholder="Ej: Coro, Iglesia">
+    </div>
+    <div class="field">
+      <label>Día</label>
+      <select id="newDay"></select>
+    </div>
+    <div class="field">
+      <label>Desde</label>
+      <input type="time" id="newStart" value="09:00">
+    </div>
+    <div class="field">
+      <label>Hasta</label>
+      <input type="time" id="newEnd" value="10:00">
+    </div>
+    <div class="field">
+      <label>Color</label>
+      <input type="color" id="newColor" value="#D88180">
+    </div>
+    <div class="field">
+      <button class="primary" id="confirmAddBtn">Agregar</button>
+    </div>
+  </div>
+  <p class="error-msg" id="addError"></p>
+</div>
+
+<div class="scheduler-wrap">
+  <div class="grid-columns" id="headerRow"></div>
+  <div class="grid-columns" id="bodyRow" style="min-height: 1px;"></div>
+</div>
+
+<script>
+  // ---------- Configuración de la grilla ----------
+  const DAYS = ["Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado", "Domingo"];
+  const GRID_START = 6 * 60;   // 6:00 en minutos desde medianoche
+  const GRID_END = 23 * 60;    // 23:00 (un poco más de margen para tareas nuevas a la noche)
+  const PX_PER_MIN = 48 / 60;  // 48px por hora
+  const SNAP = 15;             // minutos de snapping al mover/redimensionar
+  const MIN_DURATION = 15;     // duración mínima de un bloque
+
+  // Paleta indicada por el usuario, una base por categoría (editable desde la leyenda)
+  const categoryBaseColor = {
+    "Universidad": "#D88180",
+    "Búsqueda laboral": "#CAD182",
+    "Ejercicio": "#F7B1B0",
+    "Cocina": "#FEEAC7",
+    "Amistades": "#724319",
+  };
+
+  function categoryOf(label) {
+    if (label.startsWith("Universidad")) return "Universidad";
+    if (label.startsWith("Búsqueda laboral")) return "Búsqueda laboral";
+    if (label === "Ejercicio") return "Ejercicio";
+    if (label.startsWith("Cocina") || label === "Limpieza") return "Cocina";
+    return "Amistades"; // Amistades, Descanso, Desayuno / prep, Desayuno
+  }
+
+  function shade(hex, percent) {
+    const f = parseInt(hex.slice(1), 16);
+    const t = percent < 0 ? 0 : 255;
+    const p = Math.abs(percent);
+    const R = f >> 16, G = (f >> 8) & 0x00ff, B = f & 0x0000ff;
+    return "#" + (
+      0x1000000 +
+      (Math.round((t - R) * p) + R) * 0x10000 +
+      (Math.round((t - G) * p) + G) * 0x100 +
+      (Math.round((t - B) * p) + B)
+    ).toString(16).slice(1);
+  }
+
+  // Color final de un bloque: si tiene color propio (tareas nuevas o editadas
+  // manualmente) se respeta; si no, se deriva de la categoría por su nombre.
+  function colorFor(ev) {
+    if (ev.color) return ev.color;
+    const base = categoryBaseColor[categoryOf(ev.label)];
+    return ev.label.includes("(entrega)") ? shade(base, -0.3) : base;
+  }
+
+  function getContrastText(hex) {
+    const r = parseInt(hex.substr(1, 2), 16);
+    const g = parseInt(hex.substr(3, 2), 16);
+    const b = parseInt(hex.substr(5, 2), 16);
+    const luminance = (0.299 * r + 0.587 * g + 0.114 * b) / 255;
+    return luminance > 0.55 ? "#2c2c2a" : "#ffffff";
+  }
+
+  // ---------- Datos base (matriz original convertida en eventos) ----------
+  const timeRows = [
+    [420, 480],   // 7:00 - 8:00
+    [480, 540],   // 8:00 - 9:00
+    [540, 720],   // 9:00 - 12:00
+    [720, 780],   // 12:00 - 13:00
+    [780, 960],   // 13:00 - 16:00
+    [960, 1020],  // 16:00 - 17:00
+    [1020, 1140], // 17:00 - 19:00
+    [1140, 1200], // 19:00 - 20:00
+    [1200, 1290], // 20:00 - 21:30
+  ];
+
+  const labelMatrix = [
+    ["Ejercicio", "Ejercicio", "Ejercicio", "Ejercicio", "Ejercicio", "Descanso", "Descanso"],
+    ["Desayuno / prep", "Desayuno / prep", "Desayuno / prep", "Desayuno / prep", "Desayuno / prep", "Desayuno", "Desayuno"],
+    ["Búsqueda laboral", "Universidad", "Búsqueda laboral", "Universidad", "Búsqueda laboral", "Universidad (entrega)", "Descanso"],
+    ["Cocina", "Cocina", "Cocina", "Cocina", "Cocina", "Cocina", "Cocina"],
+    ["Universidad", "Búsqueda laboral", "Universidad (entrega)", "Búsqueda laboral", "Universidad", "Búsqueda laboral (entrega)", "Amistades"],
+    ["Descanso", "Descanso", "Descanso", "Descanso", "Descanso", "Búsqueda laboral (entrega)", "Amistades"],
+    ["Universidad", "Universidad", "Cocina / limpieza", "Universidad", "Amistades", "Limpieza", "Amistades"],
+    ["Cocina", "Cocina", "Cocina", "Cocina", "Cocina", "Cocina", "Cocina"],
+    ["Búsqueda laboral", "Universidad", "Descanso", "Universidad", "Descanso", "Descanso", "Descanso"],
+  ];
+
+  function buildInitialEvents() {
+    const evs = [];
+    let id = 0;
+    for (let day = 0; day < 7; day++) {
+      for (let row = 0; row < timeRows.length; row++) {
+        evs.push({
+          id: "e" + (id++),
+          day,
+          start: timeRows[row][0],
+          end: timeRows[row][1],
+          label: labelMatrix[row][day],
+          color: null, // null = usa el color de categoría
+        });
+      }
+    }
+    return evs;
+  }
+
+  let events = buildInitialEvents();
+  let nextId = events.length;
+  const initialSnapshot = JSON.parse(JSON.stringify(events));
+
+  // ---------- Leyenda editable ----------
+  const legendEl = document.getElementById("legend");
+  function buildLegend() {
+    legendEl.innerHTML = "";
+    Object.keys(categoryBaseColor).forEach((cat) => {
+      const item = document.createElement("div");
+      item.className = "item";
+      const input = document.createElement("input");
+      input.type = "color";
+      input.value = categoryBaseColor[cat];
+      input.addEventListener("input", () => {
+        categoryBaseColor[cat] = input.value;
+        buildBody();
+      });
+      const label = document.createElement("span");
+      label.textContent = cat;
+      item.appendChild(input);
+      item.appendChild(label);
+      legendEl.appendChild(item);
+    });
+  }
+  buildLegend();
+
+  // ---------- Panel para agregar tareas ----------
+  const addPanel = document.getElementById("addPanel");
+  const addTaskBtn = document.getElementById("addTaskBtn");
+  const newDaySelect = document.getElementById("newDay");
+  DAYS.forEach((d, i) => {
+    const opt = document.createElement("option");
+    opt.value = i;
+    opt.textContent = d;
+    newDaySelect.appendChild(opt);
+  });
+
+  addTaskBtn.addEventListener("click", () => {
+    addPanel.classList.toggle("open");
+  });
+
+  function parseTimeToMinutes(str) {
+    const [h, m] = str.split(":").map(Number);
+    return h * 60 + m;
+  }
+
+  document.getElementById("confirmAddBtn").addEventListener("click", () => {
+    const label = document.getElementById("newLabel").value.trim();
+    const day = parseInt(newDaySelect.value, 10);
+    const start = parseTimeToMinutes(document.getElementById("newStart").value);
+    const end = parseTimeToMinutes(document.getElementById("newEnd").value);
+    const color = document.getElementById("newColor").value;
+    const errorEl = document.getElementById("addError");
+
+    if (!label) {
+      errorEl.textContent = "Ponele un nombre a la tarea.";
+      errorEl.classList.add("show");
+      return;
+    }
+    if (end - start < MIN_DURATION) {
+      errorEl.textContent = "La hora de fin tiene que ser al menos 15 minutos después del inicio.";
+      errorEl.classList.add("show");
+      return;
+    }
+    errorEl.classList.remove("show");
+
+    events.push({
+      id: "e" + (nextId++),
+      day,
+      start: Math.max(GRID_START, start),
+      end: Math.min(GRID_END, end),
+      label,
+      color,
+    });
+
+    document.getElementById("newLabel").value = "";
+    buildBody();
+  });
+
+  // ---------- Construcción de la grilla ----------
+  const headerRow = document.getElementById("headerRow");
+  const bodyRow = document.getElementById("bodyRow");
+  const totalHeight = (GRID_END - GRID_START) * PX_PER_MIN;
+
+  function minutesToLabel(min) {
+    const h = Math.floor(min / 60);
+    const m = min % 60;
+    return h + ":" + (m === 0 ? "00" : String(m).padStart(2, "0"));
+  }
+
+  function buildHeader() {
+    headerRow.innerHTML = "";
+    const corner = document.createElement("div");
+    corner.className = "time-header";
+    headerRow.appendChild(corner);
+    DAYS.forEach((d) => {
+      const h = document.createElement("div");
+      h.className = "day-header";
+      h.textContent = d;
+      headerRow.appendChild(h);
+    });
+  }
+
+  let dayColEls = [];
+
+  function buildBody() {
+    closeEditPopup();
+    bodyRow.innerHTML = "";
+    bodyRow.style.height = totalHeight + "px";
+
+    const ruler = document.createElement("div");
+    ruler.className = "time-ruler";
+    ruler.style.height = totalHeight + "px";
+    for (let h = GRID_START / 60; h <= GRID_END / 60; h++) {
+      const lbl = document.createElement("div");
+      lbl.className = "time-label";
+      lbl.style.top = (h * 60 - GRID_START) * PX_PER_MIN + "px";
+      lbl.textContent = h + ":00";
+      ruler.appendChild(lbl);
+    }
+    bodyRow.appendChild(ruler);
+
+    dayColEls = [];
+    for (let day = 0; day < 7; day++) {
+      const col = document.createElement("div");
+      col.className = "day-col";
+      col.style.height = totalHeight + "px";
+      col.dataset.day = day;
+      bodyRow.appendChild(col);
+      dayColEls.push(col);
+    }
+
+    events.forEach(renderBlock);
+  }
+
+  function renderBlock(ev) {
+    const col = dayColEls[ev.day];
+    const block = document.createElement("div");
+    block.className = "block";
+    block.dataset.id = ev.id;
+    const bg = colorFor(ev);
+    block.style.background = bg;
+    block.style.color = getContrastText(bg);
+    block.style.top = (ev.start - GRID_START) * PX_PER_MIN + "px";
+    block.style.height = (ev.end - ev.start) * PX_PER_MIN + "px";
+
+    const labelSpan = document.createElement("div");
+    labelSpan.textContent = ev.label;
+    block.appendChild(labelSpan);
+
+    const timeTag = document.createElement("span");
+    timeTag.className = "time-tag";
+    timeTag.textContent = minutesToLabel(ev.start) + " - " + minutesToLabel(ev.end);
+    block.appendChild(timeTag);
+
+    const editIcon = document.createElement("div");
+    editIcon.className = "edit-icon";
+    editIcon.textContent = "✎";
+    editIcon.title = "Editar";
+    editIcon.addEventListener("pointerdown", (e) => e.stopPropagation());
+    editIcon.addEventListener("click", (e) => {
+      e.stopPropagation();
+      openEditPopup(ev, block);
+    });
+    block.appendChild(editIcon);
+
+    const topHandle = document.createElement("div");
+    topHandle.className = "resize-handle top";
+    block.appendChild(topHandle);
+
+    const bottomHandle = document.createElement("div");
+    bottomHandle.className = "resize-handle bottom";
+    block.appendChild(bottomHandle);
+
+    attachInteractions(block, ev, topHandle, bottomHandle);
+    col.appendChild(block);
+  }
+
+  function clamp(v, min, max) { return Math.max(min, Math.min(max, v)); }
+  function snap(v) { return Math.round(v / SNAP) * SNAP; }
+
+  // ---------- Popup de edición (renombrar / recolorear / borrar) ----------
+  let currentPopup = null;
+
+  function closeEditPopup() {
+    if (currentPopup) {
+      currentPopup.remove();
+      currentPopup = null;
+      document.removeEventListener("click", outsidePopupClick, true);
+    }
+  }
+
+  function outsidePopupClick(e) {
+    if (currentPopup && !currentPopup.contains(e.target)) closeEditPopup();
+  }
+
+  function openEditPopup(ev, blockEl) {
+    closeEditPopup();
+    const rect = blockEl.getBoundingClientRect();
+    const popup = document.createElement("div");
+    popup.className = "edit-popup";
+    popup.style.top = Math.min(rect.top, window.innerHeight - 220) + "px";
+    popup.style.left = Math.min(rect.right + 8, window.innerWidth - 236) + "px";
+
+    popup.innerHTML = `
+      <div class="field">
+        <label>Nombre</label>
+        <input type="text" id="editLabel" value="${ev.label.replace(/"/g, "&quot;")}">
+      </div>
+      <div class="field">
+        <label>Color</label>
+        <input type="color" id="editColor" value="${colorFor(ev)}">
+      </div>
+      <div class="actions">
+        <button class="primary" id="editSaveBtn">Guardar</button>
+        <button class="danger" id="editDeleteBtn">Borrar</button>
+      </div>
+    `;
+    document.body.appendChild(popup);
+    currentPopup = popup;
+
+    popup.querySelector("#editSaveBtn").addEventListener("click", () => {
+      const newLabel = popup.querySelector("#editLabel").value.trim();
+      const newColor = popup.querySelector("#editColor").value;
+      if (newLabel) ev.label = newLabel;
+      ev.color = newColor;
+      buildBody();
+    });
+
+    popup.querySelector("#editDeleteBtn").addEventListener("click", () => {
+      events = events.filter((e) => e.id !== ev.id);
+      buildBody();
+    });
+
+    setTimeout(() => document.addEventListener("click", outsidePopupClick, true), 0);
+  }
+
+  // ---------- Interacciones: mover y redimensionar ----------
+  function attachInteractions(block, ev, topHandle, bottomHandle) {
+    let mode = null; // 'move' | 'resize-top' | 'resize-bottom'
+    let startClientY = 0;
+    let origStart = 0, origEnd = 0;
+    let currentTargetDay = 0;
+
+    function onPointerDown(e, m) {
+      e.preventDefault();
+      mode = m;
+      startClientY = e.clientY;
+      origStart = ev.start;
+      origEnd = ev.end;
+      currentTargetDay = ev.day;
+      block.classList.add("dragging");
+      document.addEventListener("pointermove", onPointerMove);
+      document.addEventListener("pointerup", onPointerUp);
+    }
+
+    function onPointerMove(e) {
+      const dyMin = (e.clientY - startClientY) / PX_PER_MIN;
+
+      if (mode === "move") {
+        const deltaMin = snap(dyMin);
+        const duration = origEnd - origStart;
+        let newStart = clamp(origStart + deltaMin, GRID_START, GRID_END - duration);
+        const newEnd = newStart + duration;
+
+        const el = document.elementFromPoint(e.clientX, e.clientY);
+        const hoveredCol = el ? el.closest(".day-col") : null;
+        dayColEls.forEach((c) => c.classList.remove("drop-target"));
+        if (hoveredCol) {
+          currentTargetDay = parseInt(hoveredCol.dataset.day, 10);
+          hoveredCol.classList.add("drop-target");
+        }
+
+        block.style.top = (newStart - GRID_START) * PX_PER_MIN + "px";
+        ev._previewStart = newStart;
+        ev._previewEnd = newEnd;
+      }
+
+      if (mode === "resize-top") {
+        const deltaMin = snap(dyMin);
+        const newStart = clamp(origStart + deltaMin, GRID_START, origEnd - MIN_DURATION);
+        block.style.top = (newStart - GRID_START) * PX_PER_MIN + "px";
+        block.style.height = (origEnd - newStart) * PX_PER_MIN + "px";
+        ev._previewStart = newStart;
+        ev._previewEnd = origEnd;
+      }
+
+      if (mode === "resize-bottom") {
+        const deltaMin = snap(dyMin);
+        const newEnd = clamp(origEnd + deltaMin, origStart + MIN_DURATION, GRID_END);
+        block.style.height = (newEnd - origStart) * PX_PER_MIN + "px";
+        ev._previewStart = origStart;
+        ev._previewEnd = newEnd;
+      }
+    }
+
+    function onPointerUp() {
+      document.removeEventListener("pointermove", onPointerMove);
+      document.removeEventListener("pointerup", onPointerUp);
+      block.classList.remove("dragging");
+      dayColEls.forEach((c) => c.classList.remove("drop-target"));
+
+      if (mode === "move") {
+        ev.start = ev._previewStart !== undefined ? ev._previewStart : origStart;
+        ev.end = ev._previewEnd !== undefined ? ev._previewEnd : origEnd;
+        ev.day = currentTargetDay;
+      } else if (mode) {
+        ev.start = ev._previewStart !== undefined ? ev._previewStart : origStart;
+        ev.end = ev._previewEnd !== undefined ? ev._previewEnd : origEnd;
+      }
+      delete ev._previewStart;
+      delete ev._previewEnd;
+      mode = null;
+      buildBody(); // re-render limpio y consistente
+    }
+
+    block.addEventListener("pointerdown", (e) => {
+      if (e.target === topHandle || e.target === bottomHandle) return;
+      onPointerDown(e, "move");
+    });
+    topHandle.addEventListener("pointerdown", (e) => onPointerDown(e, "resize-top"));
+    bottomHandle.addEventListener("pointerdown", (e) => onPointerDown(e, "resize-bottom"));
+  }
+
+  // ---------- Botón de reset ----------
+  document.getElementById("resetBtn").addEventListener("click", () => {
+    events = JSON.parse(JSON.stringify(initialSnapshot));
+    nextId = events.length;
+    buildBody();
+  });
+
+  buildHeader();
+  buildBody();
+</script>
+
+</body>
+</html>

@@ -1,0 +1,30 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    position: relative;
+}
+
+.container img {
+    width: 750px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.arm{
+    transform-origin:74% 86%; 
+    transition: transform 0.3s;
+}
+.container:hover .arm {
+   animation: waving 0.4s infinite;
+}
+
+@keyframes waving{
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(20deg); }
+    50% { transform: rotate(20deg); }
+    75% { transform: rotate(20deg); }
+    100% { transform: rotate(0deg); }
+}
