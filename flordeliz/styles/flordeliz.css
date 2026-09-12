@@ -1,54 +1,106 @@
+/* =========================================================
+   PALETA — rosa viejo / verde oliva / marrón tierra
+   Estas variables se usan en flordeliz.css, menor.css y pedido.css
+   ========================================================= */
+:root{
+  --rosa-viejo: #A66F6F;
+  --rosa-viejo: #A66F6F;
+  --verde-oliva: #4F5934;
+  --verde-oliva-claro: #7C8B5B;
+  --marron-tierra: #8B5A2B;
+  --marron-tierra-suave: #C9976B;
+  --crema: #F7F1E5;
+  --texto: #3B3A30;
+}
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
-    font-family: 'Times New Roman', Times, serif;
-    background-color: #f1e0ce;
-
+html{
+  scroll-behavior: smooth;
 }
 
+body{
+    font-family: 'Times New Roman', Times, serif;
+    background-color: var(--crema);
+    background-image:
+      radial-gradient(circle at 15% 20%, rgba(185,140,140,0.10), transparent 40%),
+      radial-gradient(circle at 85% 15%, rgba(79,89,52,0.08), transparent 45%),
+      radial-gradient(circle at 50% 95%, rgba(139,90,43,0.08), transparent 40%);
+    background-attachment: fixed;
+    color: var(--texto);
+}
+
+a{
+  color: inherit;
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible{
+  outline: 3px solid var(--rosa-viejo);
+  outline-offset: 2px;
+}
+
+/* =========================================================
+   HEADER
+   ========================================================= */
 header{
     display: flex;
     align-items: center;
-    padding:  10px 20px;
-    background-color:  #F9E3CF;
-
+    padding: 10px 20px;
+    background-color: var(--verde-oliva);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
 }
 
 header img {
-  height: 50px;
+  height: 100px;
   width: auto;
   margin-right: 15px;
   border-radius: 50px;
+  flex-shrink: 0;
 }
 
 .branding{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    flex: 1;
+    min-width: 0;
 }
 
 .nombre{
-    font-size: 1.8rem;
+    font-size: clamp(1.1rem, 4vw, 1.8rem);
     font-weight: bold;
-    color: #333;
+    color: #ffffff;
     font-family: 'Times New Roman', Times, serif;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .subtítulo{
-    font-size: 0.9rem;
-    color: #666;
+    font-size: 0.85rem;
+    color: #C9976B;
     margin: 2px 0 0 0;
 }
 
+/* =========================================================
+   NAV + MENÚ HAMBURGUESA
+   ========================================================= */
 nav{
-    background-color: rgb(170, 120, 62);
+    background-color: var(--verde-oliva);
     display: grid;
     grid-template-rows: 0fr;
-    transition: grid-template-rows 0.5s ease-out;
+    transition: grid-template-rows 0.35s ease-out;
 }
 
 nav ul{
@@ -58,55 +110,106 @@ nav ul{
 nav.open{
     grid-template-rows: 1fr;
 }
+
 #myButton{
-  font-size:2rem;
-  background:none;
-  border:none;
-  color:#000000;
-  cursor:pointer;
-  width:100%;
-  text-align:right;
-  padding:.25rem 2vw;
+  width: 30px;
+  height: 22px;
+  position: relative;
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin: 0 2vw 0 auto;
+  flex-shrink: 0;
 }
 
-#myButton::before{
-  content:"=";
+#myButton::before,
+#myButton::after,
+#myButton span{
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: #fff;
+  border-radius: 2px;
+  transition: transform 0.3s ease, opacity 0.3s ease, top 0.3s ease, bottom 0.3s ease;
 }
+
+#myButton::before{ top: 0; }
+#myButton span{ top: 50%; transform: translateY(-50%); }
+#myButton::after{ bottom: 0; }
+
+#myButton.open::before{ top: 50%; transform: translateY(-50%) rotate(45deg); }
+#myButton.open span{ opacity: 0; }
+#myButton.open::after{ bottom: 50%; transform: translateY(50%) rotate(-45deg); }
 
 ul.menuLinks li a{
-  display:block;
-  padding:.75rem 2vw;
-  color:#fff;
-  text-decoration:none;
+  display: block;
+  padding: .85rem 2vw;
+  color: #fff;
+  text-decoration: none;
+  transition: background-color 0.2s ease;
+}
+
+ul.menuLinks li a:hover{
+  background-color: rgba(255,255,255,0.12);
 }
 
 li.current-menu-item a{
   background-color: rgba(0,0,0,0.2);
+  font-weight: bold;
 }
+
 ul.menuLinks{
-  
-  list-style-type:none;
+  list-style-type: none;
 }
 
-#myButton.open::before{
-  content:"x";
+#cart-count{
+  font-size: 0.8rem;
+  color: var(--rosa-viejo-suave);
+  font-weight: bold;
 }
 
+/* =========================================================
+   TIPOGRAFÍA / BOTONES GENERALES
+   ========================================================= */
 h1{
-  color: rgb(170, 120, 62);
-  display:flex;
+  color: var(--verde-oliva);
+  display: flex;
   justify-content: center;
-  margin: 5px;
+  text-align: center;
+  margin: 1.2rem 0.5rem;
+  font-size: clamp(1.6rem, 5vw, 2.4rem);
 }
 
 p{
   margin: 10px;
-
+  line-height: 1.5;
 }
-#vamos {
-  background-color: rgb(170, 120, 62);
+
+button{
+  background-color: var(--marron-tierra);
   color: white;
-  padding: 10px 20px;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+button:hover{
+  background-color: var(--verde-oliva);
+}
+
+button:active{
+  transform: scale(0.96);
+}
+
+#vamos {
+  background-color: var(--rosa-viejo);
+  color: white;
+  padding: 12px 24px;
   margin: 10px auto;
   display: block;
   text-align: center;
@@ -116,41 +219,110 @@ p{
   cursor: pointer;
   transition: background-color 0.3s ease, transform 0.2s ease;
   box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-  
 }
+
 #link-vamos {
   text-decoration: none;
 }
 
-
 #vamos:hover {
-  background-color: rgb(140, 90, 40);
+  background-color: var(--marron-tierra);
   transform: scale(1.05);
 }
+
+/* =========================================================
+   HERO
+   ========================================================= */
 .hero {
   width: 100%;
-  height: auto;
+  max-height: 380px;
   overflow: hidden;
   border-radius: 10px;
-  margin-bottom: 1rem;
+  margin: 24px auto 1rem;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  border: 3px solid var(--rosa-viejo-suave);
 }
 
 .hero img {
   width: 100%;
-  height: auto;
+  height: 100%;
   display: block;
   object-fit: cover;
   border-radius: 10px;
 }
+
+.bienvenida{
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+/* =========================================================
+   TOAST (aviso "agregado al pedido" en vez de alert())
+   ========================================================= */
+.toast{
+  position: fixed;
+  left: 50%;
+  bottom: 90px;
+  transform: translateX(-50%) translateY(20px);
+  background: var(--verde-oliva);
+  color: white;
+  padding: 12px 22px;
+  border-radius: 30px;
+  font-size: 0.9rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.25s ease, transform 0.25s ease;
+  z-index: 300;
+  text-align: center;
+  max-width: 90vw;
+}
+
+.toast.visible{
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+}
+
+/* =========================================================
+   BOTÓN FLOTANTE DE WHATSAPP
+   ========================================================= */
+#whatsapp-float{
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: var(--verde-oliva);
+  border-radius: 50%;
+  width: 55px;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.25);
+  z-index: 200;
+  transition: transform 0.2s ease;
+}
+
+#whatsapp-float:hover{
+  transform: scale(1.08);
+}
+
+#whatsapp-float img{
+  width: 28px;
+  height: 28px;
+}
+
+/* =========================================================
+   FOOTER
+   ========================================================= */
 footer {
-  background-color:  rgb(170, 120, 62);
+  background-color: var(--marron-tierra);
   color: white;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   padding: 2rem;
   font-size: 0.9rem;
+  border-top: 5px solid var(--verde-oliva);
 }
 
 .footer-left, .footer-center {
@@ -164,7 +336,24 @@ footer {
   margin: 0 5px;
 }
 
-
-
-
-
+/* =========================================================
+   RESPONSIVE — celular
+   ========================================================= */
+@media (max-width: 480px){
+  header{
+    padding: 8px 12px;
+  }
+  header img{
+    height: 40px;
+  }
+  #whatsapp-float{
+    width: 48px;
+    height: 48px;
+    bottom: 14px;
+    right: 14px;
+  }
+  #whatsapp-float img{
+    width: 24px;
+    height: 24px;
+  }
+}

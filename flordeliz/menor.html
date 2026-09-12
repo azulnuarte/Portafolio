@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flor de Liz</title>
+    <title>Flor de Lis</title>
     <meta name="description" content=" Esta página es de nuestro emprendimiento Flor de Liz, ofrecemos una variedad de productos como frutos secos condimentos y más!">
     <meta name="author" content="Azul Nuarte">
-    <meta property="og::title" content="Flor de Liz condimentos y frutos secos">
-    <meta property="og::description" content="Esta página es de nuestro emprendimiento Flor de Liz, ofrecemos una variedad de productos como frutos secos condimentos y más!">
-    <meta property="og:: image" content="#">
-    <meta property="og::url" content="#">
-    <meta property="og::locale" content="es_ES">
+    <meta property="og:title" content="Flor de Liz condimentos y frutos secos">
+    <meta property="og:description" content="Esta página es de nuestro emprendimiento Flor de Liz, ofrecemos una variedad de productos como frutos secos condimentos y más!">
+    <meta property="og:image" content="#">
+    <meta property="og:url" content="#">
+    <meta property="og:locale" content="es_ES">
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="Flor de Liz, condimentos y alimentos saludables.">
     <link rel="stylesheet" href="styles/flordeliz.css">
@@ -23,44 +23,50 @@
 </head>
 <body>
     <header>
-        <img src="images/logo PAG.png" alt="Logo">
+        <img src="images/logo.png" alt="Logo">
         <div class="branding">
-
-
-
-            <span class="nombre"> Flor De Liz </span>
+            <span class="nombre"> Flor De Lis </span>
             <p class="subtítulo"> Condimentos y Alimentos Saludables </p>
         </div>
-        <button id="myButton"></button>
+        <button id="myButton" aria-label="Abrir menú" aria-expanded="false"><span></span></button>
     </header>
     <nav id="animateme">
         <ul class="menuLinks">
            <li> <a href="flordeliz.html"> Inicio </a> </li>
-           <li class="current-menu-item"><a href="menor.html">Catálogo Por Menor</a></li>
-            <li> <a href="pedidos.html"> Mi pedido </a> </li>
+           <li class="current-menu-item"><a href="menor.html">Catálogo</a></li>
+            <li> <a href="pedidos.html"> Mi pedido <span id="cart-count"></span></a> </li>
 
         </ul>
     </nav>
 
     <main>
-       
+        <div id="buscador-wrap">
+          <input type="text" id="buscadorProductos" placeholder="Buscar producto...">
+        </div>
+        <p id="cargando-productos">Cargando productos...</p>
+        <p id="sin-resultados">No encontramos productos con ese nombre.</p>
+        <div id="categorias-container"></div>
     </main>
     <footer>
         <div class="footer-left">
-          Flor de Liz<br>
+          Flor de Lis<br>
           Condimentos y Alimentos saludables<br>
-          Estancia Rodena <br>
+         
           
         </div>
         <div class="footer-center">
           <div class="social-icons">
             <a href="https://www.instagram.com/flordeliz.alimentos?igsh=MXh0MjMwMTIyeDJqaA%3D%3D" target="_blank"><img src="images/instagram.png" alt="Ig icon"></a>
             <a href="https://wa.me/5492616626634 " target="_blank"><img src="images/whatsapp.png" alt="Whatsapp icon"></a>
-            <a href="https://www.instagram.com/estanciarodena?igsh=MWt0NnFyNWR5dXRkeA%3D%3D" target="_blank"><img src="images/instagram.png" alt="Ig icon"></a>
+           
             
           </div>
         </div>
         
       </footer>
+
+      <a href="https://wa.me/5492616626634" target="_blank" id="whatsapp-float" aria-label="Escribinos por WhatsApp">
+        <img src="images/whatsapp.png" alt="WhatsApp">
+      </a>
 </body>
 </html>

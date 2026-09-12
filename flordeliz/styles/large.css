@@ -1,4 +1,4 @@
-@media only screen and (min-width:38rem) {
+@media only screen and (min-width: 38rem) {
   #myButton {
     display: none;
   }
@@ -12,4 +12,27 @@
     grid-template-rows: 1fr;
   }
 
+  header{
+    padding: 14px 40px;
+  }
+
+  main{
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  .hero{
+    max-height: 460px;
+  }
+
+  #whatsapp-float{
+    width: 60px;
+    height: 60px;
+  }
+
+  #whatsapp-float img{
+    width: 30px;
+    height: 30px;
+  }
 }
