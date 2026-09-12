@@ -1,208 +1,309 @@
 {
   "Frutas Deshidratadas": [
     {
-      "nombre": "Pasa de uva negra premium sin semilla",
-      "presentaciones": [ "1kg - $6.900"],
+      "nombre": "Pasa de uva negra premium",
+      "presentaciones": [ "1kg - $6.235"],
       "imagen": "images/imagenes estancia rodena/PASA DE UVA NEGRA SIN SEMILLA PREMIUM.png"
     },
     {
       "nombre": "Pasa de Uva Negra Sin Semilla Flame",
-      "presentaciones": ["500gr - $3.500", "1kg - $6.900"],
+      "presentaciones": [ "1kg - $4.560"],
       "imagen": "images/imagenes estancia rodena/PASA DE UVA NEGRA SIN SEMILLA FLAME.png"
     },
     {
       "nombre": "Pasa de Uva Rubia Sin Semilla",
-      "presentaciones": ["500gr - $3.500", "1kg - $6.900"],
+      "presentaciones": [ "1kg - $9.953"],
       "imagen": "images/imagenes estancia rodena/PASA DE UVA RUBIA SIN SEMILLA.png"
     },
     {
       "nombre": "Arándanos Rojos Deshidratados",
-      "presentaciones": ["500gr - $3.500", "1kg - $6.900"],
+      "presentaciones": [ "1kg - $24.450"],
       "imagen": "images/imagenes estancia rodena/ARANDANOS ROJOS DESHIDRATADOS – CHILE.png"
     },
     {
-      "nombre": "Ciruela S/C N°1",
-      "presentaciones": ["500gr - $3.500", "1kg - $6.900"],
+      "nombre": "Arándanos Rojos Doy Pack Cumana x150gr",
+      "presentaciones": [ "$3.625"],
+      "imagen": "images/imagenes estancia rodena/ARANDANOS ROJOS DESHIDRATADOS – CHILE.png"
+    },
+    {
+      "nombre": "Ciruela sin carozo N°1",
+      "presentaciones": [ "1kg - $9.950"],
+      "imagen": "images/imagenes estancia rodena/CIRUELA S_C N° 1.png"
+    },
+    {
+      "nombre": "Ciruela sin carozo N°2",
+      "presentaciones": [ "1kg - $11.060"],
+      "imagen": "images/imagenes estancia rodena/CIRUELA S_C N° 1.png"
+    },
+    {
+      "nombre": "Ciruela sin carozo N°3",
+      "presentaciones": [ "1kg - $10.140"],
       "imagen": "images/imagenes estancia rodena/CIRUELA S_C N° 1.png"
     },
     {
       "nombre": "Dátiles Deshidratados Con Carozo Egipto",
-      "presentaciones": ["500gr - $3.500", "1kg - $6.900"],
+      "presentaciones": [ "1kg - $9.360"],
+      "imagen": "images/imagenes estancia rodena/DATILES DESHIDRATADOS CON CAROZO EGIPTO.png"
+    },
+    {
+      "nombre": "Dátiles Deshidratados sin carozo Irán",
+      "presentaciones": [ "1kg - $11.510"],
+      "imagen": "images/imagenes estancia rodena/DATILES DESHIDRATADOS CON CAROZO EGIPTO.png"
+    },
+    {
+      "nombre": "Dátiles Deshidratados deglet nour Argelia con carozo",
+      "presentaciones": [ "1kg - $11.440"],
+      "imagen": "images/imagenes estancia rodena/DATILES DESHIDRATADOS CON CAROZO EGIPTO.png"
+    },
+    {
+      "nombre": "Dátiles Deshidratados deglet nour Argelia sin carozo",
+      "presentaciones": [ "1kg - $11.510"],
       "imagen": "images/imagenes estancia rodena/DATILES DESHIDRATADOS CON CAROZO EGIPTO.png"
     },
     {
       "nombre": "Tomate Deshidratado N°1 Grande",
-      "presentaciones": ["500gr - $3.500", "1kg - $6.900"],
+      "presentaciones": [ "1kg - $18.620"],
       "imagen": "images/imagenes estancia rodena/TOMATE DESHIDRATADO N°1 GRANDE.png"
     },
     {
       "nombre": "Empaque Mixto",
-      "presentaciones": ["500gr - $3.500", "1kg - $6.900"],
+      "presentaciones": [ "1kg - $13.900"],
       "imagen": "images/imagenes estancia rodena/EMPAQUE MIXTO.png"
     },
     {
-     "nombre": "Medallones De Durazno Deshidratado Sin Carozo Secado a Sol",
-     "presentaciones": ["500gr - $3.500", "1kg - $6.900"],
-     "imagen": "images/imagenes estancia rodena/MEDALLONES DE DURAZNO DESHIDRATAD0.png" 
-    },
-    {
      "nombre": "Medallones De Durazno Deshidratado Sin Carozo Secado a Horno",
-     "presentaciones": ["500gr - $3.500", "1kg - $6.900"],
+     "presentaciones": [ "1kg - $19.060"],
      "imagen": "images/imagenes estancia rodena/MEDALLONES DE DURAZNO DESHIDRATAD0.png" 
-    },
-    {
-     "nombre": "Damasco Deshidratado",
-     "presentaciones": ["500gr - $3.500", "1kg - $6.900"],
-     "imagen": "images/imagenes estancia rodena/DAMASCO DESHIDRATADO.png" 
     },
     {
      "nombre": "Chips de Banana",
-     "presentaciones": ["500gr - $3.500", "1kg - $6.900"],
+     "presentaciones": [ "1kg - $17.390"],
      "imagen": "images/imagenes estancia rodena/CHIPS DE BANANA.png" 
     },
     {
      "nombre": "Higos Negros Deshidratados y Tiernizados (Catamarca)",
-     "presentaciones": ["500gr - $3.500", "1kg - $6.900"],
+     "presentaciones": [ "1kg - $18.880"],
      "imagen": "images/imagenes estancia rodena/HIGOS NEGROS DESHIDRATADOS Y TIERNIZADOS (CATAMARCA).png" 
     },
     {
-     "nombre": "Pera Deshidratada ",
-     "presentaciones": ["500gr - $3.500", "1kg - $6.900"],
+     "nombre": "Pera Deshidratada Mediana",
+     "presentaciones": [ "1kg - $18.320"],
      "imagen": "images/imagenes estancia rodena/PERA DESHIDRATADA.png" 
+    },
+    {
+     "nombre": "Coco en escamas",
+     "presentaciones": [ "1kg - $25.040"],
+     "imagen": "insertar foto" 
     }
   ],
 
   "Mix Frutos Secos": [
     {
       "nombre": "Mix Delicia de Cereza (Castañas de caju, cereza glaseada, nuez mariposa EXTRA-LIGHT, pasas deuva rubia, almendra Carmel.)",
-      "presentaciones": ["50gr - $400", "100gr - $750"],
+      "presentaciones": [ "1kg - $23.950"],
       "imagen": "images/imagenes estancia rodena/MIX DELICIA DE CEREZA.png"
     },
     {
       "nombre": "Mix Patagónico  ( Arandanos, catañas de Cajú, pasa rubia, avellanas, Nueces, almendras)",
-      "presentaciones": ["50gr - $500", "100gr - $900"],
+      "presentaciones": [ "1kg - $25.410"],
       "imagen": "images/imagenes estancia rodena/MIX  PATAGONICO.png"
     },
       {
       "nombre": "Mix Tropical Premium (Anana en cubos, chips de banana, nuez, almendra Carmel, pasas de uva rubia, pasas negras)",
-      "presentaciones": ["50gr - $400", "100gr - $750"],
+      "presentaciones": [ "1kg - $19.990"],
       "imagen": "images/imagenes estancia rodena/MIX TROPICAL PREMIUM.png"
     },
     {
       "nombre": "Mix Clásico con Castañas (castañas de caju, nuez, almendras carmel, pasa de uva rubia , pasa de uva negra)",
-      "presentaciones": ["50gr - $500", "100gr - $900"],
+      "presentaciones": [ "1kg - $19.370"],
       "imagen": "images/imagenes estancia rodena/MIX CLÁSICO CON CASTAÑAS.png"
     },
     {
       "nombre": "Mix Tropical Clásico (Ananá en cubos, chips de banana, nuez, almendra Carmel, pasas de uva rubia, pasas negras)",
-      "presentaciones": ["50gr - $400", "100gr - $750"],
+      "presentaciones": [ "1kg - $11.120"],
       "imagen": "images/imagenes estancia rodena/MIX TROPICAL CLÁSICO.png"
     },
     {
       "nombre": "Mix Clásico con Banana (chips de banana, mani s. sal, pasa negra, pasa rubia, almendra)",
-      "presentaciones": ["50gr - $500", "100gr - $900"],
+      "presentaciones": [ "1kg - $10.715"],
       "imagen": "images/imagenes estancia rodena/MIX CLÁSICO CON BANANA.png"
     },
       {
       "nombre": "Mix Clásico  (maní sín sal, almendras, pasa de uva rubía , pasa de uva negra)",
-      "presentaciones": ["50gr - $400", "100gr - $750"],
+      "presentaciones": [ "1kg - $12.550"],
       "imagen": "images/imagenes estancia rodena/MIX CLASICO.png"
     },
     {
+      "nombre": "Mix Clásico con Escamas de Coco (escamas de coco, pasas de uva flame, nuez mariposa light, maní sin sal, almendras guará, chips de banana)",
+      "presentaciones": [ "1kg - $13.050"],
+      "imagen": "insertar imagen"
+    },
+    {
       "nombre": "Mix Seco sin pasas (Castañas de cajú, nuez marÍposa, maní sÍn sal, almendra)",
-      "presentaciones": ["50gr - $500", "100gr - $900"],
+      "presentaciones": [ "1kg - $21.100"],
       "imagen": "images/imagenes estancia rodena/mix seco.png"
     },
-       {
+    {
+      "nombre": "Mix Seco estándar (Almendras guará, nuez mariposa light, castañas de cajú, avellanas)",
+      "presentaciones": [ "1kg - $27.370"],
+      "imagen": "insertar imagen"
+    },
+    {
+      "nombre": "Mix Seco premium (Almendras nonpareil, nuez mariposa extra-light, castañas de cajú, avellanas)",
+      "presentaciones": [ "1kg - $29.400"],
+      "imagen": "insertar imagen"
+    },
+    {
+      "nombre": "Mix Seco con Pistacho (Almendras nonpareil, nuez mariposa extra-light, castañas de cajú, pistacho)",
+      "presentaciones": [ "1kg - $34.990"],
+      "imagen": "insertar imagen"
+    },
+    {
       "nombre": "Mix Tropical Económico   (Mani, pasa de uva negra, papaya nacional,almendra partida, nuez)",
-      "presentaciones": ["50gr - $400", "100gr - $750"],
+      "presentaciones": [ "1kg - $9.130"],
       "imagen": "images/imagenes estancia rodena/MIX TROPICAL ECONOMICO.png"
     },
     {
       "nombre": "Mix Energético Económico (Mani, pasa de uva negra, almendra partida, nuez )",
-      "presentaciones": ["50gr - $500", "100gr - $900"],
+      "presentaciones": [ "1kg - $8.500"],
       "imagen": "images/imagenes estancia rodena/MIX ENERGÉTICO ECONÓMICO.png"
+    },
+    {
+      "nombre": "Mix Cervecero Seco (maíz frito, almendras guará, maní saborizado de jamón, maní salado)",
+      "presentaciones": [ "1kg - $12.290"],
+      "imagen": "insertar imagen"
+    },
+    {
+      "nombre": "Mix Cervecero Agridulce (Maiz frito salado, mani pelado salado, almendra, pasa de uva rubia.) ",
+      "presentaciones": [ "1kg - $12.410"],
+      "imagen": "images/imagenes estancia rodena/MIX CERVECERO SALADO.png"
     }
   ],
 
-  "Granolas y Mix Cervecero": [
+  "Granolas": [
     {
       "nombre": "Granola Tradicional (Avena, semillas de lino, Quinoa pop, semillas de girasol, copos de maíz, pasas negras, arroz inflado, miel. )",
-      "presentaciones": ["50gr - $400", "100gr - $750"],
+      "presentaciones": ["1kg - $7.860"],
       "imagen": "images/imagenes estancia rodena/GRANOLA TRADICIONAL.png"
     },
     {
-      "nombre": "Granola Kids (Aritos frutales,bolitas de chocolate,avena, almohaditas de trigo, arroz inflado,copos de maiz, miel  )",
-      "presentaciones": ["50gr - $400", "100gr - $750"],
-      "imagen": "images/imagenes estancia rodena/GRANOLA KIDS.png"
+      "nombre": "Granola Tradicional sin pasas (Avena, semillas de lino, Quinoa pop, semillas de girasol, copos de maíz, arroz inflado, miel. )",
+      "presentaciones": ["1kg - $7.430"],
+      "imagen": "insertar foto"
     },
     {
-      "nombre": "Mix Cervecero Salado (Maiz frito salado, mani pelado salado, almendra, pasa de uva rubia.) ",
-      "presentaciones": ["50gr - $400", "100gr - $750"],
-      "imagen": "images/imagenes estancia rodena/MIX CERVECERO SALADO.png"
+      "nombre": "Granola Horneada Protéica Tutti Grani (Avena, semillas: girasol,lino, sésamo, chia, copos de maíz sin azúcar, arroz inflado, miel, salvado de trigo,pasas negras, maní, azúcar mascabo, canela en polvo, proteína texturizada de soja. )",
+      "presentaciones": ["1kg - $9.240"],
+      "imagen": "insertar foto"
+    },
+    {
+      "nombre": "Granola Horneada Simple Tutti Grani (Avena, semillas de girasol, copos de maíz sin azúcar, pasas negras, maní, azúcar mascabo. )",
+      "presentaciones": ["1kg - $7.380"],
+      "imagen": "insertar foto"
+    },
+    {
+      "nombre": "Granola Horneada Tradicional Tutti Grani (Avena, semillas de girasol, copos de maíz sin azúcar, pasas negras, maní, azúcar mascabo. )",
+      "presentaciones": ["1kg - $7.850"],
+      "imagen": "insertar foto"
+    },
+    {
+      "nombre": "Granola Horneada con Almendras Tutti Grani (Avena, semillas: girasol,lino, sésamo, chia, copos de maíz sin azúcar, arroz inflado, miel, salvado de trigo, pasas negras, maní, azúcar mascabo, canela en polvo, almendras. )",
+      "presentaciones": ["1kg - $9.243"],
+      "imagen": "insertar foto"
+    },
+    {
+      "nombre": "Granola Horneada con cacao y coco Tutti Grani (Cacao amargo, coco rallado, Avena, semillas: girasol,lino, sésamo, chia, copos de maíz sin azúcar, arroz inflado, miel, salvado de trigo, pasas negras, maní, azúcar mascabo, canela en polvo. )",
+      "presentaciones": ["1kg - $9.243"],
+      "imagen": "insertar foto"
+    },
+    {
+      "nombre": "Granola Horneada con dulce de leche Tutti Grani (Dulce de leche, Avena, semillas: girasol,lino, sésamo, chia, copos de maíz sin azúcar, arroz inflado, miel, salvado de trigo, pasas negras, maní, azúcar mascabo, canela en polvo. )",
+      "presentaciones": ["1kg - $9.243"],
+      "imagen": "insertar foto"
+    },
+    {
+      "nombre": "Granola Horneada con Pasta de maní Tutti Grani (Pasta de maní, Avena, semillas: girasol,lino, sésamo, chia, copos de maíz sin azúcar, arroz inflado, miel, salvado de trigo, pasas negras, maní, azúcar mascabo, canela en polvo. )",
+      "presentaciones": ["1kg - $9.243"],
+      "imagen": "insertar foto"
+    },
+    {
+      "nombre": "Granola Horneada Tropical Tutti Grani (Chpis de banana, Papaya deshidratada, Avena, semillas: girasol,lino, sésamo, chia, copos de maíz sin azúcar, arroz inflado, miel, salvado de trigo, pasas negras, maní, azúcar mascabo, canela en polvo. )",
+      "presentaciones": ["1kg - $9.243"],
+      "imagen": "insertar foto"
+    },
+    {
+      "nombre": "Granola con stevia Tutti Grani (Stevia en polvo, Avena, semillas: girasol,lino, sésamo, chia, copos de maíz sin azúcar, arroz inflado, pasas negras, maní tostado. )",
+      "presentaciones": ["1kg - $9.900"],
+      "imagen": "insertar foto"
+    },
+    {
+      "nombre": "Granola Kids (Aritos frutales,bolitas de chocolate,avena, almohaditas de trigo, arroz inflado,copos de maiz, miel  )",
+      "presentaciones": [ "1kg - $9.800"],
+      "imagen": "images/imagenes estancia rodena/GRANOLA KIDS.png"
     }
+   
  ],
    "Nueces, Almendras y Castañas": [
     {
       "nombre": "Avellanas Georgia",
-      "presentaciones": ["50gr - $400", "100gr - $750"],
+      "presentaciones": [ "1kg - $6.900"],
       "imagen": "images/imagenes estancia rodena/AVELLANAS GEORGIA.png"
     },
     {
       "nombre": "Almendra Marindada ",
-      "presentaciones": ["50gr - $400", "100gr - $750"],
+      "presentaciones": [ "1kg - $6.900"],
       "imagen": "images/imagenes estancia rodena/ALMENDRA MARINADA.png"
     },
     {
       "nombre": "Almenra Carmel",
-      "presentaciones": ["50gr - $400", "100gr - $750"],
+      "presentaciones": [ "1kg - $6.900"],
       "imagen": "images/imagenes estancia rodena/ALMENDRA CARMEL_ SIN STOCK.png"
     },
     {
       "nombre": "Nueces Mariposa Combinada",
-      "presentaciones": ["50gr - $400", "100gr - $750"],
+      "presentaciones": [ "1kg - $6.900"],
       "imagen": "images/imagenes estancia rodena/NUECES.png"
     },
     {
       "nombre": "Nueces ",
-      "presentaciones": ["50gr - $400", "100gr - $750"],
+      "presentaciones": [ "1kg - $6.900"],
       "imagen": "images/imagenes estancia rodena/NUEZ MARIPOSA.png"
     },
     {
       "nombre": "Castañas de Cajú W4 ",
-      "presentaciones": ["50gr - $400", "100gr - $750"],
+      "presentaciones": [ "1kg - $6.900"],
       "imagen": "images/imagenes estancia rodena/CASTAÑAS DE CAJÚ W4.png"
     }
  ],
 "Quinoa, Maíz Frito, Semillas y Cereales": [
   {
       "nombre": "Quinoa Pop ",
-      "presentaciones": ["50gr - $400", "100gr - $750"],
+      "presentaciones": [ "1kg - $6.900"],
       "imagen": "images/imagenes estancia rodena/QUINOA POP.png"
   },
   {
       "nombre": "Maíz Frito Salado ",
-      "presentaciones": ["50gr - $400", "100gr - $750"],
+      "presentaciones": [ "1kg - $6.900"],
       "imagen": "images/imagenes estancia rodena/MAIZ FRITO SALADO.png"
   },
   {
       "nombre": "Semillas de Quínoa ",
-      "presentaciones": ["50gr - $400", "100gr - $750"],
+      "presentaciones": [ "1kg - $6.900"],
       "imagen": "images/imagenes estancia rodena/SEMILLAS DE QUINOA.png"
   },
   {
       "nombre": "Avena: arollada gruesa y salvado de avena ",
-      "presentaciones": ["50gr - $400", "100gr - $750"],
+      "presentaciones": [ "1kg - $6.900"],
       "imagen": "images/imagenes estancia rodena/AVENA_ arrollada  gruesa y salvado de avena.png"
   },
   {
       "nombre": "Semillas de Lino ",
-      "presentaciones": ["50gr - $400", "100gr - $750"],
+      "presentaciones": [ "1kg - $6.900"],
       "imagen": "images/imagenes estancia rodena/SEMILLAS DE LINO.png"
   },
   {
       "nombre": "Arroz Inflado sin Azúcar ",
-      "presentaciones": ["50gr - $400", "100gr - $750"],
+      "presentaciones": [ "1kg - $6.900"],
       "imagen": "images/imagenes estancia rodena/ARROZ INFLADO.png"
   }
  ],
