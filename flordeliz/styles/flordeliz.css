@@ -62,7 +62,7 @@ header{
 }
 
 header img {
-  height: 100px;
+  height: 110px;
   width: auto;
   margin-right: 15px;
   border-radius: 50px;
@@ -207,7 +207,7 @@ button:active{
 }
 
 #vamos {
-  background-color: var(--rosa-viejo);
+  background-color: var(--marron-tierra-suave);
   color: white;
   padding: 12px 24px;
   margin: 10px auto;
