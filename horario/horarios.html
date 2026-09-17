@@ -434,6 +434,42 @@
   let events = buildInitialEvents();
   let nextId = events.length;
   const initialSnapshot = JSON.parse(JSON.stringify(events));
+  const ORIGINAL_PALETTE = JSON.parse(JSON.stringify(categoryBaseColor));
+
+  // ---------- Guardado local (persiste aunque cierres el navegador) ----------
+  const STORAGE_KEY = "horarioSemanalData";
+
+  function saveState() {
+    try {
+      localStorage.setItem(
+        STORAGE_KEY,
+        JSON.stringify({ events, categoryBaseColor })
+      );
+    } catch (e) {
+      console.warn("No se pudo guardar el horario:", e);
+    }
+  }
+
+  function loadSavedState() {
+    try {
+      const raw = localStorage.getItem(STORAGE_KEY);
+      if (!raw) return null;
+      return JSON.parse(raw);
+    } catch (e) {
+      console.warn("No se pudo leer el horario guardado:", e);
+      return null;
+    }
+  }
+
+  const saved = loadSavedState();
+  if (saved && Array.isArray(saved.events)) {
+    events = saved.events;
+    nextId = events.reduce((max, e) => {
+      const n = parseInt(String(e.id).replace("e", ""), 10);
+      return isNaN(n) ? max : Math.max(max, n + 1);
+    }, events.length);
+    if (saved.categoryBaseColor) Object.assign(categoryBaseColor, saved.categoryBaseColor);
+  }
 
   // ---------- Leyenda editable ----------
   const legendEl = document.getElementById("legend");
@@ -598,6 +634,7 @@
     }
 
     events.forEach(renderBlock);
+    saveState();
   }
 
   function renderBlock(ev) {
@@ -860,6 +897,8 @@
   document.getElementById("resetBtn").addEventListener("click", () => {
     events = JSON.parse(JSON.stringify(initialSnapshot));
     nextId = events.length;
+    Object.assign(categoryBaseColor, ORIGINAL_PALETTE);
+    buildLegend();
     buildBody();
   });
 
