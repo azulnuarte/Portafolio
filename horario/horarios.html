@@ -257,6 +257,31 @@
   .edit-popup .field input[type="text"] { width: 100%; }
   .edit-popup .actions { display: flex; gap: 6px; margin-top: 8px; }
   .edit-popup .actions button { flex: 1; padding: 6px 8px; font-size: 12px; }
+
+  .context-menu {
+    position: fixed;
+    z-index: 110;
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 4px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+    display: flex;
+    flex-direction: column;
+    min-width: 160px;
+  }
+
+  .context-menu button {
+    text-align: left;
+    border: none;
+    border-radius: 5px;
+    padding: 7px 10px;
+    font-size: 13px;
+    background: transparent;
+  }
+
+  .context-menu button:hover:not(:disabled) { background: #f0efe9; }
+  .context-menu button:disabled { color: var(--text-muted); cursor: default; }
 </style>
 </head>
 <body>
@@ -514,6 +539,7 @@
 
   function buildBody() {
     closeEditPopup();
+    closeContextMenu();
     bodyRow.innerHTML = "";
     bodyRow.style.height = totalHeight + "px";
 
@@ -535,6 +561,38 @@
       col.className = "day-col";
       col.style.height = totalHeight + "px";
       col.dataset.day = day;
+      col.addEventListener("contextmenu", (e) => {
+        if (e.target !== col) return; // clic sobre un bloque ya lo maneja su propio handler
+        e.preventDefault();
+        e.stopPropagation();
+        const colRect = col.getBoundingClientRect();
+        const clickMinutes = GRID_START + (e.clientY - colRect.top) / PX_PER_MIN;
+
+        if (!clipboardEvent) {
+          showContextMenu(e.clientX, e.clientY, [
+            { label: "Pegar (no hay nada copiado)", disabled: true, onClick: () => {} },
+          ]);
+          return;
+        }
+
+        showContextMenu(e.clientX, e.clientY, [
+          {
+            label: "Pegar aquí",
+            onClick: () => {
+              const start = clamp(snap(clickMinutes), GRID_START, GRID_END - clipboardEvent.duration);
+              events.push({
+                id: "e" + (nextId++),
+                day: parseInt(col.dataset.day, 10),
+                start,
+                end: start + clipboardEvent.duration,
+                label: clipboardEvent.label,
+                color: clipboardEvent.color,
+              });
+              buildBody();
+            },
+          },
+        ]);
+      });
       bodyRow.appendChild(col);
       dayColEls.push(col);
     }
@@ -573,6 +631,27 @@
     });
     block.appendChild(editIcon);
 
+    block.addEventListener("contextmenu", (e) => {
+      e.preventDefault();
+      e.stopPropagation();
+      showContextMenu(e.clientX, e.clientY, [
+        {
+          label: "Duplicar",
+          onClick: () => {
+            clipboardEvent = { label: ev.label, color: ev.color, duration: ev.end - ev.start };
+          },
+        },
+        { label: "Editar", onClick: () => openEditPopup(ev, block) },
+        {
+          label: "Eliminar",
+          onClick: () => {
+            events = events.filter((e2) => e2.id !== ev.id);
+            buildBody();
+          },
+        },
+      ]);
+    });
+
     const topHandle = document.createElement("div");
     topHandle.className = "resize-handle top";
     block.appendChild(topHandle);
@@ -587,6 +666,52 @@
 
   function clamp(v, min, max) { return Math.max(min, Math.min(max, v)); }
   function snap(v) { return Math.round(v / SNAP) * SNAP; }
+
+  // ---------- Menú contextual (clic derecho): duplicar / pegar ----------
+  let clipboardEvent = null;
+  let currentMenu = null;
+
+  function closeContextMenu() {
+    if (currentMenu) {
+      currentMenu.remove();
+      currentMenu = null;
+      document.removeEventListener("click", outsideMenuClick, true);
+      document.removeEventListener("keydown", onMenuEscape, true);
+    }
+  }
+
+  function outsideMenuClick(e) {
+    if (currentMenu && !currentMenu.contains(e.target)) closeContextMenu();
+  }
+
+  function onMenuEscape(e) {
+    if (e.key === "Escape") closeContextMenu();
+  }
+
+  function showContextMenu(x, y, items) {
+    closeContextMenu();
+    const menu = document.createElement("div");
+    menu.className = "context-menu";
+    items.forEach((item) => {
+      const btn = document.createElement("button");
+      btn.textContent = item.label;
+      btn.disabled = !!item.disabled;
+      btn.addEventListener("click", () => {
+        closeContextMenu();
+        item.onClick();
+      });
+      menu.appendChild(btn);
+    });
+    document.body.appendChild(menu);
+    const menuRect = menu.getBoundingClientRect();
+    menu.style.left = Math.min(x, window.innerWidth - menuRect.width - 8) + "px";
+    menu.style.top = Math.min(y, window.innerHeight - menuRect.height - 8) + "px";
+    currentMenu = menu;
+    setTimeout(() => {
+      document.addEventListener("click", outsideMenuClick, true);
+      document.addEventListener("keydown", onMenuEscape, true);
+    }, 0);
+  }
 
   // ---------- Popup de edición (renombrar / recolorear / borrar) ----------
   let currentPopup = null;
