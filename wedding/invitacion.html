@@ -4,23 +4,37 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Juan & Azul | Wedding Invitation </title>
+<title>Juan & Azul | Nos casamos</title>
+<meta name="description" content="¡Nos casamos! 12 de febrero de 2027. Confirmá tu asistencia y acompañanos en este día especial.">
+<meta name="theme-color" content="#6b705c">
 
-<meta name="description" content="Invitación digital de boda de Juan y Azul. Confirmá tu asistencia y acompañanos en este día especial.">
-
-<!-- Open Graph -->
-<meta property="og:title" content="Juan & Azul Wedding">
-<meta property="og:description" content="Estás invitado a nuestra boda 💍">
+<!-- Open Graph (WhatsApp, Facebook, Instagram, Telegram) -->
+<!-- IMPORTANTE: reemplazá TU-DOMINIO.com por la dirección real donde publiques la invitación -->
 <meta property="og:type" content="website">
-<meta property="og:image" content="juaz.jfif">
+<meta property="og:site_name" content="Juan & Azul">
+<meta property="og:locale" content="es_AR">
+<meta property="og:url" content="https://TU-DOMINIO.com/">
+<meta property="og:title" content="Juan & Azul ¡Nos casamos! 💍">
+<meta property="og:description" content="12 de febrero de 2027 · Mendoza. Estás invitado a celebrar con nosotros. Confirmá tu asistencia acá.">
+<meta property="og:image" content="https://TU-DOMINIO.com/juaz.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Juan y Azul, los novios">
+
+<!-- Twitter / X -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Juan & Azul ¡Nos casamos! 💍">
+<meta name="twitter:description" content="12 de febrero de 2027 · Mendoza. Estás invitado a celebrar con nosotros.">
+<meta name="twitter:image" content="https://TU-DOMINIO.com/juaz.jpg">
 
 <!-- Fonts -->
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,700;1,500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
 
 <link rel="stylesheet" href="styles.css">
-<script src="invitacion.js" defer></script>
-<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@1&display=swap" rel="stylesheet">
 <link rel="icon" href="favicon.avif" type="image/avif">
+<script src="invitacion.js" defer></script>
 </head>
 
 <body>
@@ -29,6 +43,7 @@
     <div class="overlay">
         <h1>Juan & Azul</h1>
         <p class="tagline">¡Nos vamos a casar!</p>
+        <p class="hero-date">12 · 02 · 2027</p>
     </div>
 </header>
 
@@ -38,9 +53,14 @@
     <p>Después de tantos momentos compartidos, queremos celebrar el comienzo de una nueva etapa juntos. Nos haría muy felices que formes parte de este día tan importante para nosotros.</p>
 </section>
 
+<!-- FOTO 1 -->
+<figure class="foto reveal">
+    <img src="fotoboda.png" alt="Juan y Azul" loading="lazy">
+</figure>
+
 <section class="countdown-section">
-    <h2>Cuenta regresiva </h2>
-    <div id="countdown" class="timer"></div>
+    <h2>Cuenta regresiva</h2>
+    <div id="countdown" class="timer" aria-live="off"></div>
 </section>
 
 <section class="details grid">
@@ -48,52 +68,139 @@
         <h3>Fecha 📆</h3>
         <p>12 de Febrero 2027</p>
         <span>10:00 hs</span>
+        <a href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Boda+Juan+%26+Azul&dates=20270212T100000/20270213T040000&ctz=America/Argentina/Mendoza&details=Nos+casamos!&location=Manuel+Antonio+S%C3%A1ez+8253" target="_blank" rel="noopener" class="link-small">Agregar al calendario</a>
     </div>
 
     <div class="item">
-        <h3>Modalidad</h3>
-        <p>Menú a la canasta 🍽️</p>
+        <h3>Tarjeta 🍽️</h3>
+        <p>$30.000 por persona</p>
+        <span>Incluye el menú de la fiesta</span>
     </div>
 </section>
 
 <section class="locations grid">
-    
     <div class="item">
         <h3>Ceremonia Civil</h3>
         <p>Registro Civil</p>
         <p class="address">Manuel Antonio Sáez 8253</p>
-
-        <a href="https://maps.app.goo.gl/y1YJqgqMqy7Fh9C28" target="_blank" class="btn">
-            Ver en mapa →
-        </a>
+        <a href="https://maps.app.goo.gl/y1YJqgqMqy7Fh9C28" target="_blank" rel="noopener" class="link-small">Ver en mapa →</a>
     </div>
 
     <div class="item">
         <h3>Fiesta</h3>
-        <p>Salón de eventos</p>
-        <p class="address">Carodilla 1515</p>
-
-        <a href="https://maps.app.goo.gl/7q6pQc2SKjhH4Zve8?g_st=aw" target="_blank" class="btn">
-            Ver en mapa →
-        </a>
+        <p>Salón de eventos: Club Chandon </p>
+        <p class="address">Ruta Provincial 15, Agrelo </p>
+        <a href="https://maps.app.goo.gl/oChiAw6Ub8gNvhTb7" target="_blank" rel="noopener" class="link-small">Ver en mapa →</a>
     </div>
-
 </section>
 
-<section class="confirmation">
-    <h2>Confirmación de asistencia</h2>
-    <p>Por favor confirmá tu asistencia</p>
+<!-- FOTO 2 -->
+<figure class="foto reveal foto-completa">
+    <img src="fotoboda2.jpg" alt="Juan y Azul juntos" loading="lazy">
+</figure>
 
-    <div class="buttons">
-        <a href="#" class="btn primary">Novia 👰</a>
-        <a href="#" class="btn secondary">Novio 🤵</a>
+<section class="dresscode">
+    <h2>Dress code</h2>
+    <p class="dress-main">Colores oscuros 🖤</p>
+    <p>Negro, azul noche, verde botella, bordó, gris grafito. <strong>Por favor, nada de colores claros</strong> (blanco, crema, beige, pasteles).</p>
+    <div class="swatches">
+    <div class="swatch"><span style="background:#111111"></span><p>Negro</p></div>
+    <div class="swatch"><span style="background:#1d2a44"></span><p>Azul noche</p></div>
+    <div class="swatch"><span style="background:#1f4d3a"></span><p>Verde botella</p></div>
+    <div class="swatch"><span style="background:#5a1f2b"></span><p>Bordó</p></div>
+    <div class="swatch"><span style="background:#3a3d42"></span><p>Gris grafito</p></div>
+</div>
+</section>
+
+<section class="pago">
+    <h2>Pagos y reserva</h2>
+    <p>Para reservar tu lugar, abonás la <strong>seña de $15.000 por persona</strong> (la mitad de la tarjeta). El resto se abona luego.</p>
+    <p class="deadline">⏰ Fecha límite para pagar la seña: <strong>1 de febrero de 2027</strong></p>
+
+    <div class="alias-grid">
+        <div class="alias-card">
+            <h3>Juan</h3>
+            <p class="alias" id="alias-juan">juan.zoc.nx</p>
+            <button type="button" class="copy-btn" data-copy="alias-juan">Copiar alias</button>
+        </div>
+        <div class="alias-card">
+            <h3>Azul</h3>
+            <p class="alias" id="alias-azul">azul.nuarte</p>
+            <button type="button" class="copy-btn" data-copy="alias-azul">Copiar alias</button>
+        </div>
     </div>
+    <p class="nota">Después de transferir, enviá el comprobante por WhatsApp a cualquiera de los dos.</p>
+</section>
+
+<!-- FOTO 3 -->
+<figure class="foto reveal">
+    <img src="foto3.jpg" alt="Juan y Azul" loading="lazy">
+</figure>
+
+<section class="confirmation" id="confirmacion">
+    <h2>Confirmación de asistencia</h2>
+    <p>Por favor confirmá tu asistencia antes del <strong>1 de febrero</strong>. Anotá tu nombre, cuántas personas van y si tenés alguna restricción alimentaria.</p>
+    <div class="buttons">
+        <a href="https://forms.gle/td1Fx5594k7HWrPSA" target="_blank" rel="noopener" class="btn primary">Confirmar asistencia</a>
+    </div>
+</section>
+
+<section class="extras grid">
+    <div class="item">
+        <h3>Canciones para el baile 🎶</h3>
+        <p>Contanos qué temas no pueden faltar en la pista.</p>
+        <a href="canciones.html" class="btn primary">Elegir mis canciones</a>
+    </div>
+
+    <div class="item">
+        <h3>Fotos de la fiesta 📸</h3>
+        <p>Subí tus fotos y videos del gran día a nuestra carpeta compartida.</p>
+        <a href="https://drive.google.com/drive/folders/1GFLJVvoHVGWE36tjW_W1_I5MNk1Bt5fk?usp=sharing" target="_blank" rel="noopener" class="btn primary">Subir mis fotos</a>
+    </div>
+</section>
+
+<section class="lista">
+    <h2>Lo que ya tenemos y lo que nos falta</h2>
+    <p>Si querés hacernos un regalo, esta lista te puede ayudar. ¡Lo más importante es que estés con nosotros!</p>
+
+    <div class="lista-grid">
+        <div class="lista-col">
+            <h3>Ya tenemos ✅</h3>
+            <ul>
+                <li>Pava Eléctrica </li>
+                <li>Cama y colchón</li>
+                <li>Cocina</li>
+                <!-- Editá o agregá tus cosas -->
+            </ul>
+        </div>
+        <div class="lista-col">
+            <h3>Nos falta 🎁</h3>
+            <ul>
+                <li>Juego de sábanas</li>
+                <li>Juego de ollas</li>
+                <li>Licuadora</li>
+                <li>Juego de comedor </li>
+                <li>Vajilla</li>
+                <!-- Editá o agregá tus cosas -->
+            </ul>
+        </div>
+    </div>
+</section>
+
+<section class="info-util">
+    <h2>Info útil</h2>
+    <ul>
+        <li>Si tenés dudas, escribinos por WhatsApp.</li>
+        <li>Avisanos con tiempo si vas a necesitar menú especial (celíaco, vegetariano, etc.).</li>
+        <li>Las tarjetas son personales: indicá en la confirmación quiénes asisten.</li>
+    </ul>
 </section>
 
 </main>
 
 <footer>
     <p>Con amor, Juan & Azul 💍</p>
+    <p class="hashtag">#JuanYAzul2027</p>
 </footer>
 
 </body>

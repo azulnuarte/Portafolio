@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Canciones para el baile | Juan & Azul</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,700;1,500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<link rel="icon" href="favicon.avif" type="image/avif">
+</head>
+<body>
+
+<main class="container songs-page">
+    <h1 class="songs-title">Canciones para el baile 🎶</h1>
+    <p class="songs-sub">Contanos qué temas no pueden faltar en la pista. Podés anotar todas las que quieras.</p>
+
+    <form id="form-canciones" class="form-card">
+        <label for="nombre">Tu nombre</label>
+        <input type="text" id="nombre" required placeholder="Nombre y apellido">
+
+        <div id="lista-canciones">
+            <div class="song-row">
+                <input type="text" class="cancion" placeholder="Canción" required>
+                <input type="text" class="artista" placeholder="Artista">
+            </div>
+        </div>
+
+        <button type="button" id="agregar" class="copy-btn">+ Agregar otra canción</button>
+        <button type="submit" class="btn primary send-btn">Enviar canciones</button>
+        <p class="nota" id="estado">Tus canciones se guardan en nuestra lista del baile.</p>
+    </form>
+
+    <p class="back"><a href="invitacion.html">← Volver a la invitación</a></p>
+</main>
+
+<script>
+// Pegá acá la URL de tu Apps Script (la que termina en /exec)
+const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbxLwJxW_evcdpe7laSmWOhruCflfryWb9Jf0T8w5GGtGuOts4Tj25AyH6iTMCEmGy-M/exec";
+
+const lista = document.getElementById("lista-canciones");
+const estado = document.getElementById("estado");
+
+document.getElementById("agregar").addEventListener("click", function () {
+    const row = document.createElement("div");
+    row.className = "song-row";
+    row.innerHTML =
+        '<input type="text" class="cancion" placeholder="Canción">' +
+        '<input type="text" class="artista" placeholder="Artista">';
+    lista.appendChild(row);
+    row.querySelector(".cancion").focus();
+});
+
+document.getElementById("form-canciones").addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    const nombre = document.getElementById("nombre").value.trim();
+    const canciones = [];
+
+    document.querySelectorAll(".song-row").forEach(function (row) {
+        const c = row.querySelector(".cancion").value.trim();
+        const a = row.querySelector(".artista").value.trim();
+        if (c) canciones.push({ cancion: c, artista: a });
+    });
+
+    if (!nombre || canciones.length === 0) return;
+
+    const btn = e.target.querySelector(".send-btn");
+    btn.disabled = true;
+    btn.textContent = "Enviando...";
+
+    fetch(SCRIPT_URL, {
+        method: "POST",
+        mode: "no-cors",
+        headers: { "Content-Type": "text/plain;charset=utf-8" },
+        body: JSON.stringify({ nombre: nombre, canciones: canciones })
+    })
+    .then(function () {
+        estado.textContent = "¡Gracias, " + nombre + "! Tus canciones ya están en la lista 🎶";
+        e.target.reset();
+        btn.textContent = "Enviar canciones";
+        btn.disabled = false;
+    })
+    .catch(function () {
+        estado.textContent = "No se pudo enviar. Probá de nuevo en un rato.";
+        btn.textContent = "Enviar canciones";
+        btn.disabled = false;
+    });
+});
+</script>
+
+</body>
+</html>
