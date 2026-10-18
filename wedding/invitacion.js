@@ -1,5 +1,5 @@
 // ===== CUENTA REGRESIVA =====
-const weddingDate = new Date("Feb 12, 2027 10:00:00").getTime();
+const weddingDate = new Date("Feb 12, 2027 19:00:00").getTime();
 const countdownEl = document.getElementById("countdown");
 
 function updateCountdown() {
