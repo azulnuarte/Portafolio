@@ -200,22 +200,57 @@ a:not(.btn):hover::after { width: 100%; }
 }
 
 /* Fotos */
+/* ---------- FOTOS ---------- */
 .foto { margin: 0 0 50px; }
+
 .foto img {
     display: block;
     width: 100%;
-    max-height: 520px;
-    object-fit: cover;
     border-radius: 20px;
 }
-/* foto vertical: se muestra entera y centrada */
-.foto-completa img {
+
+/* las tres fotos son verticales: se muestran enteras y centradas */
+.foto-completa {
+    position: relative;
     max-width: 520px;
-    max-height: none;
+    margin: 0 auto 50px;
+}
+.foto-completa img {
     height: auto;
-    margin: 0 auto;
 }
 
+/* ---------- FLORES EN LAS FOTOS ---------- */
+.foto-completa::before,
+.foto-completa::after {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    background-repeat: no-repeat;
+    background-size: contain;
+    pointer-events: none;
+    filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.25));
+}
+
+/* gardenia: abajo a la izquierda */
+.foto-completa::before {
+    left: -26px;
+    bottom: -26px;
+    width: 130px;
+    height: 204px;
+    background-image: url('flores/flor-acuarela-abajo.png');
+    background-position: bottom left;
+}
+
+/* magnolias: arriba a la derecha (dadas vuelta para que miren hacia la foto) */
+.foto-completa::after {
+    top: -26px;
+    right: -26px;
+    width: 190px;
+    height: 167px;
+    background-image: url('flores/flor-magnolias.png');
+    background-position: top right;
+    transform: scaleY(-1);
+}
 /* Dress code */
 .dresscode {
     margin-bottom: 50px;
@@ -419,6 +454,8 @@ footer {
 
     .hero h1 { font-size: 2.5rem; }
     .timer   { font-size: 1.5rem; }
+    .foto-completa::before { left: -10px; bottom: -10px; width: 90px;  height: 141px; }
+    .foto-completa::after  { top: -10px;  right: -10px;  width: 120px; height: 106px; }
 }
 
 /* =========================================================
