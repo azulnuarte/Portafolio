@@ -6,7 +6,7 @@
 
 <title>Juan & Azul | Nos casamos</title>
 <meta name="description" content="¡Nos casamos! 12 de febrero de 2027. Confirmá tu asistencia y acompañanos en este día especial.">
-<meta name="theme-color" content="#6b705c">
+<meta name="theme-color" content="#1d2a44">
 <meta name="robots" content="noindex, nofollow">
 
 <!-- Open Graph (WhatsApp, Facebook, Instagram, Telegram) -->
@@ -31,11 +31,12 @@
 <!-- Fonts -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,700;1,500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,700;1,500&family=Inter:wght@300;400;500&family=Cormorant+Garamond:ital,wght@0,600;1,600&display=swap" rel="stylesheet">
 
 <link rel="stylesheet" href="styles.css">
 <link rel="icon" href="favicon.avif" type="image/avif">
 <script src="invitacion.js" defer></script>
+<script src="regalos.js" defer></script>
 </head>
 
 <body>
@@ -69,7 +70,7 @@
         <h3>Fecha 📆</h3>
         <p>12 de Febrero 2027</p>
         <span>19:00 hs</span>
-        <a href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Boda+Juan+%26+Azul&dates=20270212T190000/20270213T040000&ctz=America/Argentina/Mendoza&details=Nos+casamos!&location=Club+Chandon,+Ruta+Provincial+15,+Agrelo" target="_blank"<a href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Boda+Juan+%26+Azul&dates=20270212T190000/20270213T040000&ctz=America/Argentina/Mendoza&details=Nos+casamos!&location=Club+Chandon,+Ruta+Provincial+15,+Agrelo" target="_blank" rel="noopener">Agregar al calendario</a> rel="noopener">Agregar al calendario</a>
+        <a href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Boda+Juan+%26+Azul&dates=20270212T190000/20270213T040000&ctz=America/Argentina/Mendoza&details=Nos+casamos!&location=Club+Chandon,+Ruta+Provincial+15,+Agrelo" target="_blank" rel="noopener">Agregar al calendario</a>
     </div>
 
     <div class="item">
@@ -92,7 +93,7 @@
 
 <!-- FOTO 2 -->
 <figure class="foto reveal foto-completa">
-    <img src="fotoboda2.jpg" alt="Juan y Azul juntos" loading="lazy">
+    <img src="boda1.jpg" alt="Juan y Azul juntos" loading="lazy">
 </figure>
 
 <section class="dresscode">
@@ -122,24 +123,20 @@
 <p class="deadline">⏰ Seña: hasta el <strong>18 de diciembre de 2026</strong></p>
 <p class="deadline">⏰ Pago total: hasta el <strong>15 de enero de 2027</strong></p>
 
-    <div class="alias-grid">
-        <div class="alias-card">
-            <h3>Juan</h3>
-            <p class="alias" id="alias-juan">juan.zoc.nx</p>
-            <button type="button" class="copy-btn" data-copy="alias-juan">Copiar alias</button>
-        </div>
-        <div class="alias-card">
-            <h3>Azul</h3>
-            <p class="alias" id="alias-azul">azul.nuarte</p>
-            <button type="button" class="copy-btn" data-copy="alias-azul">Copiar alias</button>
-        </div>
+   <div class="alias-grid uno">
+    <div class="alias-card">
+        <h3>Juan & Azul</h3>
+        <p class="alias">CBU terminado en 0044</p>
+        <button type="button" class="copy-btn" data-valor="4530000800014159570044">Copiar CBU</button>
+    </div>
+</div>
     </div>
     <p class="nota">Después de transferir, enviá el comprobante por WhatsApp a cualquiera de los dos.</p>
 </section>
 
 <!-- FOTO 3 -->
 <figure class="foto reveal foto-completa">
-    <img src="fotoboda1.jpg" alt="Juan y Azul" loading="lazy">
+    <img src="fotoboda2.jpg" alt="Juan y Azul" loading="lazy">
 </figure>
 
 <section class="confirmation" id="confirmacion">
@@ -164,35 +161,13 @@
     </div>
 </section>
 
-<section class="lista">
-    <h2>Lo que ya tenemos y lo que nos falta</h2>
-    <p>Si querés hacernos un regalo, esta lista te puede ayudar. ¡Lo más importante es que estés con nosotros!</p>
+<section class="regalos" id="regalos">
+    <h2>Lista de regalos 🎁</h2>
+    <p>Si querés hacernos un regalo, elegilo y reservalo así nadie lo repite. ¡Lo más importante es que estés con nosotros!</p>
+    <p class="nota">Ya tenemos: pava eléctrica, cama y colchón, cocina y tuppers.</p>
 
-    <div class="lista-grid">
-        <div class="lista-col">
-            <h3>Ya tenemos ✅</h3>
-            <ul>
-                <li>Pava Eléctrica </li>
-                <li>Cama y colchón</li>
-                <li>Cocina</li>
-                <li>Tuppers</li>
-                <!-- Editá o agregá tus cosas -->
-            </ul>
-        </div>
-        <div class="lista-col">
-            <h3>Nos falta 🎁</h3>
-            <ul>
-                <li>Juego de sábanas</li>
-                <li>Juego de ollas</li>
-                <li>Licuadora</li>
-                <li>Juego de comedor (mesa y sillas) </li>
-                <li>Vajilla (platos, vasos, cubiertos)</li>
-                <li>Heladera</li>
-                <li>Lavarropas </li>
-                <!-- Editá o agregá tus cosas -->
-            </ul>
-        </div>
-    </div>
+    <div id="regalos-lista" class="regalos-grid">Cargando la lista...</div>
+    <p class="nota regalos-estado" id="regalos-estado"></p>
 </section>
 
 <section class="info-util">

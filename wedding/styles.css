@@ -135,8 +135,8 @@ a:not(.btn):hover::after { width: 100%; }
    5. HERO
    ========================================================= */
 .hero {
-    --hero-foto: url('fotoboda3.png');
-    --hero-pos: center 55%;            /* subí o bajá para encuadrar */
+    --hero-foto: url('fotoboda1.jpg');
+    --hero-pos: center 60%;            /* subí o bajá para encuadrar */
 
     height: 85vh;
     display: flex;
@@ -148,7 +148,7 @@ a:not(.btn):hover::after { width: 100%; }
     background-size: cover;
     background-position: var(--hero-pos);
     background-repeat: no-repeat;
-    --hero-pos: center 13%;
+   
 }
 
 .overlay {
@@ -159,9 +159,10 @@ a:not(.btn):hover::after { width: 100%; }
 }
 
 .hero h1 {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Cormorant Garamond', serif;
     font-style: italic;
-    font-size: 3.8rem;
+    font-weight: 600;
+    font-size: 4.6rem;      /* esta fuente se ve más chica que Playfair */
     letter-spacing: 1px;
     text-shadow: 0 4px 10px rgba(0,0,0,0.3);
     color: var(--sand);
@@ -302,6 +303,10 @@ a:not(.btn):hover::after { width: 100%; }
     gap: 20px;
     margin: 25px 0 15px;
 }
+.alias-grid.uno {
+    grid-template-columns: minmax(0, 360px);
+    justify-content: center;
+}
 .alias-card {
     padding: 20px;
     border-top: 4px solid var(--bronze);
@@ -335,31 +340,49 @@ a:not(.btn):hover::after { width: 100%; }
 }
 
 /* Lista de regalos */
-.lista {
+.regalos {
     margin: 50px 0;
     text-align: center;
 }
-.lista-grid {
+.regalos-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
     margin-top: 25px;
     text-align: left;
 }
-.lista-col {
+.regalo-grupo {
     padding: 20px 25px;
+    border-top: 4px solid var(--bronze);
     border-radius: 16px;
     background: white;
 }
-.lista-col h3 {
-    margin-top: 0;
+.regalo-grupo h3 {
+    margin: 0 0 8px;
     font-family: 'Playfair Display', serif;
 }
-.lista-col ul {
-    margin: 0;
-    padding-left: 20px;
+.regalo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 9px 0;
+    border-bottom: 1px solid var(--cream);
 }
-.lista-col li { margin-bottom: 6px; }
+.regalo:last-child { border-bottom: none; }
+.regalo.reservado span {
+    color: var(--grey);
+    text-decoration: line-through;
+}
+.regalo .copy-btn { white-space: nowrap; }
+.regalo .copy-btn:disabled {
+    background: var(--grey);
+    cursor: default;
+}
+.regalos-estado {
+    margin-top: 20px;
+    min-height: 1.4em;
+}
 
 /* Info útil */
 .info-util {
@@ -447,7 +470,7 @@ footer {
     .grid,
     .grid-3,
     .alias-grid,
-    .lista-grid,
+    .regalos-grid,
     .song-row {
         grid-template-columns: 1fr;
     }
