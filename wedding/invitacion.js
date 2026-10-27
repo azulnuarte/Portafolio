@@ -22,30 +22,33 @@ function updateCountdown() {
 const countdown = setInterval(updateCountdown, 1000);
 updateCountdown(); // se muestra de inmediato, sin esperar 1 segundo
 
-// ===== COPIAR ALIAS =====
+
+
 document.querySelectorAll(".copy-btn").forEach(function (btn) {
-    btn.addEventListener("click", function () {
-        const text = document.getElementById(btn.dataset.copy).textContent.trim();
-        const original = btn.textContent;
+    btn.addEventListener("click", async function () {
+        const text = btn.dataset.valor;
 
-        const done = function () {
+        // Prueba: confirmar que el botón funciona
+        if (!text) {
+            alert("El botón no tiene un CBU en data-valor.");
+            return;
+        }
+
+        try {
+            await navigator.clipboard.writeText(text);
             btn.textContent = "¡Copiado!";
-            setTimeout(function () { btn.textContent = original; }, 1800);
-        };
-
-        if (navigator.clipboard && navigator.clipboard.writeText) {
-            navigator.clipboard.writeText(text).then(done);
-        } else {
-            const ta = document.createElement("textarea");
-            ta.value = text;
-            document.body.appendChild(ta);
-            ta.select();
-            document.execCommand("copy");
-            document.body.removeChild(ta);
-            done();
+            setTimeout(function () {
+                btn.textContent = "Copiar CBU";
+            }, 1800);
+        } catch (error) {
+            alert(
+                "El botón funciona, pero el navegador bloqueó la copia. CBU: " + text
+            );
         }
     });
 });
+
+
 
 // ===== FOTOS: aparecen al bajar =====
 const reveals = document.querySelectorAll(".reveal");
