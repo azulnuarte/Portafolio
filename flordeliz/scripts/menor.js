@@ -33,6 +33,7 @@ document.addEventListener("DOMContentLoaded", async () => {
         productoCard.innerHTML = `
           <img src="${producto.imagen}" alt="${producto.nombre}" loading="lazy">
           <h3>${producto.nombre}</h3>
+          ${producto.contenido ? `<p class="producto-contenido">${producto.contenido}</p>` : ""}
           <ul>
             ${producto.presentaciones.map(p => {
               const [cantidad, precioStr] = p.split(" - $");
