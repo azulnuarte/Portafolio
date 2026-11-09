@@ -1,0 +1,1640 @@
+{
+  "Frutas Desecadas y Deshidroazucaradas": [
+    {
+      "nombre": "Ananá Deshidratado en Cubos Rojos",
+      "presentaciones": [ "1kg - $19.895"],
+      "imagen": "images/productos/anana-rojo-cubo.png"
+    },
+    {
+      "nombre": "Anana Glace en Rodajas x 1 kg",
+      "presentaciones": [ "1kg - $27.858"],
+      "imagen": "images/productos/ananar.png"
+    },
+    {
+      "nombre": "Anana Glace natural en cubos",
+      "presentaciones": [ "1kg - $24.089"],
+      "imagen": "images/productos/anana.png"
+    },
+    {
+      "nombre": "Ananá Deshidratado en Cubos Multicolor",
+      "presentaciones": [ "1kg - $15.787"],
+      "imagen": "images/productos/anana-multicolor.png"
+    },
+    {
+      "nombre": "Arándanos Rojos Doy Pack Cumana",
+      "presentaciones": [ "150gr - $3.093"],
+      "imagen": "images/productos/arandano-pack.png"
+    },
+    {
+      "nombre": "Arándanos Rojos Deshidratados",
+      "presentaciones": [ "1kg - $24.193"],
+      "imagen": "images/productos/arandano-rojo.png"
+    },
+    {
+      "nombre": "Cerezas confitadas",
+      "presentaciones": [ "1kg - $27.192"],
+      "imagen": "images/productos/cereza1.png"
+    },
+    {
+      "nombre": "Cereza Glaseada",
+      "presentaciones": [ "1kg - $25.864"],
+      "imagen": "images/productos/cereza1.png"
+    },
+    {
+      "nombre": "Chips de Banana",
+      "presentaciones": [ "1kg - $16.104"],
+      "imagen": "images/productos/chips-banana.png"
+    },
+    {
+      "nombre": "Ciruela Con Carozo Grande",
+      "presentaciones": [ "1kg - $8.491"],
+      "imagen": "images/productos/ciruela-1.png"
+    },
+    {
+      "nombre": "Ciruela PRESIDENTE s/c Tiernizada",
+      "presentaciones": [ "1kg - $18.544"],
+      "imagen": "images/productos/ciruela.png"
+    },
+    {
+      "nombre": "Ciruela sin carozo N°1",
+      "presentaciones": [ "1kg - $11.029"],
+      "imagen": "images/productos/ciruela-1.png"
+    },
+    {
+      "nombre": "Ciruela sin carozo N°2",
+      "presentaciones": [ "1kg - $10.077"],
+      "imagen": "images/productos/ciruela-1.png"
+    },
+    {
+      "nombre": "Ciruela sin carozo N°3",
+      "presentaciones": [ "1kg - $9.601"],
+      "imagen": "images/productos/ciruela-1.png"
+    },
+    {
+      "nombre": "Coco en escamas",
+      "presentaciones": [ "1kg - $15.104"],
+      "imagen": "images/productos/coco-escamas.png"
+    },
+    {
+      "nombre": "Dátiles Deshidratados deglet nour Argelia sin carozo",
+      "presentaciones": [ "1kg - $15.738"],
+      "imagen": "images/productos/datiles-a.png"
+    },
+    {
+      "nombre": "Dátiles Deshidratados Con Carozo Egipto",
+      "presentaciones": [ "1kg - $7.985"],
+      "imagen": "images/productos/datiles.png"
+    },
+    {
+      "nombre": "Dátiles Deshidratados sin carozo Irán",
+      "presentaciones": [ "1kg - $9.465"],
+      "imagen": "images/productos/datiles.png"
+    },
+    {
+      "nombre": "Durazno Glaseado en cubos",
+      "presentaciones": [ "1kg - $22.448"],
+      "imagen": "images/productos/durazno-cubos.png"
+    },
+    {
+      "nombre": "Dátiles Deshidratados deglet nour Argelia con carozo",
+      "presentaciones": [ "1kg - $9.760"],
+      "imagen": "images/productos/datiles-a.png"
+    },
+    {
+      "nombre": "Empaque Mixto",
+      "presentaciones": [ "1kg - $11.863"],
+      "imagen": "images/productos/empaque-mixto.png"
+    },
+    {
+      "nombre": "Fruta Glaseada PREMIUM",
+      "presentaciones": [ "1kg - $16.025"],
+      "imagen": "images/productos/fruta.png"
+    },
+    {
+      "nombre": "Higos Negros Deshidratados y Tiernizados (Catamarca)",
+      "presentaciones": [ "1kg - $15.152"],
+      "imagen": "images/productos/HIGOS NEGROS DESHIDRATADOS Y TIERNIZADOS (CATAMARCA).png"
+    },
+    {
+      "nombre": "Medallones De Durazno Deshidratado Sin Carozo Secado a Horno",
+      "presentaciones": [ "1kg - $16.263"],
+      "imagen": "images/productos/MEDALLONES DE DURAZNO DESHIDRATAD0.png"
+    },
+    {
+      "nombre": "Papaya Deshidratada en Cubos",
+      "presentaciones": [ "1kg - $19.124"],
+      "imagen": "images/productos/PAPAYA DESHIDRATADA EN CUBOS.png"
+    },
+    {
+      "nombre": "Papaya Glaseada Multicolor",
+      "presentaciones": [ "1kg - $8.442"],
+      "imagen": "images/productos/papaya-multicolor.png"
+    },
+    {
+      "nombre": "Papaya Multicolor Glace en Cubos Importada",
+      "presentaciones": [ "1kg - $21.283"],
+      "imagen": "images/productos/papaya-m.png"
+    },
+    {
+      "nombre": "Papaya Roja Glace Importada",
+      "presentaciones": [ "1kg - $20.506"],
+      "imagen": "images/productos/papaya-r.png"
+    },
+    {
+      "nombre": "Pasa de Uva Negra Sin Semilla Flame",
+      "presentaciones": [ "1kg - $4.050"],
+      "imagen": "images/productos/uva-flame-sin-semilla.png"
+    },
+    {
+      "nombre": "Pasa de Uva Rubia Sin Semilla",
+      "presentaciones": [ "1kg - $9.126"],
+      "imagen": "images/productos/uva-rubia-sin-semilla.png"
+    },
+    {
+      "nombre": "Pasa de uva negra premium",
+      "presentaciones": [ "1kg - $5.319"],
+      "imagen": "images/productos/uva-negra-premium.png"
+    },
+    {
+      "nombre": "Pera Deshidratada Mediana",
+      "presentaciones": [ "1kg - $15.628"],
+      "imagen": "images/productos/pera.png"
+    },
+    {
+      "nombre": "Tomate Deshidratado N°1 Grande",
+      "presentaciones": [ "1kg - $15.891"],
+      "imagen": "images/productos/tomate.png"
+    },
+    {
+      "nombre": "Cerezas al Marrasquino",
+      "presentaciones": [ "50gr - $400", "100gr - $750"],
+      "imagen": "images/productos/Cerezas Al Marrasquino.png"
+    }
+  ],
+
+  "Mix de Frutos Secos": [
+    {
+      "nombre": "COMBO EMPRENDEDOR",
+      "presentaciones": [ "1 u - $109.556"],
+      "imagen": "images/productos/combo-emprendedor.png"
+    },
+    {
+      "nombre": "Mix Cervecero Agridulce",
+      "contenido": "Maíz frito salado, maní pelado salado, almendra, pasa de uva rubia",
+      "presentaciones": [ "1kg - $12.241"],
+      "imagen": "images/productos/mix-cervecero-agridulce.png"
+    },
+    {
+      "nombre": "Mix Cervecero Seco",
+      "contenido": "Maíz frito, almendras guará, maní saborizado de jamón, maní salado",
+      "presentaciones": [ "1kg - $9.719"],
+      "imagen": "images/productos/mix-cervecero.png"
+    },
+    {
+      "nombre": "Mix Clásico",
+      "contenido": "Maní sin sal, almendras, pasa de uva rubia, pasa de uva negra",
+      "presentaciones": [ "1kg - $12.380"],
+      "imagen": "images/productos/mix-clasico.png"
+    },
+    {
+      "nombre": "Mix Clásico con Banana",
+      "contenido": "Chips de banana, maní sin sal, pasa negra, pasa rubia, almendra",
+      "presentaciones": [ "1kg - $10.786"],
+      "imagen": "images/productos/mix-banana.png"
+    },
+    {
+      "nombre": "Mix Clásico con Castañas",
+      "contenido": "Castañas de cajú, nuez, almendras Carmel, pasa de uva rubia, pasa de uva negra",
+      "presentaciones": [ "1kg - $17.936"],
+      "imagen": "images/productos/mix-clasico-castañas.png"
+    },
+    {
+      "nombre": "Mix Clásico con Escamas de Coco",
+      "contenido": "Escamas de coco, pasas de uva flame, nuez mariposa light, maní sin sal, almendras guará, chips de banana",
+      "presentaciones": [ "1kg - $12.183"],
+      "imagen": "images/productos/mix-coco.png"
+    },
+    {
+      "nombre": "Mix Delicia de Cereza",
+      "contenido": "Castañas de caju, cereza glaseada, nuez mariposa EXTRA-LIGHT, pasas de uva rubia, almendra Carmel",
+      "presentaciones": [ "1kg - $21.856"],
+      "imagen": "images/productos/mix-delicia-cereza.png"
+    },
+    {
+      "nombre": "Mix Energético Económico",
+      "contenido": "Maní, pasa de uva negra, almendra partida, nuez",
+      "presentaciones": [ "1kg - $7.375"],
+      "imagen": "images/productos/mix-energetico-economico.png"
+    },
+    {
+      "nombre": "Mix Patagónico",
+      "contenido": "Arándanos, castañas de cajú, pasa rubia, avellanas, nueces, almendras",
+      "presentaciones": [ "1kg - $23.536"],
+      "imagen": "images/productos/mix-patagonico.png"
+    },
+    {
+      "nombre": "Mix Seco estándar",
+      "contenido": "Almendras guará, nuez mariposa light, castañas de cajú, avellanas",
+      "presentaciones": [ "1kg - $23.947"],
+      "imagen": "images/productos/mix-seco.png"
+    },
+    {
+      "nombre": "Mix Seco premium",
+      "contenido": "Almendras nonpareil, nuez mariposa extra-light, castañas de cajú, avellanas",
+      "presentaciones": [ "1kg - $27.009"],
+      "imagen": "images/productos/mix-seco-premium.png"
+    },
+    {
+      "nombre": "Mix Seco sin pasas",
+      "contenido": "Castañas de cajú, nuez mariposa, maní sin sal, almendra",
+      "presentaciones": [ "1kg - $18.593"],
+      "imagen": "images/productos/mix-seco-mani.png"
+    },
+    {
+      "nombre": "Mix Seco con Pistacho",
+      "contenido": "Almendras nonpareil, nuez mariposa extra-light, castañas de cajú, pistacho",
+      "presentaciones": [ "1kg - $32.204"],
+      "imagen": "images/productos/mix-pist.png"
+    },
+    {
+      "nombre": "Mix Tropical Clásico",
+      "contenido": "Ananá en cubos, chips de banana, nuez, almendra Carmel, pasas de uva rubia, pasas negras",
+      "presentaciones": [ "1kg - $10.535"],
+      "imagen": "images/productos/mix-tropical-clasico.png"
+    },
+    {
+      "nombre": "Mix Tropical Económico",
+      "contenido": "Maní, pasa de uva negra, papaya nacional, almendra partida, nuez",
+      "presentaciones": [ "1kg - $7.975"],
+      "imagen": "images/productos/mix-tropical-economico.png"
+    },
+    {
+      "nombre": "Mix Tropical Premium",
+      "contenido": "Ananá en cubos, chips de banana, nuez, almendra Carmel, pasas de uva rubia, pasas negras",
+      "presentaciones": [ "1kg - $18.955"],
+      "imagen": "images/productos/mix-tropical-premium.png"
+    }
+  ],
+
+  "Frutos Secos": [
+    {
+      "nombre": "Almendra Doypack Cumana x 120 g",
+      "presentaciones": [ "1 u - $6.741"],
+      "imagen": "images/productos/almendra-doy-pack.png"
+    },
+    {
+      "nombre": "Almendra Guara Grande (6)",
+      "presentaciones": [ "1kg - $26.064"],
+      "imagen": "images/productos/almendra-guara-grande.png"
+    },
+    {
+      "nombre": "Almendra Guara Partida",
+      "presentaciones": [ "1kg - $21.972"],
+      "imagen": "images/productos/almendra-guara-partida.png"
+    },
+    {
+      "nombre": "Almendra Non Pareil Mediana",
+      "presentaciones": [ "1kg - $33.312"],
+      "imagen": "images/productos/non-pareil.png"
+    },
+    {
+      "nombre": "Almendras Guara 3",
+      "presentaciones": [ "1kg - $27.206"],
+      "imagen": "images/productos/guara3.png"
+    },
+    {
+      "nombre": "Avellanas Georgia",
+      "presentaciones": [ "1kg - $39.955"],
+      "imagen": "images/productos/AVELLANAS GEORGIA.png"
+    },
+    {
+      "nombre": "Avellanas 9/11",
+      "presentaciones": [ "1kg - $37.036"],
+      "imagen": "images/productos/avellanas9-11.png"
+    },
+    {
+      "nombre": "Castaña de Caju P3 (Partida)",
+      "presentaciones": [ "1kg - $15.067"],
+      "imagen": "images/productos/castaña-caju-p3.png"
+    },
+    {
+      "nombre": "Castañas de Cajú W4",
+      "presentaciones": [ "1kg - $20.439"],
+      "imagen": "images/productos/castañaw4.png"
+    },
+    {
+      "nombre": "Castaña de Caju w3",
+      "presentaciones": [ "1kg - $22.666"],
+      "imagen": "images/productos/castañaw3.png"
+    },
+    {
+      "nombre": "Castaña de Para",
+      "presentaciones": [ "1kg - $35.136"],
+      "imagen": "images/productos/castaña-para.png"
+    },
+    {
+      "nombre": "Castañas de Caju Flow Pack x 250 g",
+      "presentaciones": [ "1 u - $5.040"],
+      "imagen": "images/productos/castaña-flow-pack.png"
+    },
+    {
+      "nombre": "Nuez Con Cascara Calidad Exportación",
+      "presentaciones": [ "1kg - $7.381"],
+      "imagen": "images/productos/nuez-cascara.png"
+    },
+    {
+      "nombre": "Nuez Cuartillo",
+      "presentaciones": [ "1kg - $14.042"],
+      "imagen": "images/productos/nuez-cuartillo.png"
+    },
+    {
+      "nombre": "Nuez Cuarto",
+      "presentaciones": [ "1kg - $15.628"],
+      "imagen": "images/productos/nuez-cuarto.png"
+    },
+    {
+      "nombre": "Nuez Mariposa Extra Light",
+      "presentaciones": [ "1kg - $18.007"],
+      "imagen": "insertar imagen"
+    },
+    {
+      "nombre": "Pistacho Cascara tostado-salado Cumana x 150 g Doy Pack",
+      "presentaciones": [ "1 u - $6.890"],
+      "imagen": "images/productos/pistacho-cumana.png"
+    },
+    {
+      "nombre": "Pistachos natural pelado sin sal",
+      "presentaciones": [ "1kg - $76.335"],
+      "imagen": "images/productos/pistacho-natural-sin-sal.png"
+    },
+    {
+      "nombre": "Pistacho Tosatado y Salado EEUU",
+      "presentaciones": [ "1kg - $46.397"],
+      "imagen": "images/productos/pistacho-tostado-salado-eeuu.png"
+    },
+    {
+      "nombre": "Pistachos con cáscara tostado salado",
+      "presentaciones": [ "1kg - $42.273"],
+      "imagen": "images/productos/pistacho-cascara-saalado-tostado.png"
+    },
+    {
+      "nombre": "Almendra Marindada",
+      "presentaciones": [ "1kg - $6.900"],
+      "imagen": "images/productos/ALMENDRA MARINADA.png"
+    },
+    {
+      "nombre": "Almenra Carmel",
+      "presentaciones": [ "1kg - $6.900"],
+      "imagen": "images/productos/ALMENDRA CARMEL_ SIN STOCK.png"
+    },
+    {
+      "nombre": "Nueces Mariposa Combinada",
+      "presentaciones": [ "1kg - $6.900"],
+      "imagen": "images/productos/NUECES.png"
+    },
+    {
+      "nombre": "Nueces",
+      "presentaciones": [ "1kg - $6.900"],
+      "imagen": "images/productos/NUEZ MARIPOSA.png"
+    }
+  ],
+
+  "Complementos y Suplementos Dietarios": [
+    {
+      "nombre": "Bisglicinato de Magnesio x 50 capsulas ALUNEXA",
+      "presentaciones": [ "1 u - $16.574"],
+      "imagen": "images/productos/bisiglmag.png"
+    },
+    {
+      "nombre": "Calcio con Magnesio y D3 x 50 capsulas ALUNEXA",
+      "presentaciones": [ "1 u - $12.529"],
+      "imagen": "images/productos/calcio.png"
+    },
+    {
+      "nombre": "Citrato de Magnesio y D3 x 50 capsulas ALUNEXA",
+      "presentaciones": [ "1 u - $16.074"],
+      "imagen": "images/productos/citrato.png"
+    },
+    {
+      "nombre": "Colágeno Hidrolizado con Vitamina E x 50 capsulas ALUNEXA",
+      "presentaciones": [ "1 u - $14.195"],
+      "imagen": "images/productos/colageno.png"
+    },
+    {
+      "nombre": "Creatina Monohidrato Micronizada x 250 g ALUNEXA",
+      "presentaciones": [ "1 u - $24.107"],
+      "imagen": "images/productos/creatina.png"
+    },
+    {
+      "nombre": "Curcuma con Pimienta y Jengibre x 50 Capsulas ALUNEXA",
+      "presentaciones": [ "1 u - $20.390"],
+      "imagen": "images/productos/117.png"
+    },
+    {
+      "nombre": "Magnesio x 50 Capsulas ALUNEXA",
+      "presentaciones": [ "1 u - $12.133"],
+      "imagen": "images/productos/magnesio.png"
+    },
+    {
+      "nombre": "Multimagnesio X 50 Capsulas ALUNEXA",
+      "presentaciones": [ "1 u - $15.202"],
+      "imagen": "images/productos/multimagnesio.png"
+    },
+    {
+      "nombre": "NAD + Resveratrol y Q 10 x 50 capsulas ALUNEXA",
+      "presentaciones": [ "1 u - $21.216"],
+      "imagen": "images/productos/nad.png"
+    },
+    {
+      "nombre": "Resveratrol X 50 Capsulas ALUNEXA",
+      "presentaciones": [ "1 u - $18.199"],
+      "imagen": "images/productos/reveratrol.png"
+    },
+    {
+      "nombre": "Sobre Calcio Cubano 100 gr",
+      "presentaciones": [ "1 u - $878"],
+      "imagen": "insertar imagen"
+    },
+    {
+      "nombre": "Sobre Cartílago de Tiburón 90 gr",
+      "presentaciones": [ "1 u - $878"],
+      "imagen": "insertar imagen"
+    },
+    {
+      "nombre": "Sobre Colágeno Hidrolizado",
+      "presentaciones": [ "1 u - $878"],
+      "imagen": "insertar imagen"
+    },
+    {
+      "nombre": "Sobre Flor de Jamaica en polvo x 120 g",
+      "presentaciones": [ "1 u - $1.074"],
+      "imagen": "insertar imagen"
+    },
+    {
+      "nombre": "Sobre Maca Negra",
+      "presentaciones": [ "1 u - $1.759"],
+      "imagen": "insertar imagen"
+    },
+    {
+      "nombre": "Vitamina B12 2000 MCG x 50 Capsulas ALUNEXA",
+      "presentaciones": [ "1 u - $13.749"],
+      "imagen": "images/productos/b12.png"
+    },
+    {
+      "nombre": "Vitamina C con Zinc y Vitamina D x 50 capsulas ALUNEXA",
+      "presentaciones": [ "1 u - $15.226"],
+      "imagen": "insertar imagen"
+    }
+  ],
+
+  "Aceitunas y Aceite": [
+    {
+      "nombre": "Aceite de Oliva \"Sono Di Oliva\" Extra Virgen x 1 Lt.",
+      "presentaciones": [ "1 u - $18.788"],
+      "imagen": "images/productos/sono-aceite1l.png"
+    },
+    {
+      "nombre": "Aceite de Oliva \"Sono Di Oliva\" Extra Virgen x 500 cc",
+      "presentaciones": [ "1 u - $10.492"],
+      "imagen": "images/productos/sono500cc.png"
+    },
+    {
+      "nombre": "Aceite de Oliva MENDOLIVA x 500 cc",
+      "presentaciones": [ "1 u - $5.865"],
+      "imagen": "images/productos/mendoliva.png"
+    },
+    {
+      "nombre": "Aceite de Oliva Mendoliva botella vidrio x 500 cc",
+      "presentaciones": [ "1 u - $6.972"],
+      "imagen": "images/productos/mendoliva-vidrio.png"
+    },
+    {
+      "nombre": "Aceite de oliva MENDOLIVA x 900cc",
+      "presentaciones": [ "1 u - $8.380"],
+      "imagen": "images/productos/mendoliva.png"
+    },
+    {
+      "nombre": "Aceitunas Griegas con Aceite Garrafa 2 kg",
+      "presentaciones": [ "1 u - $22.204"],
+      "imagen": "images/productos/aceituna-griega-2k.png"
+    },
+    {
+      "nombre": "Aceitunas Griegas con aceite garrafita 1 kg",
+      "presentaciones": [ "1 u - $12.353"],
+      "imagen": "images/productos/aceituna-griega-2k.png"
+    },
+    {
+      "nombre": "Aceitunas Negras naturales 0 x 330cc",
+      "presentaciones": [ "330cc - $4.277"],
+      "imagen": "images/productos/99.png"
+    },
+    {
+      "nombre": "Aceitumas Verdes Artesanales N°1 2Kg",
+      "presentaciones": [ "2kg - $14.591"],
+      "imagen": "images/productos/ACEITUNAS VERDES.png"
+    },
+    {
+      "nombre": "Aceitunas verdes N1 garrafita 1 kg",
+      "presentaciones": [ "1 u - $7.823"],
+      "imagen": "images/productos/aceitunaverde-garrafa.png"
+    },
+    {
+      "nombre": "Jarrita Aceite de Oliva extra virgen x 250 cc",
+      "presentaciones": [ "1 u - $7.137"],
+      "imagen": "images/productos/jarra-aceite-oliva.png"
+    },
+    {
+      "nombre": "Aceite de Oliva Olivo de Campo 500cc",
+      "presentaciones": [ "50gr - $400", "100gr - $750"],
+      "imagen": "images/productos/aceite de oliva 500.png"
+    },
+    {
+      "nombre": "Aceite de Oliva Olivo de Campo 1L",
+      "presentaciones": [ "50gr - $400", "100gr - $750"],
+      "imagen": "images/productos/aceite de oliva 1l.png"
+    },
+    {
+      "nombre": "Aceitunas Verdes Condimentadas en Aceite",
+      "presentaciones": [ "50gr - $400", "100gr - $750"],
+      "imagen": "images/productos/ACEITUNAS VERDES CONDIMENTADS EN ACEITE X 330 cc $5.100.png"
+    },
+    {
+      "nombre": "Aceitunas Verdes N°0 y N°1",
+      "presentaciones": [ "50gr - $400", "100gr - $750"],
+      "imagen": "images/productos/90.png"
+    },
+    {
+      "nombre": "Aceitunas Rellenas con Morron Bandeja x 200cc",
+      "presentaciones": [ "50gr - $400", "100gr - $750"],
+      "imagen": "images/productos/91.png"
+    },
+    {
+      "nombre": "Aceitunas Verdes Desc. N°2 Bandeja x 200cc",
+      "presentaciones": [ "50gr - $400", "100gr - $750"],
+      "imagen": "images/productos/92.png"
+    },
+    {
+      "nombre": "Aceitunas Verdes Desc. N°2 Frasco x 330cc",
+      "presentaciones": [ "50gr - $400", "100gr - $750"],
+      "imagen": "images/productos/93.png"
+    },
+    {
+      "nombre": "Chucrut Frasco x 330cc",
+      "presentaciones": [ "50gr - $400", "100gr - $750"],
+      "imagen": "images/productos/94.png"
+    },
+    {
+      "nombre": "Ajíes en Vinagre x 660cc",
+      "presentaciones": [ "50gr - $400", "100gr - $750"],
+      "imagen": "images/productos/95.png"
+    },
+    {
+      "nombre": "Aceitunas Negras N°1 Bandeja x 200cc",
+      "presentaciones": [ "50gr - $400", "100gr - $750"],
+      "imagen": "images/productos/96.png"
+    },
+    {
+      "nombre": "Aceitunas Negras N°2 Bandeja x 200cc",
+      "presentaciones": [ "50gr - $400", "100gr - $750"],
+      "imagen": "images/productos/97.png"
+    },
+    {
+      "nombre": "Aceitunas Verdes en Bandeja x 200cc",
+      "presentaciones": [ "50gr - $400", "100gr - $750"],
+      "imagen": "images/productos/98.png"
+    },
+    {
+      "nombre": "Aceitunas Verdes 2 Bandeja x 200cc",
+      "presentaciones": [ "50gr - $400", "100gr - $750"],
+      "imagen": "images/productos/100.png"
+    },
+    {
+      "nombre": "Aceitunas Negras Griegas con aceite x330cc",
+      "presentaciones": [ "50gr - $400", "100gr - $750"],
+      "imagen": "images/productos/101.png"
+    },
+    {
+      "nombre": "Aceitunas Verdes 2 Bandeja x 600cc",
+      "presentaciones": [ "50gr - $400", "100gr - $750"],
+      "imagen": "images/productos/102.png"
+    },
+    {
+      "nombre": "Corazón de Alcaucil Natural Frasco x 330cc",
+      "presentaciones": [ "50gr - $400", "100gr - $750"],
+      "imagen": "images/productos/103.png"
+    },
+    {
+      "nombre": "Pasta de aceitunas Negras",
+      "presentaciones": [ "50gr - $400", "100gr - $750"],
+      "imagen": "images/productos/104.png"
+    },
+    {
+      "nombre": "Aceitunas Verdes 0 x330cc",
+      "presentaciones": [ "50gr - $400", "100gr - $750"],
+      "imagen": "images/productos/105.png"
+    },
+    {
+      "nombre": "Porotos condimentados en Aceite Frasco x330cc",
+      "presentaciones": [ "50gr - $400", "100gr - $750"],
+      "imagen": "images/productos/106.png"
+    }
+  ],
+
+  "Cereales": [
+    {
+      "nombre": "Almohaditas de Trigo y Chocolate",
+      "presentaciones": [ "1kg - $9.338"],
+      "imagen": "images/productos/ALMOHADITAS DE TRIGO Y CHOCOLATE.png"
+    },
+    {
+      "nombre": "Almohaditas De Trigo Chocolate (bulto cerrado)",
+      "presentaciones": [ "5kg - $43.100"],
+      "imagen": "images/productos/almohaditas-chocolate.png"
+    },
+    {
+      "nombre": "Almohaditas de Frutilla",
+      "presentaciones": [ "1kg - $8.442"],
+      "imagen": "images/productos/ALMOHADITAS FRUTILLA.png"
+    },
+    {
+      "nombre": "Almohaditas De Trigo Frutillas (bulto cerrado)",
+      "presentaciones": [ "5kg - $38.964"],
+      "imagen": "images/productos/almohaditas-frutilla.png"
+    },
+    {
+      "nombre": "Almohaditas de Limón",
+      "presentaciones": [ "1kg - $8.442"],
+      "imagen": "images/productos/ALMOHADITAS  LIMON.png"
+    },
+    {
+      "nombre": "Almohaditas de Arroz Rellenas sabor Mani",
+      "presentaciones": [ "1kg - $8.442"],
+      "imagen": "images/productos/almohaditas-mani.png"
+    },
+    {
+      "nombre": "Almohaditas de Trigo Sabor Chocolate x 200 g",
+      "presentaciones": [ "1 u - $2.457"],
+      "imagen": "images/productos/almohaditas-chocolate.png"
+    },
+    {
+      "nombre": "Almohaditas de Trigo sabor Limon x 200 g",
+      "presentaciones": [ "1 u - $2.324"],
+      "imagen": "images/productos/almohaditas-limon.png"
+    },
+    {
+      "nombre": "Almohaditas de trigo Avellana 1 kg",
+      "presentaciones": [ "1kg - $9.338"],
+      "imagen": "insertar imagen"
+    },
+    {
+      "nombre": "Almohaditas de trigo sabor frutilla x 200 g",
+      "presentaciones": [ "1 u - $2.324"],
+      "imagen": "images/productos/almohaditas-frutilla.png"
+    },
+    {
+      "nombre": "Aritos De Colores (Cereal)",
+      "presentaciones": [ "1kg - $6.719"],
+      "imagen": "insertar imagen"
+    },
+    {
+      "nombre": "Aritos cereal multifrutal ECOSAN x 150 g",
+      "presentaciones": [ "1 u - $1.316"],
+      "imagen": "images/productos/aritos-ecosan150g.png"
+    },
+    {
+      "nombre": "Aritos cereal multifrutal (desayuno) ECOSAN x 1 kg",
+      "presentaciones": [ "1 u - $7.174"],
+      "imagen": "images/productos/aritos-ecosan1k.png"
+    },
+    {
+      "nombre": "Aritos de colores x 100g",
+      "presentaciones": [ "1 u - $988"],
+      "imagen": "insertar imagen"
+    },
+    {
+      "nombre": "Arroz Inflado con Azúcar",
+      "presentaciones": [ "1kg - $7.153"],
+      "imagen": "images/productos/ARROZ INFLADO CON AZUCAR.png"
+    },
+    {
+      "nombre": "Avena Arrollada Gruesa",
+      "presentaciones": [ "1kg - $2.606"],
+      "imagen": "images/productos/avena-arrollada-gruesa.png"
+    },
+    {
+      "nombre": "Avena Arrollada Instantanea",
+      "presentaciones": [ "1kg - $2.606"],
+      "imagen": "images/productos/avena-arrollada-instantantea.png"
+    },
+    {
+      "nombre": "Avena Instantánea sin TACC CUMANA x 400 g",
+      "presentaciones": [ "1 u - $2.588"],
+      "imagen": "images/productos/avena-instantanea-cumana.png"
+    },
+    {
+      "nombre": "Avena Tradicional sin TACC CUMANA x 400 g",
+      "presentaciones": [ "1 u - $2.588"],
+      "imagen": "images/productos/avena-tradicional-cumana.png"
+    },
+    {
+      "nombre": "Bolitas de Chocolate",
+      "presentaciones": [ "1kg - $7.407"],
+      "imagen": "images/productos/BOLITAS DE CHOCOLATE.png"
+    },
+    {
+      "nombre": "Bolitas de Maiz Frutal color",
+      "presentaciones": [ "1kg - $6.719"],
+      "imagen": "insertar imagen"
+    },
+    {
+      "nombre": "Copos de Maíz con Azúcar",
+      "presentaciones": [ "1kg - $4.197"],
+      "imagen": "images/productos/COPOS DE MAIZ CON AZUCAR.png"
+    },
+    {
+      "nombre": "Copos de Maíz sin Azúcar",
+      "presentaciones": [ "1kg - $3.760"],
+      "imagen": "images/productos/COPOS DE MAIZ SIN AZUCAR.png"
+    },
+    {
+      "nombre": "Gusanitos de colores",
+      "presentaciones": [ "1kg - $6.488"],
+      "imagen": "images/productos/gusanitos-colores.png"
+    },
+    {
+      "nombre": "Harina de Avena sin TACC CUMANA x 400 g",
+      "presentaciones": [ "1 u - $2.588"],
+      "imagen": "images/productos/harina-avena-st-cumana.png"
+    },
+    {
+      "nombre": "Maiz Pisingallo (Pochoclo)",
+      "presentaciones": [ "1kg - $2.306"],
+      "imagen": "insertar imagen"
+    },
+    {
+      "nombre": "Quinoa Pop",
+      "presentaciones": [ "1kg - $9.289"],
+      "imagen": "images/productos/QUINOA POP.png"
+    },
+    {
+      "nombre": "Salvado De Avena",
+      "presentaciones": [ "1kg - $2.674"],
+      "imagen": "images/productos/salvado-de-avena.png"
+    },
+    {
+      "nombre": "Tostaditas de Arroz Dulces ECOSAN x 1.5 kg",
+      "presentaciones": [ "1 u - $11.895"],
+      "imagen": "images/productos/tostaditas.png"
+    },
+    {
+      "nombre": "Tostaditas de arroz saladas ECOSAN x 2 kg",
+      "presentaciones": [ "1 u - $15.860"],
+      "imagen": "images/productos/tostaditas.png"
+    },
+    {
+      "nombre": "Tutucas Azucaradas ECOSAN bolson 5 kg",
+      "presentaciones": [ "1 u - $28.908"],
+      "imagen": "images/productos/tutucasx100.png"
+    },
+    {
+      "nombre": "Tutucas Azucaradas ECOSAN x 100 g",
+      "presentaciones": [ "1 u - $1.088"],
+      "imagen": "images/productos/tutucasx100.png"
+    },
+    {
+      "nombre": "Tutucas Azucardas",
+      "presentaciones": [ "1 u - $6.907"],
+      "imagen": "images/productos/TUTUCAS AZUCARADAS.png"
+    },
+    {
+      "nombre": "Tutucas con Stevia ECOSAN",
+      "presentaciones": [ "1kg - $6.753"],
+      "imagen": "images/productos/tutucas-stevia.png"
+    },
+    {
+      "nombre": "Avena: arollada gruesa y salvado de avena",
+      "presentaciones": [ "1kg - $6.900"],
+      "imagen": "images/productos/AVENA_ arrollada  gruesa y salvado de avena.png"
+    },
+    {
+      "nombre": "Arroz Inflado sin Azúcar",
+      "presentaciones": [ "1kg - $6.900"],
+      "imagen": "images/productos/ARROZ INFLADO.png"
+    },
+    {
+      "nombre": "Aritos Frutales",
+      "presentaciones": [ "50gr - $400", "100gr - $750"],
+      "imagen": "images/productos/ARITOS FRUTALES.png"
+    }
+  ],
+
+  "Especias y Condimentos": [
+    {
+      "nombre": "Ají Molido",
+      "presentaciones": [ "1kg - $10.123"],
+      "imagen": "images/productos/AJI MOLIDO.png"
+    },
+    {
+      "nombre": "Ajo Deshidratado en Polvo",
+      "presentaciones": [ "1kg - $8.214"],
+      "imagen": "images/productos/AJO DESHIDRATADO EN POLVO.png"
+    },
+    {
+      "nombre": "Ajo Deshidratado Granulado",
+      "presentaciones": [ "1kg - $12.201"],
+      "imagen": "images/productos/AJO DESHIDRATADO GRANULADO.png"
+    },
+    {
+      "nombre": "Albahaca en Hojas",
+      "presentaciones": [ "500gr - $4.921"],
+      "imagen": "images/productos/ALBAHACA EN HOJAS.png"
+    },
+    {
+      "nombre": "Anis en Grano CUMANA x 1 kg",
+      "presentaciones": [ "1 u - $12.810"],
+      "imagen": "images/productos/anis-grano-cumana.png"
+    },
+    {
+      "nombre": "Canela Molida CUMANA",
+      "presentaciones": [ "1kg - $22.228"],
+      "imagen": "images/productos/canela-molida-cumana.png"
+    },
+    {
+      "nombre": "Canela en Rama CUMANA x 300 g",
+      "presentaciones": [ "1 u - $22.033"],
+      "imagen": "images/productos/canela-rama-cumana.png"
+    },
+    {
+      "nombre": "Chimichurri con Romero",
+      "presentaciones": [ "1kg - $12.025"],
+      "imagen": "images/productos/CHIMICHURRI CON ROMERO.png"
+    },
+    {
+      "nombre": "Clavo de Olor",
+      "presentaciones": [ "1kg - $44.319"],
+      "imagen": "images/productos/CLAVO DE OLOR.png"
+    },
+    {
+      "nombre": "Comino Molido CUMANA- 1 kg",
+      "presentaciones": [ "1kg - $15.397"],
+      "imagen": "images/productos/comino-molido-cumana.png"
+    },
+    {
+      "nombre": "Comino en grano cumana x 1 kg",
+      "presentaciones": [ "1 u - $14.810"],
+      "imagen": "images/productos/comino-grano-cumana.png"
+    },
+    {
+      "nombre": "Condimento para Pizza Cumana x 1 kg",
+      "presentaciones": [ "1kg - $11.226"],
+      "imagen": "images/productos/condimento-pizza-cumana.png"
+    },
+    {
+      "nombre": "Cúrcuma Molida",
+      "presentaciones": [ "1kg - $11.398"],
+      "imagen": "images/productos/CURCUMA MOLIDA.png"
+    },
+    {
+      "nombre": "Curry en Polvo CUMANA x 1 kg",
+      "presentaciones": [ "1 u - $8.279"],
+      "imagen": "images/productos/curry-polvo-cumana.png"
+    },
+    {
+      "nombre": "Hojas de Laurel x 300 CUMANA g",
+      "presentaciones": [ "1 u - $4.936"],
+      "imagen": "images/productos/hojas-laurel-cumana.png"
+    },
+    {
+      "nombre": "Hojas de Perejil Deshidratadas",
+      "presentaciones": [ "400gr - $5.262"],
+      "imagen": "images/productos/HOJAS DE PEREJIL DESHIDRATADAS.png"
+    },
+    {
+      "nombre": "Mix Pimienta en Grano CUMANA x 1 KG",
+      "presentaciones": [ "1 u - $36.283"],
+      "imagen": "insertar imagen"
+    },
+    {
+      "nombre": "Mostaza Amarilla",
+      "presentaciones": [ "1kg - $6.772"],
+      "imagen": "images/productos/MOSTAZA AMARILLA.png"
+    },
+    {
+      "nombre": "Nuez Moscada Molida",
+      "presentaciones": [ "1kg - $24.692"],
+      "imagen": "images/productos/NUEZ MOSCADA MOLIDA.png"
+    },
+    {
+      "nombre": "Orégano",
+      "presentaciones": [ "1kg - $7.010"],
+      "imagen": "images/productos/ORÉGANO.png"
+    },
+    {
+      "nombre": "Pimentón",
+      "presentaciones": [ "1kg - $10.236"],
+      "imagen": "images/productos/PIMENTON.png"
+    },
+    {
+      "nombre": "Pimienta Blanca Molida",
+      "presentaciones": [ "1kg - $48.985"],
+      "imagen": "images/productos/PIMIENTA BLANCA MOLIDA.png"
+    },
+    {
+      "nombre": "Pimienta Negra En Grano",
+      "presentaciones": [ "1kg - $25.480"],
+      "imagen": "images/productos/pimienta-negra-grano.png"
+    },
+    {
+      "nombre": "Pimienta Negra Molida",
+      "presentaciones": [ "1kg - $26.443"],
+      "imagen": "images/productos/PIMIENTA NEGRA MOLIDA.png"
+    },
+    {
+      "nombre": "Provenzal",
+      "presentaciones": [ "1kg - $11.814"],
+      "imagen": "images/productos/PROVENZAL.png"
+    },
+    {
+      "nombre": "Romero Egipto",
+      "presentaciones": [ "800gr - $10.085"],
+      "imagen": "images/productos/ROMERO EGIPTO.png"
+    },
+    {
+      "nombre": "Tomillo Egipto",
+      "presentaciones": [ "500gr - $7.413"],
+      "imagen": "images/productos/TOMILLO EGIPTO.png"
+    },
+    {
+      "nombre": "Canela",
+      "presentaciones": [ "50gr - $400", "100gr - $750"],
+      "imagen": "images/productos/CANELA.png"
+    },
+    {
+      "nombre": "Azafrán Caps. Blister x 10 U",
+      "presentaciones": [ "50gr - $400", "100gr - $750"],
+      "imagen": "images/productos/AZAFRAN CAPS. BLISTER.png"
+    },
+    {
+      "nombre": "Pesto seco",
+      "presentaciones": [ "x 500 grs. $5.200/x 1 kg. $10.400"],
+      "imagen": "insertar imagen"
+    }
+  ],
+
+  "Línea Maní": [
+    {
+      "nombre": "Garrapiñadas x 1 kg",
+      "presentaciones": [ "1kg - $7.454"],
+      "imagen": "images/productos/garrapiñadas.png"
+    },
+    {
+      "nombre": "Mani Pelado Con Sal A",
+      "presentaciones": [ "1kg - $4.209"],
+      "imagen": "images/productos/mani-pelado.png"
+    },
+    {
+      "nombre": "Mani Pelado Sin Sal A",
+      "presentaciones": [ "1kg - $3.977"],
+      "imagen": "images/productos/MANI PELADO SIN SAL.png"
+    },
+    {
+      "nombre": "Maní Saborizado Premium Jamón",
+      "presentaciones": [ "1kg - $7.308"],
+      "imagen": "images/productos/MANI SABORIZADO PREMIUM JAMON.png"
+    },
+    {
+      "nombre": "Maní Vaina",
+      "presentaciones": [ "1kg - $7.466"],
+      "imagen": "images/productos/MANI VAINA.png"
+    },
+    {
+      "nombre": "Mani Virginia Repelado Sin Sal",
+      "presentaciones": [ "1kg - $5.478"],
+      "imagen": "images/productos/mani-virginia.png"
+    },
+    {
+      "nombre": "Mani Virginia con sal",
+      "presentaciones": [ "1kg - $5.795"],
+      "imagen": "images/productos/mani-virginia.png"
+    },
+    {
+      "nombre": "Pasta de Mani x 370g ENTRENUTS",
+      "presentaciones": [ "1 u - $3.608"],
+      "imagen": "images/productos/pasta-mani.png"
+    },
+    {
+      "nombre": "Maní Salado",
+      "presentaciones": [ "50gr - $400", "100gr - $750"],
+      "imagen": "images/productos/MANI SALADO.png"
+    },
+    {
+      "nombre": "Caja 20 U x 90gr Maní Saborizado Mixto",
+      "presentaciones": [ "50gr - $400", "100gr - $750"],
+      "imagen": "images/productos/CAJA 20 U X 90 G MANI SABORIZADO MIXTO.png"
+    },
+    {
+      "nombre": "Maní crudo calibre 38 ¡Oferta semanal!",
+      "presentaciones": [ "$2.000/$4.000"],
+      "imagen": "insertar imagen"
+    }
+  ],
+
+  "Miel": [
+    {
+      "nombre": "Miel \"MASAI\" 100% Natural x 1 kg",
+      "presentaciones": [ "1 u - $11.285"],
+      "imagen": "images/productos/miel-masai1kg.png"
+    },
+    {
+      "nombre": "Miel de Algarrobo Frasco vidrio x 1 kg",
+      "presentaciones": [ "1 u - $10.458"],
+      "imagen": "images/productos/miel-algarrobo-vidrio1k.png"
+    },
+    {
+      "nombre": "Miel de Algarrobo Frasco vidrio x 1/4 kg \"El Abuelo\"",
+      "presentaciones": [ "1 u - $3.953"],
+      "imagen": "images/productos/miel-alarrobo-1-4k.png"
+    },
+    {
+      "nombre": "Miel de Algarrobo Frasco vidrio x 500 g \"El Abuelo\"",
+      "presentaciones": [ "1 u - $5.929"],
+      "imagen": "images/productos/miel-algarrobo-500.png"
+    },
+    {
+      "nombre": "Polen Multifloral Granulado",
+      "presentaciones": [ "1kg - $25.352"],
+      "imagen": "images/productos/polen.png"
+    }
+  ],
+
+  "Legumbres": [
+    {
+      "nombre": "Garbanzos",
+      "presentaciones": [ "1kg - $2.731"],
+      "imagen": "images/productos/garbanzos.png"
+    },
+    {
+      "nombre": "Lentejas",
+      "presentaciones": [ "1kg - $4.984"],
+      "imagen": "images/productos/lenteja-roja.png"
+    },
+    {
+      "nombre": "Porotos Alubias",
+      "presentaciones": [ "1kg - $3.660"],
+      "imagen": "images/productos/poroto-alubia.png"
+    },
+    {
+      "nombre": "Poroto Negro",
+      "presentaciones": [ "1kg - $2.794"],
+      "imagen": "images/productos/poroto-negro.png"
+    },
+    {
+      "nombre": "Lentejones",
+      "presentaciones": [ "x 500 grs. $3.000/x 1 kg. $6.000"],
+      "imagen": "insertar imagen"
+    }
+  ],
+
+  "Almacén": [
+    {
+      "nombre": "Aceite de Coco Neutro \"El Cosaco\" x 200 ml",
+      "presentaciones": [ "1 u - $4.236"],
+      "imagen": "images/productos/aceite-coco200ml.png"
+    },
+    {
+      "nombre": "Aceite de Coco Neutro \"El Cosaco\" x 360 ml",
+      "presentaciones": [ "1 u - $6.326"],
+      "imagen": "images/productos/aceite-coco-360ml.png"
+    },
+    {
+      "nombre": "Aceite de Coco Neutro \"El Cosaco\" x 500 ml",
+      "presentaciones": [ "1 u - $8.788"],
+      "imagen": "images/productos/aceite-coco500ml.png"
+    },
+    {
+      "nombre": "Almidon de Maiz x 1 kg",
+      "presentaciones": [ "1kg - $2.516"],
+      "imagen": "images/productos/almidon.png"
+    },
+    {
+      "nombre": "Arroz Yamani Integral",
+      "presentaciones": [ "1kg - $3.522"],
+      "imagen": "images/productos/arroz-yamani.png"
+    },
+    {
+      "nombre": "Azucar Mascabo",
+      "presentaciones": [ "1kg - $6.253"],
+      "imagen": "images/productos/azucar-mascabo.png"
+    },
+    {
+      "nombre": "Azucar Organica x 1 kg DICOMERE",
+      "presentaciones": [ "1 u - $6.216"],
+      "imagen": "images/productos/azucar-organica.png"
+    },
+    {
+      "nombre": "Barrita Energetica artesanal \"Masai\"",
+      "presentaciones": [ "1 u - $1.452"],
+      "imagen": "insertar imagen"
+    },
+    {
+      "nombre": "Bicarbonato de Sodio",
+      "presentaciones": [ "1kg - $2.794"],
+      "imagen": "images/productos/BICARBONATO DE SODIO.png"
+    },
+    {
+      "nombre": "Cous Cous",
+      "presentaciones": [ "1kg - $11.011"],
+      "imagen": "images/productos/cous-cous.png"
+    },
+    {
+      "nombre": "Dulce de Membrillo en Pan Artesanal x 850 g",
+      "presentaciones": [ "1 u - $6.661"],
+      "imagen": "images/productos/dulce-membrillo-pan.png"
+    },
+    {
+      "nombre": "Fecula de Mandioca x 1 kg",
+      "presentaciones": [ "1 u - $3.784"],
+      "imagen": "images/productos/fecula-mandioca.png"
+    },
+    {
+      "nombre": "Fecula de Mandioca x 450 g DICOMERE",
+      "presentaciones": [ "1 u - $2.798"],
+      "imagen": "images/productos/fecula-mandioca-dicomere.png"
+    },
+    {
+      "nombre": "Gelatina sin Sabor x 1kg",
+      "presentaciones": [ "1kg - $23.485"],
+      "imagen": "images/productos/gelatina-sin-sabor.png"
+    },
+    {
+      "nombre": "Leche de Coco Chocolatada Vegana Dicomere x 150 g",
+      "presentaciones": [ "1 u - $7.023"],
+      "imagen": "images/productos/leche-coco-chocolatada.png"
+    },
+    {
+      "nombre": "Leche de Coco en polvo Clásica x 150 g Dicomere",
+      "presentaciones": [ "1 u - $8.501"],
+      "imagen": "images/productos/leche-coco-polvo.png"
+    },
+    {
+      "nombre": "Maíz Frito Salado",
+      "presentaciones": [ "1kg - $12.523"],
+      "imagen": "images/productos/MAIZ FRITO SALADO.png"
+    },
+    {
+      "nombre": "Maíz Frito Mostaza y miel CUMANA x 1kg",
+      "presentaciones": [ "1 u - $14.750"],
+      "imagen": "images/productos/maiz-mostaza-miel-cumana.png"
+    },
+    {
+      "nombre": "Palitos salados x 1 kg",
+      "presentaciones": [ "1 u - $5.838"],
+      "imagen": "images/productos/palitos-salados.png"
+    },
+    {
+      "nombre": "Psyllium Husk x 100 g Dicomere",
+      "presentaciones": [ "1 u - $7.286"],
+      "imagen": "images/productos/psyllium-husk.png"
+    },
+    {
+      "nombre": "Sal Fina del Himalaya",
+      "presentaciones": [ "1kg - $2.861"],
+      "imagen": "images/productos/sal-himalaya.png"
+    },
+    {
+      "nombre": "Sal Marina Fina x 450 g Dicomere",
+      "presentaciones": [ "1 u - $1.944"],
+      "imagen": "images/productos/sal-marina.png"
+    },
+    {
+      "nombre": "Sal dietética 0% Sodio salero x 70 g DICOMERE",
+      "presentaciones": [ "1 u - $3.859"],
+      "imagen": "images/productos/sal-dietetica.png"
+    },
+    {
+      "nombre": "Salsa Teriyaki x 250 cc",
+      "presentaciones": [ "1 u - $5.234"],
+      "imagen": "images/productos/salsa-teriyaki.png"
+    },
+    {
+      "nombre": "Salsa de Soja x 250 ml",
+      "presentaciones": [ "1 u - $4.941"],
+      "imagen": "images/productos/salsa-soja.png"
+    },
+    {
+      "nombre": "Salsa teriyaki x 1,8 L",
+      "presentaciones": [ "1 u - $19.520"],
+      "imagen": "images/productos/salsa-teriyaki.png"
+    },
+    {
+      "nombre": "Soja Texturizada x 1 kg",
+      "presentaciones": [ "1kg - $2.568"],
+      "imagen": "images/productos/soja-texturizada.png"
+    }
+  ],
+
+  "Hongos y Hierbas": [
+    {
+      "nombre": "Cedrón",
+      "presentaciones": [ "1kg - $26.281"],
+      "imagen": "images/productos/CEDRON.png"
+    },
+    {
+      "nombre": "Hibiscus Flor de Jamaica",
+      "presentaciones": [ "1kg - $20.374"],
+      "imagen": "images/productos/flor-jamaica.png"
+    },
+    {
+      "nombre": "Hongos Secos Boletus Perú",
+      "presentaciones": [ "500gr - $19.292"],
+      "imagen": "images/productos/HONGOS SECOS.png"
+    },
+    {
+      "nombre": "Jengibre en trozos CUMANA x 500 g",
+      "presentaciones": [ "1 u - $10.361"],
+      "imagen": "images/productos/jenjibre-trozos.png"
+    },
+    {
+      "nombre": "Manzanilla Flor Pura",
+      "presentaciones": [ "1kg - $48.902"],
+      "imagen": "insertar imagen"
+    },
+    {
+      "nombre": "Manzanilla Tallo y Flor",
+      "presentaciones": [ "1kg - $45.658"],
+      "imagen": "images/productos/manzanilla-flor-tallo.png"
+    },
+    {
+      "nombre": "Mix Hierbas Serranas x 500 g",
+      "presentaciones": [ "1 u - $2.159"],
+      "imagen": "images/productos/hierbas-serranas.png"
+    },
+    {
+      "nombre": "Stevia en Hojas Cumaná x 1 kg",
+      "presentaciones": [ "1 u - $24.987"],
+      "imagen": "images/productos/stevia-hojas.png"
+    },
+    {
+      "nombre": "Yerba Mate Orgánica x 500 g Dicomere",
+      "presentaciones": [ "1 u - $6.675"],
+      "imagen": "images/productos/yerba-mate-organica.png"
+    }
+  ],
+
+  "Granolas": [
+    {
+      "nombre": "Granola Horneada Protéica Tutti Grani",
+      "contenido": "Avena, semillas (girasol, lino, sésamo, chía), copos de maíz sin azúcar, arroz inflado, miel, salvado de trigo, pasas negras, maní, azúcar mascabo, canela en polvo, proteína texturizada de soja",
+      "presentaciones": [ "1 u - $7.886"],
+      "imagen": "images/productos/granola-proteica.png"
+    },
+    {
+      "nombre": "Granola Horneada Simple Tutti Grani",
+      "contenido": "Avena, semillas de girasol, copos de maíz sin azúcar, pasas negras, maní, azúcar mascabo",
+      "presentaciones": [ "1 u - $6.297"],
+      "imagen": "images/productos/granola-simple.png"
+    },
+    {
+      "nombre": "Granola Horneada Tradicional Tutti Grani",
+      "contenido": "Avena, semillas de girasol, copos de maíz sin azúcar, pasas negras, maní, azúcar mascabo",
+      "presentaciones": [ "1 u - $6.695"],
+      "imagen": "images/productos/granola-traidiconal-horneaaada.png"
+    },
+    {
+      "nombre": "Granola Horneada con Almendras Tutti Grani",
+      "contenido": "Avena, semillas (girasol, lino, sésamo, chía), copos de maíz sin azúcar, arroz inflado, miel, salvado de trigo, pasas negras, maní, azúcar mascabo, canela en polvo, almendras",
+      "presentaciones": [ "1 u - $7.886"],
+      "imagen": "images/productos/granola-almendras.png"
+    },
+    {
+      "nombre": "Granola Horneada con cacao y coco Tutti Grani",
+      "contenido": "Cacao amargo, coco rallado, avena, semillas (girasol, lino, sésamo, chía), copos de maíz sin azúcar, arroz inflado, miel, salvado de trigo, pasas negras, maní, azúcar mascabo, canela en polvo",
+      "presentaciones": [ "1 u - $7.886"],
+      "imagen": "images/productos/granola-cacao-coco.png"
+    },
+    {
+      "nombre": "Granola Horneada con dulce de leche Tutti Grani",
+      "contenido": "Dulce de leche, avena, semillas (girasol, lino, sésamo, chía), copos de maíz sin azúcar, arroz inflado, miel, salvado de trigo, pasas negras, maní, azúcar mascabo, canela en polvo",
+      "presentaciones": [ "1 u - $7.886"],
+      "imagen": "images/productos/granola-dulcedeleche.png"
+    },
+    {
+      "nombre": "Granola Horneada con Pasta de maní Tutti Grani",
+      "contenido": "Pasta de maní, avena, semillas (girasol, lino, sésamo, chía), copos de maíz sin azúcar, arroz inflado, miel, salvado de trigo, pasas negras, maní, azúcar mascabo, canela en polvo",
+      "presentaciones": [ "1 u - $7.886"],
+      "imagen": "images/productos/granola-pastademani.png"
+    },
+    {
+      "nombre": "Granola Kids",
+      "contenido": "Aritos frutales, bolitas de chocolate, avena, almohaditas de trigo, arroz inflado, copos de maíz, miel",
+      "presentaciones": [ "1kg - $8.962"],
+      "imagen": "images/productos/GRANOLA KIDS.png"
+    },
+    {
+      "nombre": "Granola Tradicional",
+      "contenido": "Avena, semillas de lino, quinoa pop, semillas de girasol, copos de maíz, pasas negras, arroz inflado, miel",
+      "presentaciones": [ "1kg - $7.254"],
+      "imagen": "images/productos/GRANOLA TRADICIONAL.png"
+    },
+    {
+      "nombre": "Granola Tradicional sin pasas",
+      "contenido": "Avena, semillas de lino, quinoa pop, semillas de girasol, copos de maíz, arroz inflado, miel",
+      "presentaciones": [ "1kg - $7.254"],
+      "imagen": "images/productos/granola-tradicional-sinpasas.png"
+    },
+    {
+      "nombre": "Granola Horneada Tropical Tutti Grani",
+      "contenido": "Chips de banana, papaya deshidratada, avena, semillas (girasol, lino, sésamo, chía), copos de maíz sin azúcar, arroz inflado, miel, salvado de trigo, pasas negras, maní, azúcar mascabo, canela en polvo",
+      "presentaciones": [ "1 u - $7.886"],
+      "imagen": "images/productos/granola-tropical.png"
+    },
+    {
+      "nombre": "Granola con stevia Tutti Grani",
+      "contenido": "Stevia en polvo, avena, semillas (girasol, lino, sésamo, chía), copos de maíz sin azúcar, arroz inflado, pasas negras, maní tostado",
+      "presentaciones": [ "1 u - $8.443"],
+      "imagen": "images/productos/granola-stevia.png"
+    }
+  ],
+
+  "Harinas": [
+    {
+      "nombre": "Harina de avena",
+      "presentaciones": [ "1kg - $2.674"],
+      "imagen": "images/productos/harina-avena.png"
+    },
+    {
+      "nombre": "Harina de Almendra con Piel Pureza 100%",
+      "presentaciones": [ "1kg - $25.486"],
+      "imagen": "images/productos/harina-almendra-conpiel.png"
+    },
+    {
+      "nombre": "Harina de almendra sin piel pureza 70%",
+      "presentaciones": [ "1kg - $5.279"],
+      "imagen": "images/productos/harina-almendra-sinpiel.png"
+    },
+    {
+      "nombre": "Harina de almendra con piel pureza 70%",
+      "presentaciones": [ "1kg - $5.279"],
+      "imagen": "images/productos/harina-almendra-conpiel70.png"
+    },
+    {
+      "nombre": "Harina de Arroz x 1 kg Dicomere",
+      "presentaciones": [ "1 u - $3.305"],
+      "imagen": "images/productos/harina-arroz.png"
+    },
+    {
+      "nombre": "Harina de Avena Integral",
+      "presentaciones": [ "1kg - $2.674"],
+      "imagen": "images/productos/harina-avena.png"
+    },
+    {
+      "nombre": "Harina de Coco x 1 kg",
+      "presentaciones": [ "1 u - $7.695"],
+      "imagen": "images/productos/harina-coco.png"
+    },
+    {
+      "nombre": "Harina de Garbanzo x 450 g Dicomere",
+      "presentaciones": [ "1 u - $2.403"],
+      "imagen": "images/productos/harina-garbanzo.png"
+    },
+    {
+      "nombre": "Harina de Lino",
+      "presentaciones": [ "1kg - $5.212"],
+      "imagen": "images/productos/harina-lino.png"
+    },
+    {
+      "nombre": "Harina de Trigo Integral Organica x 1 kg Dicomere",
+      "presentaciones": [ "1 u - $3.405"],
+      "imagen": "images/productos/harina-trigo.png"
+    },
+    {
+      "nombre": "Harina de algarroba",
+      "presentaciones": [ "1kg - $6.905"],
+      "imagen": "images/productos/harina-algarroba.png"
+    },
+    {
+      "nombre": "Harina de trigo Sarraceno Dicomere x 450 g",
+      "presentaciones": [ "1 u - $4.022"],
+      "imagen": "insertar imagen"
+    },
+    {
+      "nombre": "Premezcla Pizza con C/ Psyillum Husk x 450 g DICOMERE",
+      "presentaciones": [ "1 u - $2.836"],
+      "imagen": "images/productos/premezcla-pizza-dicomere.png"
+    },
+    {
+      "nombre": "Premezcla Universal con Psyillum Husk x 450g DICOMERE",
+      "presentaciones": [ "1 u - $2.572"],
+      "imagen": "images/productos/premezcla-universal.png"
+    }
+  ],
+
+  "Semillas y Mix de Semillas": [
+    {
+      "nombre": "Mix 4 Semillas",
+      "presentaciones": [ "1kg - $5.359"],
+      "imagen": "images/productos/mix-4ssemillas.png"
+    },
+    {
+      "nombre": "Mix Multisemillas",
+      "presentaciones": [ "1kg - $7.092"],
+      "imagen": "images/productos/mix-multisemillas.png"
+    },
+    {
+      "nombre": "Mix semillas Ensalada Doypack x 150 g Cumana",
+      "presentaciones": [ "1 u - $1.610"],
+      "imagen": "images/productos/semillas-ensalada-cumana.png"
+    },
+    {
+      "nombre": "Mix semillas desayuno Doypack Cumana x 150 g 150 g",
+      "presentaciones": [ "1 u - $1.897"],
+      "imagen": "images/productos/semillas-desayuno-cumana.png"
+    },
+    {
+      "nombre": "Semillas de Quínoa",
+      "presentaciones": [ "1kg - $10.315"],
+      "imagen": "images/productos/SEMILLAS DE QUINOA.png"
+    },
+    {
+      "nombre": "Semilla de Girasol Cumana x 250 g",
+      "presentaciones": [ "1 u - $1.903"],
+      "imagen": "images/productos/semilla-girasol-cumana.png"
+    },
+    {
+      "nombre": "Semillas de Girasol",
+      "presentaciones": [ "1kg - $4.510"],
+      "imagen": "images/productos/SEMILLAS DE GIRASOL.png"
+    },
+    {
+      "nombre": "Semillas de Lino",
+      "presentaciones": [ "1kg - $3.757"],
+      "imagen": "images/productos/SEMILLAS DE LINO.png"
+    },
+    {
+      "nombre": "Sésamo Blanco",
+      "presentaciones": [ "1kg - $7.915"],
+      "imagen": "images/productos/SESAMO BLANCO.png"
+    },
+    {
+      "nombre": "Sésamo Negro",
+      "presentaciones": [ "1kg - $11.822"],
+      "imagen": "images/productos/SESAMO NEGRO.png"
+    },
+    {
+      "nombre": "Semillas de Amapola",
+      "presentaciones": [ "1kg - $15.189"],
+      "imagen": "images/productos/semillas-amapola.png"
+    },
+    {
+      "nombre": "Semillas de chía",
+      "presentaciones": [ "1kg - $5.466"],
+      "imagen": "images/productos/semillas-chia.png"
+    },
+    {
+      "nombre": "Semillas de Chia x 250 g Cumana",
+      "presentaciones": [ "1 u - $3.051"],
+      "imagen": "images/productos/semilla-chia-cumana.png"
+    },
+    {
+      "nombre": "Semillas de Girasol Cumana x 250 g",
+      "presentaciones": [ "1 u - $1.443"],
+      "imagen": "images/productos/semilla-girasol-cumana.png"
+    },
+    {
+      "nombre": "Semillas de Hinojo Cumana X 1 kg",
+      "presentaciones": [ "1 u - $8.831"],
+      "imagen": "images/productos/semilla-hinojo-cumana.png"
+    },
+    {
+      "nombre": "Semillas de Sésamo integral",
+      "presentaciones": [ "1kg - $3.660"],
+      "imagen": "images/productos/sesamo-integral.png"
+    },
+    {
+      "nombre": "Semillas de Zapallo Cumana x 200 g",
+      "presentaciones": [ "1 u - $3.480"],
+      "imagen": "images/productos/semilla-zapallo-cumana.png"
+    },
+    {
+      "nombre": "Semillas de zapallo AA premium",
+      "presentaciones": [ "1kg - $24.510"],
+      "imagen": "images/productos/semillas-zapallo.png"
+    }
+  ],
+
+  "Chocolates y Repostería": [
+    {
+      "nombre": "Cacao Alcalino Socau origen Brasil",
+      "presentaciones": [ "1kg - $14.835"],
+      "imagen": "images/productos/cacao.png"
+    },
+    {
+      "nombre": "Cacao Amargo Comun",
+      "presentaciones": [ "1kg - $11.517"],
+      "imagen": "images/productos/cacao.png"
+    },
+    {
+      "nombre": "Cacao Amargo en polvo x 200 g Dicomere",
+      "presentaciones": [ "1 u - $5.112"],
+      "imagen": "images/productos/cacao-amargo-dicomere.png"
+    },
+    {
+      "nombre": "Naranja Glaseada en Tiras",
+      "presentaciones": [ "1kg - $11.688"],
+      "imagen": "images/productos/NARANJA GLASEADA EN TIRAS.png"
+    },
+    {
+      "nombre": "Cascarilla de Cacao x 1 kg",
+      "presentaciones": [ "1kg - $5.844"],
+      "imagen": "images/productos/cascara-cacao.png"
+    },
+    {
+      "nombre": "Chips de Chocolate Blanco MAPSA x 500 g",
+      "presentaciones": [ "1 u - $8.070"],
+      "imagen": "images/productos/chips-chocolate-blanco.png"
+    },
+    {
+      "nombre": "Chips de Chocolate Negro MAPSA x 500 g",
+      "presentaciones": [ "1 u - $8.070"],
+      "imagen": "images/productos/chips-chocolate-negro.png"
+    },
+    {
+      "nombre": "Chocolate Aguila Tableta taza x 1 kg",
+      "presentaciones": [ "1 u - $31.203"],
+      "imagen": "images/productos/chocolate-aguila.png"
+    },
+    {
+      "nombre": "Chocolate Amargo 60% Cacao Aguila Tableta (1 kg)",
+      "presentaciones": [ "1kg - $44.692"],
+      "imagen": "images/productos/cacao-amargo.png"
+    },
+    {
+      "nombre": "Chocolate Blanco para Cobertura MAPSA 1kg",
+      "presentaciones": [ "1 u - $16.226"],
+      "imagen": "images/productos/chocolate-blanco-cobertura.png"
+    },
+    {
+      "nombre": "Chocolate Negro para Cobertura MAPSA 1kg",
+      "presentaciones": [ "1 u - $16.226"],
+      "imagen": "insertar imagen"
+    },
+    {
+      "nombre": "Chocolate blanco MAPSA CUBER x 500 g (botón)",
+      "presentaciones": [ "1 u - $8.690"],
+      "imagen": "images/productos/chocolate-blanco-cuber.png"
+    },
+    {
+      "nombre": "Chocolate negro MAPSA CUBER Semiamargo x 500 g (botón)",
+      "presentaciones": [ "1 u - $9.086"],
+      "imagen": "images/productos/chocolate-negro-cuber.png"
+    },
+    {
+      "nombre": "Chocolate negro MAPSA cuber con leche x 500 g",
+      "presentaciones": [ "1 u - $8.690"],
+      "imagen": "insertar imagen"
+    },
+    {
+      "nombre": "Coco Rallada Mid Fath",
+      "presentaciones": [ "1kg - $8.174"],
+      "imagen": "images/productos/coco-rallado.png"
+    },
+    {
+      "nombre": "Coco Rallado Indonesia",
+      "presentaciones": [ "1kg - $7.381"],
+      "imagen": "images/productos/COCO RALLADO INDONESIA.png"
+    },
+    {
+      "nombre": "Coco Rallado High Fat CUMANA",
+      "presentaciones": [ "1kg - $11.529"],
+      "imagen": "images/productos/coco-rallado-cumana.png"
+    },
+    {
+      "nombre": "Fruta Escurrida (para pan dulce)",
+      "presentaciones": [ "1kg - $3.781"],
+      "imagen": "images/productos/fruta-escurrida.png"
+    },
+    {
+      "nombre": "Goma Xantica x 1 kg",
+      "presentaciones": [ "1 u - $15.470"],
+      "imagen": "images/productos/goma-xantica.png"
+    },
+    {
+      "nombre": "Polvo para Hornear x 250 g Dicomere",
+      "presentaciones": [ "1 u - $2.929"],
+      "imagen": "images/productos/polvo-hornear.png"
+    },
+    {
+      "nombre": "Rocklets ARCOR x 1kg",
+      "presentaciones": [ "1 u - $26.452"],
+      "imagen": "images/productos/rocklets.png"
+    }
+  ],
+
+  "Condimentos Fraccionados Flor de Liz": [
+    {
+      "nombre": "Condimentos Fraccionados",
+      "presentaciones": [ "Cúrcuma x 25 grs. $400 Orégano x 8 grs. $400 Condimento para pizza x 15 grs. $400 Ajo molido x 25 grs. $400 Tomates secos x 20 grs. $400 ¡¡Promo lanzamiento!! lleva 3 a elección por $1.000 Pimienta negra en polvo y/o en grano x 25 grs. $800  Ají x 25 grs. $500 Hongos bolletus x 15 grs. $600"],
+      "imagen": "images/productos/107.png"
+    }
+  ]
+}
